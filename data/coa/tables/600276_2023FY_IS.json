@@ -2,127 +2,14 @@
  "label": "IS",
  "scope": "合并",
  "pages": [
-  147,
   148
  ],
  "header": [
-  "",
-  "",
-  ""
+  "信用减值损失（损失以“-”号填 列）",
+  "17,254,496.20",
+  "-26,284,422.21"
  ],
  "rows": [
-  {
-   "label": "",
-   "vals": [
-    null,
-    null
-   ]
-  },
-  {
-   "label": "一、营业总收入",
-   "vals": [
-    null,
-    null
-   ]
-  },
-  {
-   "label": "其中：营业收入",
-   "vals": [
-    null,
-    null
-   ]
-  },
-  {
-   "label": "二、营业总成本",
-   "vals": [
-    null,
-    null
-   ]
-  },
-  {
-   "label": "其中：营业成本",
-   "vals": [
-    null,
-    null
-   ]
-  },
-  {
-   "label": "税金及附加",
-   "vals": [
-    null,
-    null
-   ]
-  },
-  {
-   "label": "销售费用",
-   "vals": [
-    null,
-    null
-   ]
-  },
-  {
-   "label": "管理费用",
-   "vals": [
-    null,
-    null
-   ]
-  },
-  {
-   "label": "研发费用",
-   "vals": [
-    null,
-    null
-   ]
-  },
-  {
-   "label": "财务费用",
-   "vals": [
-    null,
-    null
-   ]
-  },
-  {
-   "label": "其中：利息费用",
-   "vals": [
-    null,
-    null
-   ]
-  },
-  {
-   "label": "利息收入",
-   "vals": [
-    null,
-    null
-   ]
-  },
-  {
-   "label": "加：其他收益",
-   "vals": [
-    null,
-    null
-   ]
-  },
-  {
-   "label": "投资收益（损失以“－”号填列）",
-   "vals": [
-    null,
-    null
-   ]
-  },
-  {
-   "label": "其中：对联营企业和合营企业的 投资收益",
-   "vals": [
-    null,
-    null
-   ]
-  },
-  {
-   "label": "公允价值变动收益（损失以“－” 号填列）",
-   "vals": [
-    null,
-    null
-   ]
-  },
   {
    "label": "信用减值损失（损失以“-”号填 列）",
    "vals": [
@@ -300,12 +187,13 @@
   }
  ],
  "unit": "元",
+ "split": "列宽不一致（11 vs 3）—— 不拼，防串列",
  "table": "利润表",
  "period": "2023FY",
  "announced": "2024-04-18",
  "source": "600276_2023FY.pdf",
  "title": "恒瑞医药2023年年度报告",
- "dropped_nonnumeric_cols": 9,
+ "dropped_nonnumeric_cols": 1,
  "symbol": "600276",
  "short": "恒瑞医药",
  "kind": "医药"
