@@ -1,0 +1,197 @@
+{
+ "label": "BS",
+ "scope": "母公司#4",
+ "pages": [
+  252
+ ],
+ "header": [
+  "41",
+  ""
+ ],
+ "rows": [
+  {
+   "label": "41",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    97379860046.15
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    634032717.78
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    98013892763.93
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    8063272365.72
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    93616301891.08
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "42",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "(1)",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null
+   ]
+  }
+ ],
+ "unit": null,
+ "table": "资产负债表",
+ "period": "2023FY",
+ "announced": "2024-03-29",
+ "source": "000002_2023FY.pdf",
+ "title": "2023年年度报告",
+ "dropped_nonnumeric_cols": 1,
+ "symbol": "000002",
+ "short": "万科A",
+ "kind": "房地产"
+}

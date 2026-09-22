@@ -26,16 +26,31 @@ COA = ROOT / "data" / "coa"
 PDFS = COA / "pdf"
 MANIFEST = COA / "manifest.json"
 
-# 三家：业态 + 代码 + 名称片段（用来从标题里剥掉公司名）
+# 十一家：业态跨度拉到最大 —— 这一刀要证伪的是我自己写下的边界断言
+# 「换一批公司仍可能翻车」（见 `docs/作品一页纸.html` 的诚实边界）。断言不测就是吹。
 COMPANIES = [
     ("600519", "贵州茅台", "白酒制造（含金融子公司）"),
     ("000651", "格力电器", "家电制造"),
     ("600036", "招商银行", "银行"),
+    ("601318", "中国平安", "保险"),
+    ("600030", "中信证券", "券商"),
+    ("000002", "万科A", "房地产"),
+    ("600276", "恒瑞医药", "医药"),
+    ("601088", "中国神华", "能源"),
+    ("002415", "海康威视", "电子"),
+    ("600887", "伊利股份", "食品"),
+    ("601857", "中国石油", "石油石化"),
 ]
 START, END = "20240101", "20241231"          # 找 2023 年报（2024 年披露）
 HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
            "Referer": "http://www.cninfo.com.cn/"}
-DROP = re.compile(r"(摘要|英文|更正|述职|评估|意见|公告|说明|补充|问询)")
+DROP = re.compile(r"(摘要|英文|更正|述职|评估|意见|公告|说明|补充|问询|督导|持续督导|关于)")
+# ⚠ 标题必须在**末尾**就是「年度报告」—— 实测栽过：中信证券抓到的第一份标题含「年度」的公告
+#   是**别家券商出的《…2023年度持续督导工作报告》**（0.39 MB），被当成年报收了进来。
+#   这类错**不报警**：文件下得下来、PDF 打得开，只是内容根本不是年报。
+KEEP = re.compile(r"\d{4}年度?报告$")   # 认「2023年度报告」与「2023年年度报告」两种正常写法
+                                       # （「年度」两字可有可无，但**末尾必须是报告**；督导/摘要等由 DROP 挡）
+MIN_PDF_BYTES = 1_500_000          # 年报都在 2 MB 以上；小于这个数几乎肯定不是年报本体
 
 
 def log(m: str) -> None:
@@ -59,8 +74,9 @@ def main() -> int:
         want = None
         for _, r in df.iterrows():
             title = str(r["公告标题"]).strip()
-            bare = title.replace(short, "").replace("：", "").strip()
-            if "年度报告" not in bare or "半年度" in bare or DROP.search(bare):
+            bare = title.replace(short, "").replace("：", "").replace(" ", "").strip()
+            # 末尾必须就是「年度报告」，且不含督导/审计/关于这类他人出件的词
+            if not KEEP.search(bare) or "半年度" in bare or DROP.search(bare):
                 continue
             want = {"title": title, "announced": str(r["公告时间"])[:10],
                     "id": (re.search(r"announcementId=(\d+)", str(r["公告链接"])) or [None, ""])[1]}
@@ -82,6 +98,9 @@ def main() -> int:
                     log(f"  {scheme} 失败：{type(e).__name__}")
                     continue
                 if resp.status_code == 200 and resp.content[:4] == b"%PDF":
+                    if len(resp.content) < MIN_PDF_BYTES:            # 大小守卫：小文件多半不是年报本体
+                        log(f"  ✗ {stem}: 只有 {len(resp.content)/1e6:.2f} MB，疑非年报本体 —— 不收")
+                        break
                     pdf.write_bytes(resp.content)
                     ok = True
                     break

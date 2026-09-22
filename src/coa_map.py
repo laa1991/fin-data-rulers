@@ -30,8 +30,9 @@ TABLES = COA / "tables"
 CANON = COA / "canonical.json"
 TOL = 0.02
 
-COMPANIES = [("600519", "贵州茅台", "制造+金融子公司"), ("000651", "格力电器", "家电制造"),
-             ("600036", "招商银行", "银行")]
+# ⚠ 公司清单**只有一个家**：`coa_fetch.COMPANIES`。原来这里另抄了一份，
+#   扩到十一家时两边立刻漂移（度量只认了 3 家、表也只出 3 家）—— 抄一份 = 两处必然不一致。
+from coa_fetch import COMPANIES                                    # noqa: E402,F401
 
 # 恒等式：左式概念 = Σ(右式概念 × 系数)
 IDENTS = [

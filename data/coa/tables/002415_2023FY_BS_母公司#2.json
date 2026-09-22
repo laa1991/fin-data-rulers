@@ -1,0 +1,700 @@
+{
+ "label": "BS",
+ "scope": "母公司#2",
+ "pages": [
+  227,
+  228
+ ],
+ "header": [
+  "项目",
+  "",
+  "",
+  "年末余额",
+  "",
+  "",
+  ""
+ ],
+ "rows": [
+  {
+   "label": "财务报表 2023年",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    342665221.2,
+    3.0,
+    896347987.05
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    3281013576.4,
+    4.0,
+    2279586556.97
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    3623678797.6,
+    7.0,
+    3175934544.02
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    23615749.83
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    15999871.3,
+    5.0,
+    31698815.96
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    6519258.6,
+    7.0,
+    16588829.27
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    24119133.4,
+    6.0,
+    49208121.54
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    38699273.2,
+    3.0,
+    99525057.16
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    3195676039.7,
+    3.0,
+    2058949983.21
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    3281013576.4,
+    4.0,
+    2279586556.97
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    315397380.73,
+    1878109184.3,
+    2229.0,
+    22015.47,
+    15524799.08,
+    2213497216.39
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    962718172.95,
+    363.0,
+    341827.45,
+    null,
+    363341827.45
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    1049973.59,
+    127.0,
+    79348.02,
+    null,
+    127079348.02
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    68421659.5,
+    70.0,
+    134950.7,
+    null,
+    70134950.7
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    8032635.16,
+    39.0,
+    467612.18,
+    null,
+    39467612.18
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    2017718.89,
+    2.0,
+    181057.96,
+    null,
+    2181057.96
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    1215397380.73,
+    2920349344.39,
+    2831.0,
+    226811.78,
+    15524799.08,
+    2815702012.7
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    210191306.76,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    1172749062.48,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    42274830.03,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    320648995.89,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    129223004.39,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    79633944.01,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    37374930.65,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    1500999221.99,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    3493095296.2,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "财务报表 2023年",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    196473485.37,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    1241880022.19,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    10312.23,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    344585345.01,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    120072855.46,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    81627645.88,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    39314886.51,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    1607546382.61,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    3631510935.26,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    2084385782.09,
+    3283605167.9,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    34566243.97,
+    59466804.99,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    2118952026.06,
+    3343071972.89,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    38079755.04,
+    68299685.57,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    38079755.04,
+    68299685.57,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    1163687279.58,
+    1207756963.94,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    1163687279.58,
+    1207756963.94,
+    null
+   ]
+  }
+ ],
+ "unit": "元",
+ "table": "资产负债表",
+ "period": "2023FY",
+ "announced": "2024-04-20",
+ "source": "002415_2023FY.pdf",
+ "title": "2023年年度报告",
+ "dropped_nonnumeric_cols": 1,
+ "symbol": "002415",
+ "short": "海康威视",
+ "kind": "电子"
+}

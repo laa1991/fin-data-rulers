@@ -24,15 +24,75 @@
   "sha256": "32ebc475a2291ce4"
  },
  {
-  "symbol": "600036",
-  "short": "招商银行",
-  "kind": "银行",
+  "symbol": "601318",
+  "short": "中国平安",
+  "kind": "保险",
   "period": "2023FY",
-  "title": "招商银行股份有限公司2023年度报告",
-  "announced": "2024-03-26",
-  "announcement_id": "1219403503",
-  "file": "600036_2023FY.pdf",
-  "bytes": 5834543,
-  "sha256": "948a390b579a8d46"
+  "title": "中国平安2023年年度报告",
+  "announced": "2024-03-22",
+  "announcement_id": "1219376072",
+  "file": "601318_2023FY.pdf",
+  "bytes": 7225491,
+  "sha256": "f55538814200d77a"
+ },
+ {
+  "symbol": "600030",
+  "short": "中信证券",
+  "kind": "券商",
+  "period": "2023FY",
+  "title": "中信证券股份有限公司2023年年度报告",
+  "announced": "2024-03-27",
+  "announcement_id": "1219411922",
+  "file": "600030_2023FY.pdf",
+  "bytes": 11895413,
+  "sha256": "53ccd5dea81365b5"
+ },
+ {
+  "symbol": "000002",
+  "short": "万科A",
+  "kind": "房地产",
+  "period": "2023FY",
+  "title": "2023年年度报告",
+  "announced": "2024-03-29",
+  "announcement_id": "1219487237",
+  "file": "000002_2023FY.pdf",
+  "bytes": 10999883,
+  "sha256": "511a089558610e86"
+ },
+ {
+  "symbol": "600276",
+  "short": "恒瑞医药",
+  "kind": "医药",
+  "period": "2023FY",
+  "title": "恒瑞医药2023年年度报告",
+  "announced": "2024-04-18",
+  "announcement_id": "1219650115",
+  "file": "600276_2023FY.pdf",
+  "bytes": 6014937,
+  "sha256": "4fe601137654acbb"
+ },
+ {
+  "symbol": "002415",
+  "short": "海康威视",
+  "kind": "电子",
+  "period": "2023FY",
+  "title": "2023年年度报告",
+  "announced": "2024-04-20",
+  "announcement_id": "1219703072",
+  "file": "002415_2023FY.pdf",
+  "bytes": 10136455,
+  "sha256": "258cd87781e0ea36"
+ },
+ {
+  "symbol": "600887",
+  "short": "伊利股份",
+  "kind": "食品",
+  "period": "2023FY",
+  "title": "内蒙古伊利实业集团股份有限公司2023年年度报告",
+  "announced": "2024-04-30",
+  "announcement_id": "1219916433",
+  "file": "600887_2023FY.pdf",
+  "bytes": 4729271,
+  "sha256": "d56b0be917eb89a0"
  }
 ]

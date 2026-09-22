@@ -1,0 +1,967 @@
+{
+ "label": "BS",
+ "scope": "母公司",
+ "pages": [
+  22,
+  23
+ ],
+ "header": [
+  "",
+  "2023",
+  "",
+  "202",
+  "2",
+  "本期比上",
+  "年同期",
+  "20",
+  "21"
+ ],
+ "rows": [
+  {
+   "label": "",
+   "vals": [
+    2023.0,
+    null,
+    202.0,
+    2.0,
+    null,
+    null,
+    20.0,
+    21.0
+   ]
+  },
+  {
+   "label": "主要会计数据",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    60067992766.11,
+    null,
+    6510850799.0,
+    9.21,
+    null,
+    -7.74,
+    765237165.0,
+    26.93
+   ]
+  },
+  {
+   "label": "营业收入",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    19720547412.84,
+    null,
+    2131742228.0,
+    2.16,
+    null,
+    -7.49,
+    230996249.0,
+    27.77
+   ]
+  },
+  {
+   "label": "归属于母公司股东的净利润",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    19386903206.87,
+    null,
+    2094832017.0,
+    3.28,
+    null,
+    -7.45,
+    233138458.0,
+    83.89
+   ]
+  },
+  {
+   "label": "归属于母公司股东的扣除非经常性",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "损益的净利润",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    -40836959699.43,
+    null,
+    7852271137.0,
+    6.43,
+    null,
+    null,
+    284581253.0,
+    58.77
+   ]
+  },
+  {
+   "label": "经营活动产生的现金流量净额",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    916785510.98,
+    null,
+    103714944.0,
+    7.51,
+    null,
+    11.61,
+    -10896571.0,
+    86.67
+   ]
+  },
+  {
+   "label": "其他综合收益",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    2023.0,
+    null,
+    2022.0,
+    null,
+    null,
+    null,
+    2021.0,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    1453359126043.71,
+    1.0,
+    30860335947.0,
+    1.01,
+    null,
+    11.06,
+    12786647750.0,
+    96.62
+   ]
+  },
+  {
+   "label": "资产总额",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    1179159917980.1,
+    1.0,
+    5023132100.0,
+    8.45,
+    null,
+    12.28,
+    10648569889.0,
+    15.04
+   ]
+  },
+  {
+   "label": "负债总额",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    268839608470.83,
+    null,
+    25311808704.0,
+    8.1,
+    null,
+    6.21,
+    2091713333.0,
+    55.47
+   ]
+  },
+  {
+   "label": "归属于母公司股东的权益",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    274199208063.61,
+    null,
+    25837203846.0,
+    2.56,
+    null,
+    6.13,
+    2138077861.0,
+    81.58
+   ]
+  },
+  {
+   "label": "所有者权益总额",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "二）主要财务指标",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    20.0,
+    2.0,
+    3202.0,
+    2.0,
+    null,
+    null,
+    null,
+    21.0
+   ]
+  },
+  {
+   "label": "主要财务指标",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    1.3,
+    1.42,
+    null,
+    null,
+    -8.45,
+    1.69
+   ]
+  },
+  {
+   "label": "基本每股收益（元／股）",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    1.3,
+    1.42,
+    null,
+    null,
+    -8.45,
+    1.69
+   ]
+  },
+  {
+   "label": "稀释每股收益（元／股）",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    1.27,
+    1.39,
+    null,
+    null,
+    -8.63,
+    1.7
+   ]
+  },
+  {
+   "label": "扣除非经常性损益后的基本每股收益（",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "%",
+   "vals": [
+    null,
+    null,
+    7.81,
+    8.67,
+    null,
+    0.86,
+    null,
+    12.07
+   ]
+  },
+  {
+   "label": "加权平均净资产收益率（ ）",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    7.68,
+    8.52,
+    null,
+    0.84,
+    null,
+    12.18
+   ]
+  },
+  {
+   "label": "扣除非经常性损益后的加权平均净资产",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    139615490534.95,
+    null,
+    135851886858.17
+   ]
+  },
+  {
+   "label": "净资本",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    220767873573.61,
+    null,
+    211824954348.29
+   ]
+  },
+  {
+   "label": "净资产",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    74577929722.96,
+    null,
+    66775981037.07
+   ]
+  },
+  {
+   "label": "各项风险资本准备之和",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "%",
+   "vals": [
+    null,
+    null,
+    187.21,
+    null,
+    203.44
+   ]
+  },
+  {
+   "label": "风险覆盖率（ ）",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "%",
+   "vals": [
+    null,
+    null,
+    16.32,
+    null,
+    17.74
+   ]
+  },
+  {
+   "label": "资本杠杆率（ ）",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "%",
+   "vals": [
+    null,
+    null,
+    148.28,
+    null,
+    130.53
+   ]
+  },
+  {
+   "label": "流动性覆盖率（ ）",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "%",
+   "vals": [
+    null,
+    null,
+    124.86,
+    null,
+    129.46
+   ]
+  },
+  {
+   "label": "净稳定资金率（ ）",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "/ %",
+   "vals": [
+    null,
+    null,
+    63.24,
+    null,
+    64.13
+   ]
+  },
+  {
+   "label": "净资本 净资产（ ）",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "/ %",
+   "vals": [
+    null,
+    null,
+    19.95,
+    null,
+    23.86
+   ]
+  },
+  {
+   "label": "净资本 负债（ ）",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "/ %",
+   "vals": [
+    null,
+    null,
+    31.55,
+    null,
+    37.21
+   ]
+  },
+  {
+   "label": "净资产 负债（ ）",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "/ %",
+   "vals": [
+    null,
+    null,
+    51.42,
+    null,
+    35.99
+   ]
+  },
+  {
+   "label": "自营权益类证券及其衍生品 净资本（ ）",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "/ %",
+   "vals": [
+    null,
+    null,
+    292.66,
+    null,
+    269.86
+   ]
+  },
+  {
+   "label": "自营非权益类证券及其衍生品 净资本（ ）",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "1",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "：母公司各项业务风险控制指标均符合中国证监会",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "2 2023 16",
+   "vals": [
+    202231.0,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "：母公司于 年执行了《企业会计准则解释第",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "2023",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "九、 年分季度主",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    15348206851.13,
+    16.0,
+    151753172.81,
+    14306776611.64,
+    14261256130.53
+   ]
+  },
+  {
+   "label": "营业收入",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    5417237420.11,
+    5.0,
+    888533536.78,
+    5108176481.67,
+    3306599974.28
+   ]
+  },
+  {
+   "label": "归属于母公司股东的净利润",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    5329928863.32,
+    5.0,
+    824884671.92,
+    5030319532.41,
+    3201770139.22
+   ]
+  },
+  {
+   "label": "归属于母公司股东的扣除非经常性损益",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "后的净利润",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    -2205056765.29,
+    12.0,
+    813816772.86,
+    -64904942795.49,
+    13459223088.49
+   ]
+  },
+  {
+   "label": "经营活动产生的现金流量净额",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  }
+ ],
+ "unit": "元",
+ "table": "资产负债表",
+ "period": "2023FY",
+ "announced": "2024-03-27",
+ "source": "600030_2023FY.pdf",
+ "title": "中信证券股份有限公司2023年年度报告",
+ "symbol": "600030",
+ "short": "中信证券",
+ "kind": "券商"
+}

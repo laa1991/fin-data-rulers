@@ -1,0 +1,495 @@
+{
+ "label": "BS",
+ "scope": "母公司",
+ "pages": [
+  255,
+  256
+ ],
+ "header": [
+  "45 管",
+  "",
+  "",
+  "",
+  ""
+ ],
+ "rows": [
+  {
+   "label": "45 管",
+   "vals": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    4521379953.77,
+    8131990780.9,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    829847733.84,
+    911492353.01,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    415719922.6,
+    540655242.26,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    5766947610.21,
+    9584138376.17,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "46 财",
+   "vals": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    14264753990.14,
+    12041882338.47,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    893775160.54,
+    980908040.35,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    9421055668.6,
+    7136238601.57,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    5737473482.08,
+    5886551777.25,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    2997067916.7,
+    3571437139.48,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    2740405565.38,
+    2315114637.77,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    553434787.38,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    420985135.62,
+    419937892.63,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    3714825488.38,
+    2615174791.68,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "47 投",
+   "vals": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "投",
+   "vals": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    58933925.49,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    2077842860.36,
+    4612857392.55,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    86112514.03,
+    22416996.17,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    418273648.05,
+    332900.0,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    46666883.43,
+    41683780.96,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    215103959.18,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    2687829831.36,
+    4115788748.7,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "48 公",
+   "vals": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    1.0,
+    92018896.61,
+    432082.87
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    1.0,
+    48093634.83,
+    4484983.28
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    3.0,
+    40112531.44,
+    4917066.15
+   ]
+  },
+  {
+   "label": "49 资",
+   "vals": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    4.0,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    4.0,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "50 信",
+   "vals": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    2.0,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    3.0,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "51 营",
+   "vals": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    258634180.81,
+    null,
+    414290732.43,
+    258634180.81
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    275838075.1,
+    null,
+    357690252.01,
+    275838075.1
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    615078045.8,
+    null,
+    530071186.6,
+    615078045.8
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    149550301.71,
+    null,
+    1302052171.04,
+    1149550301.71
+   ]
+  }
+ ],
+ "unit": null,
+ "table": "资产负债表",
+ "period": "2023FY",
+ "announced": "2024-03-29",
+ "source": "000002_2023FY.pdf",
+ "title": "2023年年度报告",
+ "dropped_nonnumeric_cols": 1,
+ "symbol": "000002",
+ "short": "万科A",
+ "kind": "房地产"
+}

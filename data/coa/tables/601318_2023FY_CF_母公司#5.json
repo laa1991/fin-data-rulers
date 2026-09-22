@@ -1,0 +1,401 @@
+{
+ "label": "CF",
+ "scope": "母公司#5",
+ "pages": [
+  32
+ ],
+ "header": [
+  "主要业务经营分析",
+  "",
+  "",
+  ""
+ ],
+ "rows": [
+  {
+   "label": "主要业务经营分析",
+   "vals": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "银行业务",
+   "vals": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "平安银行业务经营保持稳健。2023年，实现",
+   "vals": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "2023年12月31日，核心一级资本充足率9.2",
+   "vals": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "平安银行持续加强风险管控，风险抵补能力",
+   "vals": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "率1.06%，拨备覆盖率277.63%。",
+   "vals": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "平安银行推动零售业务高质量、可持续发展",
+   "vals": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "(AUM) 40,311.77亿元，较年初增长12.4%",
+   "vals": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "16.7%。",
+   "vals": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "业务概览",
+   "vals": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "平安银行坚持以“中国最卓越、全球领先的智能化零售银行”",
+   "vals": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "为战略目标，坚持“零售做强、对公做精、同业做专”战略方",
+   "vals": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "针，持续升级零售、对公、资金同业业务经营策略，提升服",
+   "vals": [
+    null,
+    3407295.0,
+    3312684.0
+   ]
+  },
+  {
+   "label": "务实体经济的能力，强化风险管理，全面深化数字化转型，",
+   "vals": [
+    null,
+    1207618.0,
+    1034970.0
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "整体业务经营保持稳健。",
+   "vals": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    2199677.0,
+    2277714.0
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    3407509.0,
+    3329161.0
+   ]
+  },
+  {
+   "label": "截至2023年12月31日，平安银行（不含平安理财）共有109家",
+   "vals": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    1977719.0,
+    2047390.0
+   ]
+  },
+  {
+   "label": "分行、1,201家营业机构。",
+   "vals": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    1429790.0,
+    1281771.0
+   ]
+  },
+  {
+   "label": "关键指标",
+   "vals": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "2023年，平安银行实现营业收入1,646.99亿元，同比下降8.4%，",
+   "vals": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "主要是受持续让利实体经济、调整资产结构及市场波动等因",
+   "vals": [
+    null,
+    1.06,
+    1.05
+   ]
+  },
+  {
+   "label": "素影响；通过数字化转型驱动经营降本增效，加强资产质量",
+   "vals": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "管控，加大不良资产清收处置力度，实现净利润464.55亿元，",
+   "vals": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    277.63,
+    290.28
+   ]
+  },
+  {
+   "label": "同比增长2.1%。",
+   "vals": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    0.74,
+    0.83
+   ]
+  },
+  {
+   "label": "（人民币百万元） 2023年 2022年 变动(%)",
+   "vals": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "经营成果",
+   "vals": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    -3.0,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "营业收入 164,699 179,895 (8.4)",
+   "vals": [
+    null,
+    9.22,
+    8.64
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "净利润 46,455 45,516 2.1",
+   "vals": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "上升0.45个",
+   "vals": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "成本收入比(%) 27.90 27.45 百分点",
+   "vals": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "下降0.04个",
+   "vals": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "平均总资产收益率(%) 0.85 0.89 百分点",
+   "vals": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "下降0.98个",
+   "vals": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "加权平均净资产收益率(%) 11.38 12.36 百分点",
+   "vals": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "下降0.37个",
+   "vals": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "净息差(%) 2.38 2.75 百分点",
+   "vals": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "二零二三年年报",
+   "vals": [
+    null,
+    null,
+    null
+   ]
+  }
+ ],
+ "unit": null,
+ "table": "现金流量表",
+ "period": "2023FY",
+ "announced": "2024-03-22",
+ "source": "601318_2023FY.pdf",
+ "title": "中国平安2023年年度报告",
+ "dropped_nonnumeric_cols": 1,
+ "symbol": "601318",
+ "short": "中国平安",
+ "kind": "保险"
+}
