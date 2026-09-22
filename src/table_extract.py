@@ -34,12 +34,24 @@ MANIFEST = ROOT / "data" / "docs" / "manifest.json"
 OUT = ROOT / "data" / "tables"
 
 SIG = {
+    # ⚠ 签名词表**本身就是一层口径**：第一版照制造业写，于是招商银行（银行）
+    #   的资产负债表因为「没有货币资金/存货」被判成「不是资产负债表」，整张表抽不到。
+    #   银行/保险口径的标签必须一起进来，否则这套抽取器只在制造业成立。
     "BS": ["货币资金", "应收账款", "存货", "流动资产合计", "非流动资产合计", "资产总计",
-           "负债合计", "所有者权益合计", "负债和所有者权益总计", "未分配利润", "实收资本"],
+           "负债合计", "所有者权益合计", "负债和所有者权益总计", "未分配利润", "实收资本",
+           # 银行 / 金融口径
+           "现金及存放中央银行款项", "存放同业款项", "拆出资金", "发放贷款和垫款", "买入返售金融资产",
+           "金融投资", "吸收存款", "向中央银行借款", "同业及其他金融机构存放款项", "拆入资金",
+           "卖出回购金融资产款", "股东权益合计", "负债及股东权益总计", "归属于本行股东权益"],
     "IS": ["营业总收入", "营业收入", "营业总成本", "税金及附加", "销售费用", "管理费用",
-           "营业利润", "利润总额", "所得税费用", "净利润", "少数股东损益", "基本每股收益"],
+           "营业利润", "利润总额", "所得税费用", "净利润", "少数股东损益", "基本每股收益",
+           # 银行口径
+           "利息净收入", "利息收入", "利息支出", "手续费及佣金净收入", "业务及管理费",
+           "信用减值损失", "归属于本行股东的净利润"],
     "CF": ["经营活动产生的现金流量", "投资活动产生的现金流量", "筹资活动产生的现金流量",
-           "现金及现金等价物净增加额", "期末现金及现金等价物余额", "期初现金及现金等价物余额"],
+           "现金及现金等价物净增加额", "期末现金及现金等价物余额", "期初现金及现金等价物余额",
+           # 银行口径
+           "向中央银行借款净增加额", "客户存款和同业存放款项净增加额", "发放贷款和垫款净增加额"],
 }
 NAME = {"BS": "资产负债表", "IS": "利润表", "CF": "现金流量表"}
 HEAD = [("合并资产负债表", "BS", "合并"), ("合并利润表", "IS", "合并"), ("合并现金流量表", "CF", "合并"),
@@ -52,6 +64,7 @@ DATE = re.compile(r"\d{4}\s*年\s*\d{1,2}\s*月\s*\d{1,2}\s*日")
 MIN_ROWS = 8
 MIN_SCORE = 2        # ⚠ 别调高：现金流量表首页只命中 2 个签名词，调到 3 会把整张表的头半段丢掉
 MAX_RUN_PAGES = 8    # 一张表最多连续几页；超了说明锚粘进了附注区
+STRATEGY_LOG = {}    # 每种抽取策略被用了几次（要说得出「这份语料靠哪种策略才抽到」）
 
 
 def to_num(x):
@@ -114,15 +127,49 @@ def pick_table(tabs, lab):
     return best, sc_best
 
 
+# 表格抽取策略**不能写死**：语料里三种 PDF 生成器三种画法——
+#   茅台：矩形（rects）；格力：160~225 个矩形但 find_tables 默认只认出一张 2 行的空表；
+#   招行：报表页**既没有矩形也没有表格线**（只有零散线条），默认策略 0 张表。
+# 只在默认策略不够好时才试后面的，避免给大报告（招行 362 页）白白加几倍开销。
+TABLE_STRATEGIES = [
+    ("默认（线/矩形）", None),
+    ("纯文本对齐", {"vertical_strategy": "text", "horizontal_strategy": "text"}),
+    ("线竖+文横", {"vertical_strategy": "lines", "horizontal_strategy": "text"}),
+    ("文竖+线横", {"vertical_strategy": "text", "horizontal_strategy": "lines"}),
+]
+
+
+def page_tables(page):
+    """一页的表：多策略并联，按内容挑；够好就停（省时间）。"""
+    best, sc_best, used = None, -1, None
+    for name, st in TABLE_STRATEGIES:
+        try:
+            found = page.find_tables(table_settings=st) if st else page.find_tables()
+        except Exception:                                            # noqa: BLE001
+            continue
+        tabs = [t for t in (tb.extract() for tb in found) if t]
+        if not tabs:
+            continue
+        rows, sc = None, -1
+        for lab in ("BS", "IS", "CF"):
+            r, s = pick_table(tabs, lab)
+            if r and s > sc:
+                rows, sc = r, s
+        if sc > sc_best:
+            best, sc_best, used = rows, sc, name
+        if sc_best >= 3:                                             # 够好了，不必再试
+            break
+    return best, sc_best, used
+
+
 def extract_pdf(pdf_path: pathlib.Path, meta: dict) -> list:
     seq, seen, cur = [], {}, None
     with pdfplumber.open(str(pdf_path)) as pdf:
         for i, page in enumerate(pdf.pages, 1):
             txt = page.extract_text() or ""
-            tabs = [t for t in (tb.extract() for tb in page.find_tables()) if t]
-            if tabs:
-                seen[i] = {"header": [(c or "").replace("\n", " ").strip() for c in tabs[0][0]],
-                           "text": txt}
+            tabs = page.find_tables()
+            seen[i] = {"header": [(c or "").replace("\n", " ").strip() for c in tabs[0].extract()[0]]
+                       if tabs else [], "text": txt}
             # 标题识别：**最长匹配优先**（否则「合并资产负债表」会被自己的子串抢走）
             cands = []
             for name, lab, scope in HEAD:
@@ -140,13 +187,16 @@ def extract_pdf(pdf_path: pathlib.Path, meta: dict) -> list:
                 cands.sort(key=lambda x: x[0])
                 a = cands[-1]
                 cur = (a[2], a[3])
-            if not tabs or not cur:
+            if not cur:
                 continue
             lab, scope = cur
-            rows, sc = pick_table(tabs, lab)
+            rows, sc, used = page_tables(page)      # 多策略并联、按内容挑
             # 内容闸：锚会粘住，正文化的附注表必须挡在外面
             if not rows or sc < MIN_SCORE:
                 continue
+            if STRATEGY_LOG is not None:
+                STRATEGY_LOG.setdefault(used, 0)
+                STRATEGY_LOG[used] += 1
             hdr = [(c or "").replace("\n", " ").strip() if isinstance(c, str) else ""
                    for c in rows[0]]
             for p in (i, i - 1):                       # 表头可能在上一页（标题页）
@@ -195,20 +245,30 @@ def extract_pdf(pdf_path: pathlib.Path, meta: dict) -> list:
             r["pages"] = sorted(set(r["pages"]))
         out += [main] + extras
 
-    # 列对齐：丢掉整列都不是数字的列（附注列），否则按位置取值会**错位一格**
+    # 列对齐：丢掉**表头写着「附注」**的列，以及整列都不是数字的列。
+    # ⚠ 两条都要：「附注」列里只要**有几格**是数字（如注释号），「整列无数字」这条就不触发，
+    #   于是它留在值列里 ⇒ 后面所有按位置取值**整体偏移一格**（实测：茅台各表的第 0 列是附注）。
     for m in out:
         rows = m["rows"]
         if not rows:
             continue
         ncol = max(len(r["vals"]) for r in rows)
-        keep = [i for i in range(ncol)
-                if any(i < len(r["vals"]) and r["vals"][i] is not None for r in rows)]
+        hdr = m.get("header") or []
+        hdr_vals = hdr[1:] if hdr else []
+        keep = []
+        for i in range(ncol):
+            is_note = i < len(hdr_vals) and nrm(hdr_vals[i]) == "附注"
+            has_num = any(i < len(r["vals"]) and r["vals"][i] is not None for r in rows)
+            if has_num and not is_note:
+                keep.append(i)
+        if not keep:                      # 兜底：一条都留不下就退回「有数字就留」
+            keep = [i for i in range(ncol)
+                    if any(i < len(r["vals"]) and r["vals"][i] is not None for r in rows)]
         if len(keep) < ncol:
             for r in rows:
                 r["vals"] = [r["vals"][i] if i < len(r["vals"]) else None for i in keep]
-            hdr = m.get("header") or []
             m["header"] = [hdr[0] if hdr else "项目"] + \
-                          [hdr[1:][i] if i < len(hdr) - 1 else "" for i in keep]
+                          [hdr_vals[i] if i < len(hdr_vals) else "" for i in keep]
             m["dropped_nonnumeric_cols"] = ncol - len(keep)
     return out
 

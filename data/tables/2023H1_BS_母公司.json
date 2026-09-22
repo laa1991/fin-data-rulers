@@ -3,7 +3,9 @@
  "scope": "母公司",
  "pages": [
   55,
-  56
+  56,
+  57,
+  58
  ],
  "header": [
   "项目",
@@ -634,6 +636,540 @@
     null,
     null,
     null
+   ]
+  },
+  {
+   "label": "盈余公积",
+   "vals": [
+    32522779178.88,
+    3252012.0,
+    3399.97,
+    null,
+    -2655778.91
+   ]
+  },
+  {
+   "label": "未分配利润",
+   "vals": [
+    113539994766.29,
+    11351609.0,
+    2756.06,
+    null,
+    -23902010.23
+   ]
+  },
+  {
+   "label": "所有者权益（或股东权",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    148693274827.89,
+    14866671.0,
+    7038.75,
+    null,
+    -26557789.14
+   ]
+  },
+  {
+   "label": "益）合计",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "负债和所有者权益",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    161790947699.8,
+    16188099.0,
+    7981.23,
+    null,
+    90050281.43
+   ]
+  },
+  {
+   "label": "（或股东权益）总计",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "25. 其他",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "□适用 √不适用",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "六、税项",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "1. 主要税种及税率",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "主要税种及税率情况",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "√适用 □不适用",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "税种",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "增值税 产品销售收",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "消费税 酒类产品销",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "城市维护建设税 应纳流转税",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "企业所得税 应纳税所得",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "教育费附加 应纳流转税",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "地方教育费附加 应纳流转税",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "存在不同企业所得税税率纳税主",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "□适用 √不适用",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "2. 税收优惠",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "□适用 √不适用",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "3. 其他",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "□适用 √不适用",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "七、合并财务报表项目注释",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "1、 货币资金",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "√适用 □不适用",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "库存现金",
+   "vals": [
+    10013.0,
+    null,
+    null,
+    null,
+    12740.7
+   ]
+  },
+  {
+   "label": "银行存款",
+   "vals": [
+    70521265692.0,
+    null,
+    null,
+    58.0,
+    274305992.53
+   ]
+  },
+  {
+   "label": "其他货币资金",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "合计",
+   "vals": [
+    70521275705.0,
+    null,
+    null,
+    58.0,
+    274318733.23
+   ]
+  },
+  {
+   "label": "其中：存放在境外的",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    34051938.0,
+    null,
+    null,
+    null,
+    29007671.59
+   ]
+  },
+  {
+   "label": "款项总额",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "使用受到限制的货币资金",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "存放同业款项",
+   "vals": [
+    85731493677.19,
+    1161.0,
+    76621670.01
+   ]
+  },
+  {
+   "label": "减：减值准备",
+   "vals": [
+    4239320.12,
+    null,
+    3910115.42
+   ]
+  },
+  {
+   "label": "账面价值",
+   "vals": [
+    85727254357.07,
+    1161.0,
+    72711554.59
+   ]
+  },
+  {
+   "label": "使用受到限制的拆出资金",
+   "vals": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "不能随时支取的同业存款",
+   "vals": [
+    4000000000.0,
+    140.0,
+    0.0
+   ]
+  },
+  {
+   "label": "3、 交易性金融资产 √适用 □不适用",
+   "vals": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "以公允价值计量且其变动计入当期 损益的金融资产",
+   "vals": [
+    199920239.27,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "其中：",
+   "vals": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "债务工具投资",
+   "vals": [
+    199920239.27,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "指定以公允价值计量且其变动计入 当期损益的金融资产",
+   "vals": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "合计",
+   "vals": [
+    199920239.27,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "4、 应收票据 (1). 应收票据分类列示 √适用 □不适用",
+   "vals": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "银行承兑票据",
+   "vals": [
+    null,
+    null,
+    105453212.0
+   ]
+  },
+  {
+   "label": "合计",
+   "vals": [
+    null,
+    null,
+    105453212.0
+   ]
+  },
+  {
+   "label": "(2). 期末公司已背书或贴现且在资产负债 □适用 √不适用 (3). 按坏账计提方法分类披露 □适用 √不适用 (4). 坏账准备的情况 □适用 √不适用 5、 应收账款 (1). 按账龄披露 √适用 □不适用",
+   "vals": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "账龄",
+   "vals": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "1年以内",
+   "vals": [
+    null,
+    null,
+    32571319.28
    ]
   }
  ],

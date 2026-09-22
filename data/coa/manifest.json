@@ -1,0 +1,38 @@
+[
+ {
+  "symbol": "600519",
+  "short": "贵州茅台",
+  "kind": "白酒制造（含金融子公司）",
+  "period": "2023FY",
+  "title": "贵州茅台2023年年度报告",
+  "announced": "2024-04-03",
+  "announcement_id": "1219506510",
+  "file": "600519_2023FY.pdf",
+  "bytes": 3563819,
+  "sha256": "2125ff97a452ea79"
+ },
+ {
+  "symbol": "000651",
+  "short": "格力电器",
+  "kind": "家电制造",
+  "period": "2023FY",
+  "title": "2023年年度报告",
+  "announced": "2024-04-30",
+  "announcement_id": "1219928418",
+  "file": "000651_2023FY.pdf",
+  "bytes": 3911496,
+  "sha256": "32ebc475a2291ce4"
+ },
+ {
+  "symbol": "600036",
+  "short": "招商银行",
+  "kind": "银行",
+  "period": "2023FY",
+  "title": "招商银行股份有限公司2023年度报告",
+  "announced": "2024-03-26",
+  "announcement_id": "1219403503",
+  "file": "600036_2023FY.pdf",
+  "bytes": 5834543,
+  "sha256": "948a390b579a8d46"
+ }
+]
