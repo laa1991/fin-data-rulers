@@ -1,0 +1,122 @@
+{
+ "label": "CF",
+ "scope": "合并#6",
+ "pages": [
+  208
+ ],
+ "header": [
+  "(8)"
+ ],
+ "rows": [
+  {
+   "label": "(8)",
+   "vals": []
+  },
+  {
+   "label": "",
+   "vals": []
+  },
+  {
+   "label": "",
+   "vals": []
+  },
+  {
+   "label": "9、",
+   "vals": []
+  },
+  {
+   "label": "",
+   "vals": []
+  },
+  {
+   "label": "",
+   "vals": []
+  },
+  {
+   "label": "",
+   "vals": []
+  },
+  {
+   "label": "",
+   "vals": []
+  },
+  {
+   "label": "",
+   "vals": []
+  },
+  {
+   "label": "",
+   "vals": []
+  },
+  {
+   "label": "",
+   "vals": []
+  },
+  {
+   "label": "10、",
+   "vals": []
+  },
+  {
+   "label": "",
+   "vals": []
+  },
+  {
+   "label": "",
+   "vals": []
+  },
+  {
+   "label": "",
+   "vals": []
+  },
+  {
+   "label": "",
+   "vals": []
+  },
+  {
+   "label": "",
+   "vals": []
+  },
+  {
+   "label": "",
+   "vals": []
+  },
+  {
+   "label": "",
+   "vals": []
+  },
+  {
+   "label": "",
+   "vals": []
+  },
+  {
+   "label": "",
+   "vals": []
+  },
+  {
+   "label": "11、",
+   "vals": []
+  },
+  {
+   "label": "(1)",
+   "vals": []
+  },
+  {
+   "label": "",
+   "vals": []
+  },
+  {
+   "label": "",
+   "vals": []
+  }
+ ],
+ "unit": null,
+ "table": "现金流量表",
+ "period": "2023FY",
+ "announced": "2024-03-27",
+ "source": "600030_2023FY.pdf",
+ "title": "中信证券股份有限公司2023年年度报告",
+ "dropped_nonnumeric_cols": 1,
+ "symbol": "600030",
+ "short": "中信证券",
+ "kind": "券商"
+}

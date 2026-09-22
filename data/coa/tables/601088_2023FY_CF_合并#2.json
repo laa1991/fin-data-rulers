@@ -1,0 +1,1115 @@
+{
+ "label": "CF",
+ "scope": "合并#2",
+ "pages": [
+  149,
+  150,
+  151,
+  152
+ ],
+ "header": [
+  "",
+  "附注",
+  "股本",
+  "资本公积",
+  "其他综合收益",
+  "专项储备",
+  "盈余公积",
+  "未分配利润",
+  "合计",
+  "少数股东权益",
+  "股东权益合计"
+ ],
+ "rows": [
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "上年",
+   "vals": [
+    null,
+    19869.0,
+    68014.0,
+    728.0,
+    14349.0,
+    11433.0,
+    279461.0,
+    393854.0,
+    65391.0,
+    459245.0
+   ]
+  },
+  {
+   "label": "加：",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    46.0,
+    46.0,
+    28.0,
+    74.0
+   ]
+  },
+  {
+   "label": "本年",
+   "vals": [
+    null,
+    19869.0,
+    68014.0,
+    728.0,
+    14349.0,
+    11433.0,
+    279507.0,
+    393900.0,
+    65419.0,
+    459319.0
+   ]
+  },
+  {
+   "label": "本年",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "(一)",
+   "vals": [
+    null,
+    null,
+    null,
+    412.0,
+    null,
+    null,
+    59694.0,
+    60106.0,
+    9951.0,
+    70057.0
+   ]
+  },
+  {
+   "label": "(二)",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    574.0,
+    574.0
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    -185.0,
+    -185.0
+   ]
+  },
+  {
+   "label": "(三)",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    -50665.0,
+    -50665.0,
+    null,
+    -50665.0
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    -6781.0,
+    -6781.0
+   ]
+  },
+  {
+   "label": "(四)",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    9620.0,
+    null,
+    null,
+    9620.0,
+    1308.0,
+    10928.0
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    -4392.0,
+    null,
+    null,
+    -4392.0,
+    -746.0,
+    -5138.0
+   ]
+  },
+  {
+   "label": "(五)",
+   "vals": [
+    null,
+    null,
+    168.0,
+    null,
+    null,
+    null,
+    -45.0,
+    123.0,
+    138.0,
+    261.0
+   ]
+  },
+  {
+   "label": "本年",
+   "vals": [
+    null,
+    19869.0,
+    68182.0,
+    1140.0,
+    19577.0,
+    11433.0,
+    288491.0,
+    408692.0,
+    69678.0,
+    478370.0
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "一、上年年末金额 (已重述)",
+   "vals": [
+    19869.0,
+    74667.0,
+    -531.0,
+    10992.0,
+    11433.0,
+    260260.0,
+    376690.0,
+    68761.0,
+    445451.0,
+    null
+   ]
+  },
+  {
+   "label": "加：会计政策变更",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    24.0,
+    24.0,
+    9.0,
+    33.0,
+    null
+   ]
+  },
+  {
+   "label": "二、本年年初余额 (已重述)",
+   "vals": [
+    19869.0,
+    74667.0,
+    -531.0,
+    10992.0,
+    11433.0,
+    260284.0,
+    376714.0,
+    68770.0,
+    445484.0,
+    null
+   ]
+  },
+  {
+   "label": "三、本年增减变动金额",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "(一) 综合收益总额 (已重述)",
+   "vals": [
+    null,
+    null,
+    1259.0,
+    null,
+    null,
+    69648.0,
+    70907.0,
+    12229.0,
+    83136.0,
+    null
+   ]
+  },
+  {
+   "label": "(二) 股东投入和减少资本",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "1. 子公司少数股东投入资本",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    1936.0,
+    1936.0,
+    null
+   ]
+  },
+  {
+   "label": "2. 收购少数股东股权",
+   "vals": [
+    null,
+    -6698.0,
+    null,
+    null,
+    null,
+    null,
+    -6698.0,
+    -3306.0,
+    -10004.0,
+    null
+   ]
+  },
+  {
+   "label": "(三) 利润分配",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "1. 对母公司股东的分配",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    -50466.0,
+    -50466.0,
+    null,
+    -50466.0,
+    null
+   ]
+  },
+  {
+   "label": "2. 对子公司少数股东的分配",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    -14629.0,
+    -14629.0,
+    null
+   ]
+  },
+  {
+   "label": "(四) 专项储备",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "1. 本年提取",
+   "vals": [
+    null,
+    null,
+    null,
+    6006.0,
+    null,
+    null,
+    6006.0,
+    980.0,
+    6986.0,
+    null
+   ]
+  },
+  {
+   "label": "2. 本年使用",
+   "vals": [
+    null,
+    null,
+    null,
+    -2649.0,
+    null,
+    null,
+    -2649.0,
+    -567.0,
+    -3216.0,
+    null
+   ]
+  },
+  {
+   "label": "(五) 其他",
+   "vals": [
+    null,
+    45.0,
+    null,
+    null,
+    null,
+    41.0,
+    86.0,
+    6.0,
+    92.0,
+    null
+   ]
+  },
+  {
+   "label": "四、本年年末余额 (已重述)",
+   "vals": [
+    19869.0,
+    68014.0,
+    728.0,
+    14349.0,
+    11433.0,
+    279507.0,
+    393900.0,
+    65419.0,
+    459319.0,
+    null
+   ]
+  },
+  {
+   "label": "此财务报表已于2024年",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "吕志韧",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "公司负责人",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "上年",
+   "vals": [
+    null,
+    19869.0,
+    77218.0,
+    173.0,
+    10109.0,
+    11433.0,
+    195903.0,
+    314705.0,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "加：",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    -24.0,
+    -24.0,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "本年",
+   "vals": [
+    null,
+    19869.0,
+    77218.0,
+    173.0,
+    10109.0,
+    11433.0,
+    195879.0,
+    314681.0,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "本年",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "(一)",
+   "vals": [
+    null,
+    null,
+    null,
+    89.0,
+    null,
+    null,
+    56179.0,
+    56268.0,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "(二)",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    33.0,
+    null,
+    null,
+    null,
+    null,
+    null,
+    -50665.0,
+    -50665.0,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "(三)",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    6222.0,
+    null,
+    null,
+    6222.0,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    -2365.0,
+    null,
+    null,
+    -2365.0,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "(四)",
+   "vals": [
+    null,
+    null,
+    56.0,
+    null,
+    null,
+    null,
+    23.0,
+    79.0,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "本年",
+   "vals": [
+    null,
+    19869.0,
+    77274.0,
+    262.0,
+    13966.0,
+    11433.0,
+    201416.0,
+    324220.0,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "财",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "志",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "司",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "上年",
+   "vals": [
+    null,
+    19869.0,
+    77202.0,
+    null,
+    11433.0,
+    179823.0,
+    295958.0,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "加：",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    1.0,
+    1.0,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "本年",
+   "vals": [
+    null,
+    19869.0,
+    77202.0,
+    null,
+    11433.0,
+    179824.0,
+    295959.0,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "本年",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "(一)",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    66524.0,
+    66770.0,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "(二)",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    -50466.0,
+    -50466.0,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "(三)",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    -3851.0,
+    null,
+    null,
+    3851.0,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    -1446.0,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "(四)",
+   "vals": [
+    null,
+    null,
+    16.0,
+    null,
+    null,
+    -3.0,
+    13.0,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "本年",
+   "vals": [
+    null,
+    19869.0,
+    77218.0,
+    17310109.0,
+    11433.0,
+    195879.0,
+    314681.0,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "财",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "志",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "司",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  }
+ ],
+ "unit": "百万元",
+ "table": "现金流量表",
+ "period": "2023FY",
+ "announced": "2024-03-23",
+ "source": "601088_2023FY.pdf",
+ "title": "中国神华2023年度报告",
+ "dropped_nonnumeric_cols": 1,
+ "symbol": "601088",
+ "short": "中国神华",
+ "kind": "能源"
+}

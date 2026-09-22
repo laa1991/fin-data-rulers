@@ -2,157 +2,2360 @@
  "label": "CF",
  "scope": "合并",
  "pages": [
-  149
+  151,
+  152,
+  153,
+  154,
+  155,
+  156
  ],
  "header": [
-  "财务费用",
-  "-457,278,597.50",
-  "-422,756,043.38"
+  "经营活动产生的现金流量净额",
+  "",
+  "8,039,698,676.06",
+  "2,390,103,142.55",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  ""
  ],
  "rows": [
   {
-   "label": "财务费用",
+   "label": "经营活动产生的现金流量净额",
    "vals": [
-    -457278597.5,
-    -422756043.38
-   ]
-  },
-  {
-   "label": "其中：利息费用",
-   "vals": [
-    1631551.03,
-    943473.97
-   ]
-  },
-  {
-   "label": "利息收入",
-   "vals": [
-    446706732.53,
-    336834993.2
-   ]
-  },
-  {
-   "label": "加：其他收益",
-   "vals": [
-    164756190.95,
-    74920194.87
-   ]
-  },
-  {
-   "label": "投资收益（损失以“－”号 填列）",
-   "vals": [
-    -30833369.08,
-    202025348.12
-   ]
-  },
-  {
-   "label": "其中：对联营企业和合营 企业的投资收益",
-   "vals": [
-    -46196214.12,
-    -38168915.56
-   ]
-  },
-  {
-   "label": "公允价值变动收益（损失 以“－”号填列）",
-   "vals": [
-    -57596875.32,
-    112134512.15
-   ]
-  },
-  {
-   "label": "信用减值损失（损失以“-” 号填列）",
-   "vals": [
-    12873117.9,
-    -10120708.43
-   ]
-  },
-  {
-   "label": "资产减值损失（损失以“-” 号填列）",
-   "vals": [
-    -91292473.15,
-    -140845774.51
-   ]
-  },
-  {
-   "label": "资产处置收益（损失以 “－”号填列）",
-   "vals": [
-    3867780.62,
-    1820226.2
-   ]
-  },
-  {
-   "label": "二、营业利润（亏损以“－”号填 列）",
-   "vals": [
-    4689879417.05,
-    3850338981.79
-   ]
-  },
-  {
-   "label": "加：营业外收入",
-   "vals": [
-    2186147.91,
-    415338.17
-   ]
-  },
-  {
-   "label": "减：营业外支出",
-   "vals": [
-    222941854.07,
-    140436456.62
-   ]
-  },
-  {
-   "label": "三、利润总额（亏损总额以“－” 号填列）",
-   "vals": [
-    4469123710.89,
-    3710317863.34
-   ]
-  },
-  {
-   "label": "减：所得税费用",
-   "vals": [
-    285800403.26,
-    125643678.86
-   ]
-  },
-  {
-   "label": "四、净利润（净亏损以“－”号填 列）",
-   "vals": [
-    4183323307.63,
-    3584674184.48
-   ]
-  },
-  {
-   "label": "（一）持续经营净利润（净亏 损以“－”号填列）",
-   "vals": [
-    4183323307.63,
-    3584674184.48
-   ]
-  },
-  {
-   "label": "六、综合收益总额",
-   "vals": [
-    4183323307.63,
-    3584674184.48
-   ]
-  },
-  {
-   "label": "七、每股收益：",
-   "vals": [
+    null,
+    8039698676.06,
+    2390103142.55,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
     null,
     null
    ]
   },
   {
-   "label": "（一）基本每股收益(元/股)",
+   "label": "二、投资活动产生的现金流量：",
    "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
     null,
     null
    ]
   },
   {
-   "label": "（二）稀释每股收益(元/股)",
+   "label": "收回投资收到的现金",
    "vals": [
+    null,
+    2607501921.22,
+    8296022000.0,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "取得投资收益收到的现金",
+   "vals": [
+    null,
+    87330655.26,
+    153705560.31,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "处置固定资产、无形资产和其他长 期资产收回的现金净额",
+   "vals": [
+    null,
+    9256759.52,
+    3466677.25,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "收到其他与投资活动有关的现金",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "投资活动现金流入小计",
+   "vals": [
+    null,
+    2704089336.0,
+    8453194237.56,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "购建固定资产、无形资产和其他长 期资产支付的现金",
+   "vals": [
+    null,
+    973953208.01,
+    1298694822.71,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "投资支付的现金",
+   "vals": [
+    null,
+    249416758.98,
+    7174738110.49,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "投资活动现金流出小计",
+   "vals": [
+    null,
+    1223369966.99,
+    8473432933.2,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "投资活动产生的现金流量净额",
+   "vals": [
+    null,
+    1480719369.01,
+    -20238695.64,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "三、筹资活动产生的现金流量：",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "吸收投资收到的现金",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "取得借款收到的现金",
+   "vals": [
+    null,
+    null,
+    1260000000.0,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "收到其他与筹资活动有关的现金",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "筹资活动现金流入小计",
+   "vals": [
+    null,
+    null,
+    1260000000.0,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "偿还债务支付的现金",
+   "vals": [
+    null,
+    1260000000.0,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "分配股利、利润或偿付利息支付的 现金",
+   "vals": [
+    null,
+    1022448302.76,
+    1014981682.34,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "支付其他与筹资活动有关的现金",
+   "vals": [
+    null,
+    827264523.33,
+    1065797972.55,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "筹资活动现金流出小计",
+   "vals": [
+    null,
+    3109712826.09,
+    2080779654.89,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "筹资活动产生的现金流量净额",
+   "vals": [
+    null,
+    -3109712826.09,
+    -820779654.89,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "四、汇率变动对现金及现金等价物的 影响",
+   "vals": [
+    null,
+    10068008.93,
+    75263921.51,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "五、现金及现金等价物净增加额",
+   "vals": [
+    null,
+    6420773227.91,
+    1624348713.53,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "加：期初现金及现金等价物余额",
+   "vals": [
+    null,
+    12839216677.23,
+    11214867963.7,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "六、期末现金及现金等价物余额",
+   "vals": [
+    null,
+    19259989905.14,
+    12839216677.23,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "一、上年年末 余额",
+   "vals": [
+    6379002274.0,
+    null,
+    null,
+    3020238194.01,
+    null,
+    null,
+    398027855.55,
+    null,
+    null,
+    3228412.82,
+    null,
+    3298912011.55,
+    25520455210.66,
+    37823808247.49,
+    589347895.68,
+    38413156143.17
+   ]
+  },
+  {
+   "label": "加：会计政策 变更",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    -247548.05,
+    -247548.05,
+    null,
+    -247548.05
+   ]
+  },
+  {
+   "label": "二、本年期初 余额",
+   "vals": [
+    6379002274.0,
+    null,
+    null,
+    3020238194.01,
+    null,
+    null,
+    398027855.55,
+    null,
+    null,
+    3228412.82,
+    null,
+    3298912011.55,
+    25520207662.61,
+    37823560699.44,
+    589347895.68,
+    38412908595.12
+   ]
+  },
+  {
+   "label": "三、本期增减 变动金额（减 少以“－”号填 列）",
+   "vals": [
+    null,
+    null,
+    null,
+    37400776.06,
+    null,
+    null,
+    693822911.6,
+    null,
+    null,
+    16094142.5,
+    null,
+    null,
+    3282562652.29,
+    2642234659.25,
+    -22056813.04,
+    2620177846.21
+   ]
+  },
+  {
+   "label": "（一）综合收 益总额",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    16094142.5,
+    null,
+    null,
+    4302435930.05,
+    4318530072.55,
+    -22867931.12,
+    4295662141.43
+   ]
+  },
+  {
+   "label": "（二）所有者 投入和减少资 本",
+   "vals": [
+    null,
+    null,
+    null,
+    37400776.06,
+    null,
+    null,
+    693822911.6,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    -656422135.54,
+    811118.08,
+    -655611017.46
+   ]
+  },
+  {
+   "label": "1．所有者投入 的普通股",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "2．其他权益工 具持有者投入 资本",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "3．股份支付计 入所有者权益 的金额",
+   "vals": [
+    null,
+    null,
+    null,
+    52400776.06,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    52400776.06,
+    811118.08,
+    53211894.14
+   ]
+  },
+  {
+   "label": "4．其他",
+   "vals": [
+    null,
+    null,
+    null,
+    -15000000.0,
+    null,
+    null,
+    693822911.6,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    -708822911.6,
+    null,
+    -708822911.6
+   ]
+  },
+  {
+   "label": "（三）利润分 配",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    -1019873277.76,
+    -1019873277.76,
+    null,
+    -1019873277.76
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "一、上年年 末余额",
+   "vals": [
+    6396011914.0,
+    null,
+    null,
+    3356184541.33,
+    664935177.0,
+    -12159390.38,
+    3054742777.2,
+    22873116638.71,
+    35002961303.86,
+    568846623.46,
+    35571807927.32,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "加：会计政 策变更",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    -318224.63,
+    -318224.63,
+    null,
+    -318224.63,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "二、本年期 初余额",
+   "vals": [
+    6396011914.0,
+    null,
+    null,
+    3356184541.33,
+    664935177.0,
+    -12159390.38,
+    3054742777.2,
+    22872798414.08,
+    35002643079.23,
+    568846623.46,
+    35571489702.69,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "三、本期增 减变动金额 （减少以 “－”号填 列）",
+   "vals": [
+    -17009640.0,
+    null,
+    null,
+    -335946347.32,
+    -266907321.45,
+    15387803.2,
+    244169234.35,
+    2647409248.53,
+    2820917620.21,
+    20501272.22,
+    2841418892.43,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "（一）综合 收益总额",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    14771079.63,
+    null,
+    3906375067.36,
+    3921146146.99,
+    -90135767.35,
+    3831010379.64,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "（二）所有 者投入和减 少资本",
+   "vals": [
+    -17009640.0,
+    null,
+    null,
+    -335946347.32,
+    -266907321.45,
+    616723.57,
+    null,
+    null,
+    -85431942.3,
+    110637039.57,
+    25205097.27,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "1．所有者 投入的普通 股",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    378863693.27,
+    378863693.27,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "一、上年年末余额",
+   "vals": [
+    6379002274.0,
+    null,
+    null,
+    2365856303.49,
+    null,
+    null,
+    398027855.55,
+    null,
+    null,
+    3279357428.44,
+    null,
+    21813304983.38,
+    33439493133.76,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "加：会计政策变更",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "前期差错更正",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "其他",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "二、本年期初余额",
+   "vals": [
+    6379002274.0,
+    null,
+    null,
+    2365856303.49,
+    null,
+    null,
+    398027855.55,
+    null,
+    null,
+    3279357428.44,
+    null,
+    21813304983.38,
+    33439493133.76,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "三、本期增减变动金额（减少以“－”号填列）",
+   "vals": [
+    null,
+    null,
+    null,
+    53211894.14,
+    null,
+    null,
+    693822911.6,
+    null,
+    null,
+    null,
+    null,
+    3163450029.87,
+    2522839012.41,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "（一）综合收益总额",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    4183323307.63,
+    4183323307.63,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "（二）所有者投入和减少资本",
+   "vals": [
+    null,
+    null,
+    null,
+    53211894.14,
+    null,
+    null,
+    693822911.6,
+    null,
+    null,
+    null,
+    null,
+    null,
+    -640611017.46,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "一、上年年末余额",
+   "vals": [
+    6396011914.0,
+    null,
+    null,
+    2984556080.49,
+    null,
+    null,
+    664935177.0,
+    null,
+    null,
+    3035188194.09,
+    null,
+    19489114788.49,
+    31239935800.07,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "加：会计政策变更",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "前期差错更正",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "其他",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "二、本年期初余额",
+   "vals": [
+    6396011914.0,
+    null,
+    null,
+    2984556080.49,
+    null,
+    null,
+    664935177.0,
+    null,
+    null,
+    3035188194.09,
+    null,
+    19489114788.49,
+    31239935800.07,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "三、本期增减变动金额（减少以“－”号填列）",
+   "vals": [
+    -17009640.0,
+    null,
+    null,
+    -618699777.0,
+    null,
+    null,
+    -266907321.45,
+    null,
+    null,
+    244169234.35,
+    null,
+    2324190194.89,
+    2199557333.69,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "（一）综合收益总额",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    3584674184.48,
+    3584674184.48,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "（二）所有者投入和减少资本",
+   "vals": [
+    -17009640.0,
+    null,
+    null,
+    -618699777.0,
+    null,
+    null,
+    -266907321.45,
+    null,
+    null,
+    null,
+    null,
+    -1518170.76,
+    -370320266.31,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "1．所有者投入的普通股",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "2．其他权益工具持有者投入资本",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "3．股份支付计入所有者权益的金额",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "4．其他",
+   "vals": [
+    -17009640.0,
+    null,
+    null,
+    -618699777.0,
+    null,
+    null,
+    -266907321.45,
+    null,
+    null,
+    null,
+    null,
+    -1518170.76,
+    -370320266.31,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "（三）利润分配",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    244169234.35,
+    null,
+    -1258965818.83,
+    -1014796584.48,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "1．提取盈余公积",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    244169234.35,
+    null,
+    -244169234.35,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "2．对所有者（或股东）的分配",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    -1014796584.48,
+    -1014796584.48,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "3．其他",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "四、本期期末余额",
+   "vals": [
+    6379002274.0,
+    null,
+    null,
+    2365856303.49,
+    null,
+    null,
+    398027855.55,
+    null,
+    null,
+    3279357428.44,
+    null,
+    21813304983.38,
+    33439493133.76,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "三、 公司基本情况",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "1. 公司概况",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "√适用 □不适用",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "历史沿革",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "江苏恒瑞医药股份有限公司（以下简称“公司”）是 1997 年 2 月经江苏省人民政府苏政复",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "〔1997〕19号文件批准设立，由江苏恒瑞集团有限公司（原连云港市医药工业公司）、中国医药工",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "业公司等五家发起人共同发起设立的股份有限公司。公司于 1997 年 4 月 28 日登记注册,取得连",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "云港市市场监督管理局换发的营业执照，统一社会信用代码为9132070070404786XB。公司住所为",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "连云港经济技术开发区黄河路38号，法定代表人：孙飘扬。",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "公司设立时的注册资本为6,190.00万元人民币；1999年5月以未分配利润按每10股送5股分配",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "股票股利3,095.00万元，注册资本及股本增加至9,285.00万元；经中国证券监督管理委员会证监",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "发行字[2000]122号文批准，2000年9月通过上海证券交易所向社会公众发行人民币普通股4000万",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "股，股票每股面值为人民币1元，发行后的股本总额为13,285.00万元，同年10月，在上海证券交",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "易所挂牌上市,股票代码为600276。截止2023年12月31日，公司注册资本为639,747.7594万元人民",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "币，实收资本为637,900.2274万元，注册资本尚未变更。",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "所处行业",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "公司所处行业为医药行业。",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "经营范围",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "公司的经营范围为：片剂（含抗肿瘤药）、口服溶液剂、混悬剂、无菌原料药（抗肿瘤药）、",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "原料药（含抗肿瘤药）、精神药品、软胶囊剂（含抗肿瘤药）、冻干粉针剂（含抗肿瘤药）、粉",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "针剂（抗肿瘤药、头孢菌素类）、吸入粉雾剂、口服混悬剂、口服乳剂、大容量注射剂（含多层",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "共挤输液袋、含抗肿瘤药）、小容量注射剂（含抗肿瘤药、含非最终灭菌）、生物工程制品（聚",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "乙二醇重组人粒细胞刺激因子注射液）、硬胶囊剂（含抗肿瘤药）、颗粒剂（抗肿瘤药）、粉雾",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "剂、膜剂、凝胶剂、乳膏剂的制4造；中药前处理及提取；医疗器械的研发、制造与销售；一般化",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "工产品的销售；自营和代理各类商品及技术的进出口业务，但国家限定公司经营或禁止进出口的",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "商品和技术除外。（依法须经批准的项目，经相关部门批准后方可开展经营活动）",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "总部地址：连云港经济技术开发区黄河路38号",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "四、 财务报表的编制基础",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "1. 编制基础",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "本公司财务报表以持续经营为编制基础。",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "2. 持续经营",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "√适用 □不适用",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "公司管理层认为，公司自报告期末起至少12个月内具有持续经营能力。",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "五、 重要会计政策及会计估计",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "具体会计政策和会计估计提示：",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "□适用 √不适用",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
     null,
     null
    ]
@@ -164,7 +2367,7 @@
  "announced": "2024-04-18",
  "source": "600276_2023FY.pdf",
  "title": "恒瑞医药2023年年度报告",
- "dropped_nonnumeric_cols": 1,
+ "dropped_nonnumeric_cols": 8,
  "symbol": "600276",
  "short": "恒瑞医药",
  "kind": "医药"

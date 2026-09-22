@@ -1,0 +1,318 @@
+{
+ "label": "IS",
+ "scope": "合并",
+ "pages": [
+  137,
+  138
+ ],
+ "header": [
+  "",
+  "2023年度"
+ ],
+ "rows": [
+  {
+   "label": "",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "营业",
+   "vals": [
+    343074.0
+   ]
+  },
+  {
+   "label": "减：",
+   "vals": [
+    219922.0
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    18385.0
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    425.0
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    9812.0
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    3007.0
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    501.0
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    2858.0
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    2616.0
+   ]
+  },
+  {
+   "label": "加：",
+   "vals": [
+    423.0
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    3815.0
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    3565.0
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    -285.0
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    -3691.0
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    83.0
+   ]
+  },
+  {
+   "label": "营业",
+   "vals": [
+    91367.0
+   ]
+  },
+  {
+   "label": "加：",
+   "vals": [
+    912.0
+   ]
+  },
+  {
+   "label": "减：",
+   "vals": [
+    5103.0
+   ]
+  },
+  {
+   "label": "利润",
+   "vals": [
+    87176.0
+   ]
+  },
+  {
+   "label": "减：",
+   "vals": [
+    17578.0
+   ]
+  },
+  {
+   "label": "净利",
+   "vals": [
+    69598.0
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "(一)",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    81696.0
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "(二)",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    69648.0
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    12048.0
+   ]
+  },
+  {
+   "label": "其他",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "归属",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "收",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "(一)",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    326.0
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    223.0
+   ]
+  },
+  {
+   "label": "(二)",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    1.0
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    705.0
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    4.0
+   ]
+  },
+  {
+   "label": "归属",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "税",
+   "vals": [
+    1259.0
+   ]
+  },
+  {
+   "label": "归属",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "的",
+   "vals": [
+    181.0
+   ]
+  }
+ ],
+ "unit": "百万元",
+ "table": "利润表",
+ "period": "2023FY",
+ "announced": "2024-03-23",
+ "source": "601088_2023FY.pdf",
+ "title": "中国神华2023年度报告",
+ "dropped_nonnumeric_cols": 3,
+ "symbol": "601088",
+ "short": "中国神华",
+ "kind": "能源"
+}

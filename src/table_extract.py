@@ -56,6 +56,53 @@ SIG = {
 NAME = {"BS": "资产负债表", "IS": "利润表", "CF": "现金流量表"}
 HEAD = [("合并资产负债表", "BS", "合并"), ("合并利润表", "IS", "合并"), ("合并现金流量表", "CF", "合并"),
         ("资产负债表", "BS", "母公司"), ("利润表", "IS", "母公司"), ("现金流量表", "CF", "母公司")]
+
+# 行首允许的编号/序号前缀：「12、」「（一）」「1.」「三)」
+_LEAD = re.compile(r"^(?:[（(【\[]?[一二三四五六七八九十百\d]{1,3}[）)】\]]?[、.．,，:：]?)*")
+_BAN = re.compile(r"(分析|变动|项目|主要|说明|附注|科目|情况|结构|表外|日|年度)")
+
+
+def is_heading(line: str, name: str) -> bool:
+    """这一行**是不是一个报表标题**（而不是正文里提到、也不是小节标题）。
+
+    实测栽过两次（第十一刀诊断出来的）：
+      ① 神华 p123 审计报告正文：「…包括 2023 年 12 月 31 日的**合并及母公司资产负债表**，2023 年度的…」
+         ⇒ 被当成标题，锚从此粘住，后面真表的范围全错；
+      ② 招行 p2「26 3.3 **资产负债表分析**」、神华 p18「1. **利润表**及现金流量表主要科目变动分析」
+         ⇒ 小节标题被当成报表标题。
+
+    判据：**去掉行首编号后必须以标题开头**，且标题后面**几乎什么都不剩**（只允许「（续）」这类尾巴）。
+    """
+    s = re.sub(r"\s+", "", line or "")
+    s = s[_LEAD.match(s).end():]
+    if not s.startswith(name):
+        return False
+    rest = s[len(name):].strip(":：、.。（）()[]【】")
+    if len(rest) > 3:
+        return False
+    return not _BAN.search(rest)
+
+
+def page_headings(page):
+    """本页所有**像标题的行** → [(y_top, label, scope)]（按纵向排序）。
+
+    用词坐标重建行，是为了拿到 y —— 这样**每张候选表都能由它上方最近的标题定范围**，
+    而不是整页共用一个锚（茅台 p61 那种「一页两表」就不会再张冠李戴）。
+    """
+    words = page.extract_words(use_text_flow=False, keep_blank_chars=False) or []
+    lines = {}
+    for w in words:
+        lines.setdefault(round(w["top"] / 3.0), []).append(w)
+    out = []
+    for _, ws in sorted(lines.items()):
+        ws.sort(key=lambda w: w["x0"])
+        line = "".join(w["text"] for w in ws)
+        y = min(w["top"] for w in ws)
+        for name, lab, scope in HEAD:            # HEAD 里 合并* 在前 ⇒ 天然「最长匹配优先」
+            if is_heading(line, name):
+                out.append((y, lab, scope))
+                break
+    return out
 STRONG = {"BS": ["货币资金", "资产总计"], "IS": ["营业总收入", "净利润"],
           "CF": ["经营活动产生的现金流量净额", "期末现金及现金等价物余额"]}
 # ⚠ 单位不是装饰：茅台/格力是「元」，**招商银行是「百万元」** ——
@@ -184,26 +231,13 @@ def extract_pdf(pdf_path: pathlib.Path, meta: dict) -> list:
             tabs = page.find_tables()
             seen[i] = {"header": [(c or "").replace("\n", " ").strip() for c in tabs[0].extract()[0]]
                        if tabs else [], "text": txt}
-            # 标题识别：**最长匹配优先**（否则「合并资产负债表」会被自己的子串抢走）
-            cands = []
-            for name, lab, scope in HEAD:
-                start = 0
-                while True:
-                    pos = txt.find(name, start)
-                    if pos < 0:
-                        break
-                    cands.append((pos, pos + len(name), lab, scope, name))
-                    start = pos + 1
-            cands = [c for c in cands
-                     if not any(o[0] <= c[0] and c[1] <= o[1] and (o[1] - o[0]) > (c[1] - c[0])
-                                for o in cands)]
-            if cands:
-                cands.sort(key=lambda x: x[0])
-                a = cands[-1]
-                cur = (a[2], a[3])
+            # 标题识别：**只认独立成行的短标题**（`is_heading` 里有两次翻车的实证）
+            hds = page_headings(page)
+            if hds:
+                cur = (hds[-1][1], hds[-1][2])      # 页面级锚（纵向最后一处标题 = 本页正文所属的表）
             if not cur:
                 continue
-            lab, scope = cur
+            lab0, scope0 = cur
             cands = page_tables(page)               # 多策略并联、**全部**候选（按纵向位置）
             if not cands:
                 continue
@@ -218,6 +252,9 @@ def extract_pdf(pdf_path: pathlib.Path, meta: dict) -> list:
             # 取**分数最高**的那一张（不是纵向第一张：第一张常常是上一张表的尾巴）。
             # 试过「一页多张全取」，实测无改善且总行数反而降（-32 行）⇒ 不保留对自己没用的改动。
             cd = cands[0]
+            # 这张表属于哪一份：**由它上方最近的标题决定**（一页两表时不再共用整页的锚）
+            above = [(y, l, s) for (y, l, s) in hds if y <= cd["top"] + 2]
+            lab, scope = (above[-1][1], above[-1][2]) if above else (lab0, scope0)
             rows = cd["rows"]
             hdr = [(c or "").replace("\n", " ").strip() if isinstance(c, str) else ""
                    for c in rows[0]]

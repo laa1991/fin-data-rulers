@@ -48,8 +48,9 @@ DROP = re.compile(r"(摘要|英文|更正|述职|评估|意见|公告|说明|补
 # ⚠ 标题必须在**末尾**就是「年度报告」—— 实测栽过：中信证券抓到的第一份标题含「年度」的公告
 #   是**别家券商出的《…2023年度持续督导工作报告》**（0.39 MB），被当成年报收了进来。
 #   这类错**不报警**：文件下得下来、PDF 打得开，只是内容根本不是年报。
-KEEP = re.compile(r"\d{4}年度?报告$")   # 认「2023年度报告」与「2023年年度报告」两种正常写法
-                                       # （「年度」两字可有可无，但**末尾必须是报告**；督导/摘要等由 DROP 挡）
+KEEP = re.compile(r"\d{4}年(?:年)?(?:度)?报告$")
+# 必须同时认两种正常写法：「2023年度报告」与「2023年年度报告」——
+# 上一版写成 `\d{4}年度?报告$` 只认前者，于是**八家全部匹配不上**、全靠盘上兜底（差一点又静默缩水）。
 MIN_PDF_BYTES = 1_500_000          # 年报都在 2 MB 以上；小于这个数几乎肯定不是年报本体
 
 
@@ -59,6 +60,14 @@ def log(m: str) -> None:
 
 def main() -> int:
     PDFS.mkdir(parents=True, exist_ok=True)
+    # 先读旧 manifest：它是**语料的账**，只能增改、不许被「本次成功的那几家」覆盖掉
+    prev = {}
+    if MANIFEST.exists():
+        try:
+            prev = {e["symbol"]: e for e in json.loads(MANIFEST.read_text(encoding="utf-8"))}
+            log(f"旧 manifest: {len(prev)} 条（本次按 symbol 合并）")
+        except Exception as e:                                       # noqa: BLE001
+            log(f"  ⚠ 旧 manifest 读不动（{type(e).__name__}）—— 按空账继续，但这要人看")
     import akshare as ak
 
     manifest = []
@@ -82,7 +91,16 @@ def main() -> int:
                     "id": (re.search(r"announcementId=(\d+)", str(r["公告链接"])) or [None, ""])[1]}
             break                                        # 列表按时间倒序，第一条最新的年度报告即可
         if not want or not want["id"]:
-            log("  ✗ 没找到年度报告本体")
+            old = prev.get(symbol)
+            # ⚠ 不许让语料**静默缩水**：标题没匹配上（过滤器改动、公告改名）时，
+            #   只要盘上还有旧件就沿用旧条目，并且**大声说出来**。
+            #   实测代价：收紧标题过滤那一次，manifest 从 11 条悄悄变成 8 条，
+            #   而后面所有读数照算（度量层完全看不出来）。
+            if old and (PDFS / old["file"]).exists():
+                log(f"  ⚠ 标题没匹配上，但盘上已有 {old['file']} ⇒ **沿用旧条目**（不让语料缩水）")
+                manifest.append(old)
+            else:
+                log("  ✗ 没找到年度报告本体，且盘上也没有旧件")
             continue
         period = re.search(r"(\d{4})年", want["title"])
         period = f"{period.group(1)}FY" if period else "FY"
