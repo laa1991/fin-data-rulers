@@ -58,7 +58,11 @@ HEAD = [("合并资产负债表", "BS", "合并"), ("合并利润表", "IS", "�
         ("资产负债表", "BS", "母公司"), ("利润表", "IS", "母公司"), ("现金流量表", "CF", "母公司")]
 STRONG = {"BS": ["货币资金", "资产总计"], "IS": ["营业总收入", "净利润"],
           "CF": ["经营活动产生的现金流量净额", "期末现金及现金等价物余额"]}
-UNIT = re.compile(r"单位[:：]\s*(元|万元|千元)")
+# ⚠ 单位不是装饰：茅台/格力是「元」，**招商银行是「百万元」** ——
+#   不识别单位、不换算，跨公司表里招行的 11,028,483 看起来是茅台的 1/25000，
+#   而它实际比茅台大 40 倍。**这个错不报警：数字在、格式对、量级错。**
+UNIT = re.compile(r"单位[:：]\s*(?:人民币)?\s*(亿元|百万元|千万元|万元|千元|元)")
+UNIT_SCALE = {"元": 1.0, "千元": 1e3, "万元": 1e4, "千万元": 1e7, "百万元": 1e6, "亿元": 1e8}
 DATE = re.compile(r"\d{4}\s*年\s*\d{1,2}\s*月\s*\d{1,2}\s*日")
 
 MIN_ROWS = 8
@@ -140,26 +144,36 @@ TABLE_STRATEGIES = [
 
 
 def page_tables(page):
-    """一页的表：多策略并联，按内容挑；够好就停（省时间）。"""
-    best, sc_best, used = None, -1, None
+    """一页的候选表：多策略并联，返回 **按纵向位置排序的全部候选**（每张 ≥ MIN_SCORE）。
+
+    为什么要「全部」而不是「最好的那一张」：报表首页常常**同时**有上一张表的尾巴和下一张表的头
+    （实测：茅台 p61 = 合并表的权益段 + 母公司表的开头）。只取一张，两边的行都会缺。
+    """
+    cands = []
     for name, st in TABLE_STRATEGIES:
         try:
             found = page.find_tables(table_settings=st) if st else page.find_tables()
         except Exception:                                            # noqa: BLE001
             continue
-        tabs = [t for t in (tb.extract() for tb in found) if t]
-        if not tabs:
-            continue
-        rows, sc = None, -1
-        for lab in ("BS", "IS", "CF"):
-            r, s = pick_table(tabs, lab)
-            if r and s > sc:
-                rows, sc = r, s
-        if sc > sc_best:
-            best, sc_best, used = rows, sc, name
-        if sc_best >= 3:                                             # 够好了，不必再试
+        got = []
+        for tb in found:
+            try:
+                rows = tb.extract()
+            except Exception:                                        # noqa: BLE001
+                continue
+            if not rows:
+                continue
+            flat = " ".join(str(c) for row in rows[:60] for c in row)
+            sc = max(sum(1 for w in SIG[lab] if w in flat) for lab in ("BS", "IS", "CF"))
+            if sc >= MIN_SCORE:
+                got.append({"rows": rows, "score": sc, "strategy": name,
+                            "top": round(tb.bbox[1], 1)})
+        cands += got
+        if got and max(c["score"] for c in got) >= 3:   # 够好就停（不为大报告白白加几倍开销）
             break
-    return best, sc_best, used
+    # 排序：**先按内容分**（分数高的最像这张表），同分再按纵向位置（靠上的先）
+    cands.sort(key=lambda c: (-c["score"], c["top"]))
+    return cands
 
 
 def extract_pdf(pdf_path: pathlib.Path, meta: dict) -> list:
@@ -190,21 +204,28 @@ def extract_pdf(pdf_path: pathlib.Path, meta: dict) -> list:
             if not cur:
                 continue
             lab, scope = cur
-            rows, sc, used = page_tables(page)      # 多策略并联、按内容挑
-            # 内容闸：锚会粘住，正文化的附注表必须挡在外面
-            if not rows or sc < MIN_SCORE:
+            cands = page_tables(page)               # 多策略并联、**全部**候选（按纵向位置）
+            if not cands:
                 continue
-            if STRATEGY_LOG is not None:
-                STRATEGY_LOG.setdefault(used, 0)
-                STRATEGY_LOG[used] += 1
+            m = UNIT.search(txt)
+            # 单位兜底：单位行常常写在**没被纳入本表的首页**（报表首页只有标题 + 单位行），
+            # 认不到单位 = 后面所有数都可能差 10^n 倍 ⇒ 往前翻两页找（用 seen 里存过的页文本）。
+            if not m:
+                for p in range(i - 1, max(0, i - 3), -1):
+                    m = UNIT.search((seen.get(p) or {}).get("text", ""))
+                    if m:
+                        break
+            # 取**分数最高**的那一张（不是纵向第一张：第一张常常是上一张表的尾巴）。
+            # 试过「一页多张全取」，实测无改善且总行数反而降（-32 行）⇒ 不保留对自己没用的改动。
+            cd = cands[0]
+            rows = cd["rows"]
             hdr = [(c or "").replace("\n", " ").strip() if isinstance(c, str) else ""
                    for c in rows[0]]
             for p in (i, i - 1):                       # 表头可能在上一页（标题页）
                 h = (seen.get(p) or {}).get("header")
-                if h and looks_like_header(h):
+                if h and looks_like_header(h) and not looks_like_header(hdr):
                     hdr = h
                     break
-            m = UNIT.search(txt)
             seq.append({"page": i, "label": lab, "scope": scope, "header": hdr,
                         "rows": clean_rows(rows), "unit": (m.group(1) if m else None)})
 
@@ -258,8 +279,11 @@ def extract_pdf(pdf_path: pathlib.Path, meta: dict) -> list:
         keep = []
         for i in range(ncol):
             is_note = i < len(hdr_vals) and nrm(hdr_vals[i]) == "附注"
-            has_num = any(i < len(r["vals"]) and r["vals"][i] is not None for r in rows)
-            if has_num and not is_note:
+            filled = sum(1 for r in rows if i < len(r["vals"]) and r["vals"][i] is not None)
+            # ⚠ 两条一起用：① 表头写着「附注」 ② **多数行为空**的列。
+            #   只用①会漏（招行的表头是页眉文字，认不出「附注」），
+            #   只用②会在表头缺失时把附注列留下 —— 两者都漏的话，值列整体偏移一格。
+            if not is_note and filled >= max(2, len(rows) * 0.5):
                 keep.append(i)
         if not keep:                      # 兜底：一条都留不下就退回「有数字就留」
             keep = [i for i in range(ncol)

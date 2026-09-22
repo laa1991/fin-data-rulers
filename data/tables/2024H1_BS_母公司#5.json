@@ -1,0 +1,364 @@
+{
+ "label": "BS",
+ "scope": "母公司#5",
+ "pages": [
+  53
+ ],
+ "header": [
+  "教育费附加 应纳流转税",
+  "额",
+  "",
+  "",
+  "3%"
+ ],
+ "rows": [
+  {
+   "label": "教育费附加 应纳流转税",
+   "vals": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "地方教育费附加 应纳流转税",
+   "vals": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "在不同企业所得税税率纳税主体",
+   "vals": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "适用 √不适用",
+   "vals": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": ". 税收优惠",
+   "vals": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "适用 √不适用",
+   "vals": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": ". 其他",
+   "vals": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "适用 √不适用",
+   "vals": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "、合并财务报表项目注释",
+   "vals": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "、 货币资金",
+   "vals": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "适用 □不适用",
+   "vals": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "库存现金",
+   "vals": [
+    null,
+    null,
+    495964.0,
+    162802.0
+   ]
+  },
+  {
+   "label": "银行存款",
+   "vals": [
+    null,
+    56839.0,
+    853566.82,
+    69069973574.12
+   ]
+  },
+  {
+   "label": "其他货币资金",
+   "vals": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "存放财务公司存款",
+   "vals": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "合计",
+   "vals": [
+    null,
+    56840.0,
+    349530.82,
+    69070136376.12
+   ]
+  },
+  {
+   "label": "其中：存放在境外的款项总",
+   "vals": [
+    null,
+    29.0,
+    928312.74,
+    27433842.07
+   ]
+  },
+  {
+   "label": "、 拆出资金",
+   "vals": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "存放同业款项",
+   "vals": [
+    11310.0,
+    41405.0,
+    91.93,
+    103060963177.98
+   ]
+  },
+  {
+   "label": "拆出资金",
+   "vals": [
+    220.0,
+    40438.0,
+    88.9,
+    2508579166.67
+   ]
+  },
+  {
+   "label": "减：减值准备",
+   "vals": [
+    1.0,
+    45124.0,
+    31.87,
+    15705882.07
+   ]
+  },
+  {
+   "label": "账面价值",
+   "vals": [
+    11529.0,
+    36720.0,
+    48.96,
+    105553836462.58
+   ]
+  },
+  {
+   "label": "、 交易性金融资产",
+   "vals": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "适用 □不适用",
+   "vals": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "以公允价值计量且其变动",
+   "vals": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    20.0,
+    400712059.93,
+    null
+   ]
+  },
+  {
+   "label": "计入当期损益的金融资产",
+   "vals": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "其中：",
+   "vals": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "债务工具投资",
+   "vals": [
+    null,
+    20.0,
+    400712059.93,
+    null
+   ]
+  },
+  {
+   "label": "指定以公允价值计量且其",
+   "vals": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "变动计入当期损益的金融",
+   "vals": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "资产",
+   "vals": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "其中：",
+   "vals": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "合计",
+   "vals": [
+    null,
+    20.0,
+    400712059.93,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    105.0,
+    null,
+    null
+   ]
+  }
+ ],
+ "unit": "元",
+ "table": "资产负债表",
+ "period": "2024H1",
+ "announced": "2024-08-09",
+ "source": "600519_2024H1_2024-08-09.pdf",
+ "title": "贵州茅台2024年半年度报告"
+}

@@ -2,1466 +2,788 @@
  "label": "CF",
  "scope": "母公司",
  "pages": [
-  63,
-  64,
-  65,
-  66,
-  67
+  105,
+  106,
+  107,
+  108
  ],
  "header": [
-  "经营活动现金流入小计",
-  "",
-  "62,497,008,747.99",
-  "49,912,909,522.04",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  ""
+  "项目",
+  "本期发生额",
+  "上期发生额"
  ],
  "rows": [
   {
-   "label": "经营活动现金流入小计",
+   "label": "其中：固定资产处置损失 21,063,974.29 11,924,267",
    "vals": [
-    null,
-    62497008747.99,
-    49912909522.04,
-    null,
-    null,
-    null,
-    null,
-    null,
+    null
+   ]
+  },
+  {
+   "label": "无形资产处置损失",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "非货币性资产交换损失",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "对外捐赠 225,431,100.98 271,167,088",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "罚款支出 200,000",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "其他 2,389,244.34 8,546,747",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "合计 248,884,319.61 291,838,102",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "50、 所得税费用 (1). 所得税费用表 √适用 □不适用",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "项目 本期发生额",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "当期所得税费用 23,548,077,905.70",
+   "vals": [
+    19922940809.01
+   ]
+  },
+  {
+   "label": "递延所得税费用 -1,221,724,924.27",
+   "vals": [
+    -1115438870.71
+   ]
+  },
+  {
+   "label": "合计 22,326,352,981.43",
+   "vals": [
+    18807501938.3
+   ]
+  },
+  {
+   "label": "(2). 会计利润与所得税费用调整过程 √适用 □不适用",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "利润总额",
+   "vals": [
+    87701489748.18
+   ]
+  },
+  {
+   "label": "按法定/适用税率计算的所得税费用",
+   "vals": [
+    21925372437.05
+   ]
+  },
+  {
+   "label": "子公司适用不同税率的影响",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "调整以前期间所得税的影响",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "非应税收入的影响",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "不可抵扣的成本、费用和损失的影响",
+   "vals": [
+    400980544.38
+   ]
+  },
+  {
+   "label": "使用前期未确认递延所得税资产的可抵扣亏损的影响",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "本期未确认递延所得税资产的可抵扣暂时性差异或可抵扣亏损的影响",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "所得税费用",
+   "vals": [
+    22326352981.43
+   ]
+  },
+  {
+   "label": "51、 其他综合收益 √适用 □不适用 详见附注32其他综合收益 52、 现金流量表项目 (1). 收到的其他与经营活动有关的现金 √适用 □不适用",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "项目 本期发生额",
+   "vals": [
+    null
+   ]
+  },
+  {
+   "label": "自有资金利息收入 886,579,338.69",
+   "vals": [
+    549608351.2
+   ]
+  },
+  {
+   "label": "收到的其他收入 1,872,842,833.19",
+   "vals": [
+    1093928511.28
+   ]
+  },
+  {
+   "label": "合计 2,759,422,171.88",
+   "vals": [
+    1643536862.48
+   ]
+  },
+  {
+   "label": "项目 本期",
+   "vals": [
     null,
     null,
     null
    ]
   },
   {
-   "label": "购买商品、接受劳务支付的现金",
+   "label": "支付的广告宣传费",
    "vals": [
-    null,
-    8247604843.54,
-    7730438800.94,
-    null,
-    null,
-    null,
-    null,
-    null,
+    117.0,
+    7149398.36,
+    1047792182.25
+   ]
+  },
+  {
+   "label": "支付的运输费及运输保险费用",
+   "vals": [
+    20.0,
+    5887269.67,
+    238511859.13
+   ]
+  },
+  {
+   "label": "支付的财产保险费",
+   "vals": [
+    4.0,
+    5179150.27,
+    56151552.1
+   ]
+  },
+  {
+   "label": "支付的其他费用",
+   "vals": [
+    369.0,
+    4871614.59,
+    3026048912.52
+   ]
+  },
+  {
+   "label": "合计",
+   "vals": [
+    512.0,
+    3087432.89,
+    4368504506.0
+   ]
+  },
+  {
+   "label": "(3). 收到的其他与投资活动有关的现金 √适用 □不适用",
+   "vals": [
     null,
     null,
     null
    ]
   },
   {
-   "label": "支付给职工及为职工支付的现金",
+   "label": "项目 本",
    "vals": [
-    null,
-    11019897320.84,
-    9421372112.36,
-    null,
-    null,
-    null,
-    null,
-    null,
     null,
     null,
     null
    ]
   },
   {
-   "label": "支付的各项税费",
-   "vals": [
-    null,
-    37873356637.22,
-    17808661856.89,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
-  },
-  {
-   "label": "支付其他与经营活动有关的现金",
-   "vals": [
-    null,
-    2876686272.05,
-    2170307857.51,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
-  },
-  {
-   "label": "经营活动现金流出小计",
-   "vals": [
-    null,
-    60017545073.65,
-    37130780627.7,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
-  },
-  {
-   "label": "经营活动产生的现金流量净额",
-   "vals": [
-    null,
-    2479463674.34,
-    12782128894.34,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
-  },
-  {
-   "label": "二、投资活动产生的现金流量：",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
-  },
-  {
-   "label": "收回投资收到的现金",
-   "vals": [
-    null,
-    null,
-    6079930.68,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
-  },
-  {
-   "label": "取得投资收益收到的现金",
-   "vals": [
-    null,
-    47596490707.35,
-    44741153786.43,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
-  },
-  {
-   "label": "处置固定资产、无形资产和其他长期资产收 回的现金净额",
-   "vals": [
-    null,
-    317509.0,
-    2453676.06,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
-  },
-  {
-   "label": "处置子公司及其他营业单位收到的现金净 额",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
-  },
-  {
-   "label": "收到其他与投资活动有关的现金",
+   "label": "收到基本建设工程履约保证金",
    "vals": [
     null,
     4971762.18,
-    9983452.63,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
+    9983452.63
    ]
   },
   {
-   "label": "投资活动现金流入小计",
+   "label": "合计",
    "vals": [
     null,
-    47601779978.53,
-    44759670845.8,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
+    4971762.18,
+    9983452.63
    ]
   },
   {
-   "label": "购建固定资产、无形资产和其他长期资产支 付的现金",
-   "vals": [
-    null,
-    5252006054.93,
-    3349912221.23,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
-  },
-  {
-   "label": "投资支付的现金",
+   "label": "(4). 支付的其他与投资活动有关的现金 √适用 □不适用",
    "vals": [
     null,
     null,
-    2000000000.0,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
     null
    ]
   },
   {
-   "label": "取得子公司及其他营业单位支付的现金净 额",
+   "label": "项目 本",
    "vals": [
     null,
     null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
     null
    ]
   },
   {
-   "label": "支付其他与投资活动有关的现金",
+   "label": "退还的基本建设工程履约保证金",
    "vals": [
     null,
     31486829.54,
-    23048029.93,
+    23048029.93
+   ]
+  },
+  {
+   "label": "合计",
+   "vals": [
     null,
-    null,
-    null,
-    null,
-    null,
+    31486829.54,
+    23048029.93
+   ]
+  },
+  {
+   "label": "(5). 支付的其他与筹资活动有关的现金 √适用 □不适用",
+   "vals": [
     null,
     null,
     null
    ]
   },
   {
-   "label": "投资活动现金流出小计",
+   "label": "项目 本",
    "vals": [
-    null,
-    5283492884.47,
-    5372960251.16,
-    null,
-    null,
-    null,
-    null,
-    null,
     null,
     null,
     null
    ]
   },
   {
-   "label": "投资活动产生的现金流量净额",
+   "label": "偿还租赁负债支付的金额",
    "vals": [
     null,
-    42318287094.06,
-    39386710594.64,
+    54332788.37,
+    88121549.59
+   ]
+  },
+  {
+   "label": "合计",
+   "vals": [
     null,
-    null,
-    null,
-    null,
-    null,
+    54332788.37,
+    88121549.59
+   ]
+  },
+  {
+   "label": "53、 现金流量表补充资料 (1). 现金流量表补充资料 √适用 □不适用",
+   "vals": [
     null,
     null,
     null
    ]
   },
   {
-   "label": "三、筹资活动产生的现金流量：",
+   "label": "补充资料",
    "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
     null,
     null,
     null
    ]
   },
   {
-   "label": "吸收投资收到的现金",
+   "label": "1．将净利润调节为经营活动现金流量：",
    "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
     null,
     null,
     null
    ]
   },
   {
-   "label": "取得借款收到的现金",
+   "label": "净利润",
    "vals": [
     null,
     null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
+    7555720529956.46
+   ]
+  },
+  {
+   "label": "加：资产减值准备",
+   "vals": [
     null,
     null,
     null
    ]
   },
   {
-   "label": "收到其他与筹资活动有关的现金",
+   "label": "信用减值损失",
    "vals": [
     null,
     null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
+    2513022441.19
+   ]
+  },
+  {
+   "label": "固定资产折旧、油气资产折耗、生产性生物资产折旧 1,443,574,818.",
+   "vals": [
+    501344833911.39
+   ]
+  },
+  {
+   "label": "使用权资产摊销 77,371,590.",
+   "vals": [
+    63101608046.18
+   ]
+  },
+  {
+   "label": "无形资产摊销 156,016,278.",
+   "vals": [
+    90124084418.97
+   ]
+  },
+  {
+   "label": "长期待摊费用摊销 11,487,619.",
+   "vals": [
+    410687874.77
+   ]
+  },
+  {
+   "label": "处置固定资产、无形资产和其他长期资产的损失（收益 -213,235. 以“－”号填列）",
+   "vals": [
+    69.0
+   ]
+  },
+  {
+   "label": "固定资产报废损失（收益以“－”号填列） 20,780,992.",
+   "vals": [
+    8811920829.77
+   ]
+  },
+  {
+   "label": "公允价值变动损失（收益以“－”号填列）",
+   "vals": [
+    2244726.29
+   ]
+  },
+  {
+   "label": "财务费用（收益以“－”号填列） 12,023,204.",
+   "vals": [
+    7713529867.76
+   ]
+  },
+  {
+   "label": "投资损失（收益以“－”号填列） -63,840,000.",
+   "vals": [
     null
    ]
   },
   {
-   "label": "筹资活动现金流入小计",
+   "label": "递延所得税资产减少（增加以“－”号填列） -1,221,724,924.",
    "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
     null
    ]
   },
   {
-   "label": "偿还债务支付的现金",
+   "label": "递延所得税负债增加（减少以“－”号填列）",
    "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
+    -1457513.23
+   ]
+  },
+  {
+   "label": "存货的减少（增加以“－”号填列） -5,430,009,151.",
+   "vals": [
     null
    ]
   },
   {
-   "label": "分配股利、利润或偿付利息支付的现金",
+   "label": "经营性应收项目的减少（增加以“－”号填列） -15,051,874,095.",
    "vals": [
-    null,
-    54751381113.01,
-    24235824155.4,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
+    80504305749.89
    ]
   },
   {
-   "label": "支付其他与筹资活动有关的现金",
+   "label": "经营性应付项目的增加（减少以“－”号填列） -8,644,820,580.",
    "vals": [
-    null,
-    19713859.66,
-    53056483.06,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
-  },
-  {
-   "label": "筹资活动现金流出小计",
-   "vals": [
-    null,
-    54771094972.67,
-    24288880638.46,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
-  },
-  {
-   "label": "筹资活动产生的现金流量净额",
-   "vals": [
-    null,
-    -54771094972.67,
-    -24288880638.46,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
-  },
-  {
-   "label": "四、汇率变动对现金及现金等价物的影响",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
-  },
-  {
-   "label": "五、现金及现金等价物净增加额",
-   "vals": [
-    null,
-    -9973344204.27,
-    27879958850.52,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
-  },
-  {
-   "label": "加：期初现金及现金等价物余额",
-   "vals": [
-    null,
-    77933933271.8,
-    50053974421.28,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
-  },
-  {
-   "label": "六、期末现金及现金等价物余额",
-   "vals": [
-    null,
-    67960589067.53,
-    77933933271.8,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
-  },
-  {
-   "label": "",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
-  },
-  {
-   "label": "",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
-  },
-  {
-   "label": "",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
-  },
-  {
-   "label": "一、上年年末余额",
-   "vals": [
-    1256197800.0,
-    null,
-    null,
-    1374964415.72,
-    -13017880.78,
-    25142832818.16,
-    1061529724.0,
-    160716861920.19,
-    189539368797.29,
-    7418137908.05,
-    196957506705.34
-   ]
-  },
-  {
-   "label": "加：会计政策变更",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
-  },
-  {
-   "label": "前期差错更正",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
-  },
-  {
-   "label": "同一控制下企 业合并",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
+    5211880880539.56
    ]
   },
   {
    "label": "其他",
    "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
     null
    ]
   },
   {
-   "label": "二、本年期初余额",
+   "label": "经营活动产生的现金流量净额 36,698,595,830.",
    "vals": [
-    1256197800.0,
-    null,
-    null,
-    1374964415.72,
-    -13017880.78,
-    25142832818.16,
-    1061529724.0,
-    160716861920.19,
-    189539368797.29,
-    7418137908.05,
-    196957506705.34
+    364028676147.37
    ]
   },
   {
-   "label": "三、本期增减变动金 额（减少以“－”号填 列）",
+   "label": "2．不涉及现金收支的重大投资和筹资活动：",
    "vals": [
-    null,
-    null,
-    null,
-    null,
-    2240973.45,
-    7379946360.72,
-    null,
-    585116264.54,
-    7967303598.71,
-    39877950.03,
-    8007181548.74
-   ]
-  },
-  {
-   "label": "（一）综合收益总额",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    2240973.45,
-    null,
-    null,
-    62716443738.27,
-    62718684711.72,
-    2658693028.48,
-    65377377740.2
-   ]
-  },
-  {
-   "label": "（二）所有者投入和 减少资本",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
     null
    ]
   },
   {
-   "label": "1．所有者投入的普 通股",
+   "label": "债务转为资本",
    "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
     null
    ]
   },
   {
-   "label": "2．其他权益工具持 有者投入资本",
+   "label": "一年内到期的可转换公司债券",
    "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
     null
    ]
   },
   {
-   "label": "3．股份支付计入所 有者权益的金额",
+   "label": "融资租入固定资产",
    "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
     null
    ]
   },
   {
-   "label": "4．其他",
+   "label": "3．现金及现金等价物净变动情况：",
    "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
     null
    ]
   },
   {
-   "label": "（三）利润分配",
+   "label": "现金的期末余额 152,378,738,982.",
    "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    7379946360.72,
-    null,
-    -62131327473.73,
-    -54751381113.01,
-    -2618815078.45,
-    -57370196191.46
+    83178640587379.52
    ]
   },
   {
-   "label": "1．提取盈余公积",
+   "label": "减：现金的期初余额 178,640,587,379.",
    "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    7379946360.72,
-    null,
-    -7379946360.72,
-    null,
-    null,
+    52146740524868.05
+   ]
+  },
+  {
+   "label": "加：现金等价物的期末余额",
+   "vals": [
     null
    ]
   },
   {
-   "label": "2．提取一般风险准 备",
+   "label": "减：现金等价物的期初余额",
    "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
     null
    ]
   },
   {
-   "label": "3．对所有者（或股 东）的分配",
+   "label": "现金及现金等价物净增加额 -26,261,848,396.",
    "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    -54751381113.01,
-    -54751381113.01,
-    -2618815078.45,
-    -57370196191.46
+    6931900062511.47
    ]
   },
   {
-   "label": "4．其他",
+   "label": "(2). 现金和现金等价物的构成 √适用 □不适用",
    "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
     null
    ]
   },
   {
-   "label": "（四）所有者权益内 部结转",
+   "label": "项目 期末余额",
    "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
     null
    ]
   },
   {
-   "label": "1．资本公积转增资 本（或股本）",
+   "label": "一、现金 152,378,738,982.83",
    "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
+    178640587379.52
+   ]
+  },
+  {
+   "label": "其中：库存现金 12,740.70",
+   "vals": [
+    9500.0
+   ]
+  },
+  {
+   "label": "可随时用于支付的银行存款 48,074,557,886.36",
+   "vals": [
+    42099344994.22
+   ]
+  },
+  {
+   "label": "可随时用于支付的其他货币资金",
+   "vals": [
     null
    ]
   },
   {
-   "label": "2．盈余公积转增资 本（或股本）",
+   "label": "可用于支付的存放中央银行款项 2,568,410,342.65",
    "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
+    2705674089.61
+   ]
+  },
+  {
+   "label": "存放同业款项 101,735,758,013.12",
+   "vals": [
+    133835558795.69
+   ]
+  },
+  {
+   "label": "拆放同业款项",
+   "vals": [
     null
    ]
   },
   {
-   "label": "",
+   "label": "二、现金等价物",
    "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
     null
    ]
   },
   {
-   "label": "",
+   "label": "其中：三个月内到期的债券投资",
    "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
     null
    ]
   },
   {
-   "label": "",
+   "label": "三、期末现金及现金等价物余额 152,378,738,982.83",
    "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
+    178640587379.52
+   ]
+  },
+  {
+   "label": "其中：母公司或集团内子公司使用受限制的 现金和现金等价物",
+   "vals": [
     null
    ]
   },
   {
-   "label": "一、上年年末余额",
-   "vals": [
-    1256197800.0,
-    null,
-    null,
-    1374964415.72,
-    -5331367.75,
-    20174922608.93,
-    927577822.67,
-    137594403807.99,
-    161322735087.56,
-    6397948013.72,
-    167720683101.28
-   ]
+   "label": "□适用 √不适用",
+   "vals": []
   },
   {
-   "label": "加：会计政策变更",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
+   "label": "54、 所有者权益变动表项目注释",
+   "vals": []
   },
   {
-   "label": "前期差错更正",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
+   "label": "说明对上年期末余额进行调整的“其他”项目名称及调整金额等事项：",
+   "vals": []
   },
   {
-   "label": "同一控制下企 业合并",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
+   "label": "□适用 √不适用",
+   "vals": []
   },
   {
-   "label": "其他",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
+   "label": "55、 所有权或使用权受到限制的资产",
+   "vals": []
   },
   {
-   "label": "二、本年期初余额",
-   "vals": [
-    1256197800.0,
-    null,
-    null,
-    1374964415.72,
-    -5331367.75,
-    20174922608.93,
-    927577822.67,
-    137594403807.99,
-    161322735087.56,
-    6397948013.72,
-    167720683101.28
-   ]
+   "label": "√适用 □不适用",
+   "vals": []
   },
   {
-   "label": "三、本期增减变动金 额（减少以“－”号填 列）",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    -7686513.03,
-    4967910209.23,
-    133951901.33,
-    23122458112.2,
-    28216633709.73,
-    1020189894.33,
-    29236823604.06
-   ]
+   "label": "单位：元币种：",
+   "vals": []
   },
   {
-   "label": "（一）综合收益总额",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    -7686513.03,
-    null,
-    null,
-    52460144378.16,
-    52452457865.13,
-    3260385578.3,
-    55712843443.43
-   ]
+   "label": "项目 期末账面价值 受限原因",
+   "vals": []
   },
   {
-   "label": "（二）所有者投入和 减少资本",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
+   "label": "货币资金 6,418,765,887.71 存放中央银行法定存款准备金",
+   "vals": []
   },
   {
-   "label": "1．所有者投入的普 通股",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
+   "label": "拆出资金 14,000,000,000.00 不能随时支取的同业存款",
+   "vals": []
   },
   {
-   "label": "2．其他权益工具持 有者投入资本",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
+   "label": "合计 20,418,765,887.71 /",
+   "vals": []
   },
   {
-   "label": "3．股份支付计入所 有者权益的金额",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
+   "label": "56、 外币货币性项目",
+   "vals": []
   },
   {
-   "label": "4．其他",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
+   "label": "(1). 外币货币性项目",
+   "vals": []
   },
   {
-   "label": "（三）利润分配",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    4967910209.23,
-    133951901.33,
-    -29337686265.96,
-    -24235824155.4,
-    -2240195683.97,
-    -26476019839.37
-   ]
+   "label": "√适用 □不适用",
+   "vals": []
   },
   {
-   "label": "1．提取盈余公积",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    4967910209.23,
-    null,
-    -4967910209.23,
-    null,
-    null,
-    null
-   ]
+   "label": "单",
+   "vals": []
   },
   {
-   "label": "2．提取一般风险准 备",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    133951901.33,
-    -133951901.33,
-    null,
-    null,
-    null
-   ]
+   "label": "期末折算人",
+   "vals": []
   },
   {
-   "label": "3．对所有者（或股",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    -24235824155.4,
-    -24235824155.4,
-    -2240195683.97,
-    -26476019839.37
-   ]
+   "label": "项目 期末外币余额 折算汇率",
+   "vals": []
   },
   {
-   "label": "",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
+   "label": "余额",
+   "vals": []
   },
   {
-   "label": "",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
+   "label": "货币资金 - -",
+   "vals": []
   },
   {
-   "label": "一、上年年末余额",
-   "vals": [
-    1256197800.0,
-    null,
-    null,
-    1374303082.72,
-    null,
-    25142832818.16,
-    101871858632.84,
-    129645192333.72,
-    null,
-    null,
-    null
-   ]
+   "label": "其中：美元",
+   "vals": []
   },
   {
-   "label": "加：会计政策变更",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
+   "label": "欧元 3,907,862.37 7.4229 29,007",
+   "vals": []
   },
   {
-   "label": "前期差错更正",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
+   "label": "港币",
+   "vals": []
   },
   {
-   "label": "其他",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
+   "label": "(2). 境外经营实体说明，包括对于重要的境外经营实体，应披露其境外主要经营地、记账",
+   "vals": []
   },
   {
-   "label": "二、本年期初余额",
-   "vals": [
-    1256197800.0,
-    null,
-    null,
-    1374303082.72,
-    null,
-    25142832818.16,
-    101871858632.84,
-    129645192333.72,
-    null,
-    null,
-    null
-   ]
+   "label": "及选择依据，记账本位币发生变化的还应披露原因",
+   "vals": []
   },
   {
-   "label": "三、本期增减变动金额（减 少以“－”号填列）",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    7379946360.72,
-    11668136133.45,
-    19048082494.17,
-    null,
-    null,
-    null
-   ]
+   "label": "√适用 □不适用",
+   "vals": []
   },
   {
-   "label": "（一）综合收益总额",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    73799463607.18,
-    73799463607.18,
-    null,
-    null,
-    null
-   ]
+   "label": "公司全资子公司贵州茅台酒巴黎贸易有限公司注册地位于法国巴黎，记账本位币为欧元。",
+   "vals": []
   },
   {
-   "label": "（二）所有者投入和减少资",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
+   "label": "57、 政府补助",
+   "vals": []
   },
   {
-   "label": "",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
+   "label": "(1). 政府补助基本情况",
+   "vals": []
   },
   {
-   "label": "",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
+   "label": "√适用 □不适用",
+   "vals": []
+  },
+  {
+   "label": "单位：元币种：",
+   "vals": []
+  },
+  {
+   "label": "计入",
+   "vals": []
+  },
+  {
+   "label": "种类 金额 列报项目",
+   "vals": []
+  },
+  {
+   "label": "益的",
+   "vals": []
+  },
+  {
+   "label": "上海市浦东新区经济发展财政扶持 5,696,000.00 其他收益 5,696",
+   "vals": []
+  },
+  {
+   "label": "贵州省商务厅奖励十大优势出口特色产品双循环政府",
+   "vals": []
+  },
+  {
+   "label": "其他收益",
+   "vals": []
+  },
+  {
+   "label": "3,000,000.00 3,000",
+   "vals": []
+  },
+  {
+   "label": "补助",
+   "vals": []
+  },
+  {
+   "label": "贵阳市观山湖区招商引业服务中心房租补助 1,380,000.00 其他收益 1,380",
+   "vals": []
+  },
+  {
+   "label": "郑州市二七区人民政府奖励 909,800.00 其他收益 909",
+   "vals": []
+  },
+  {
+   "label": "贵阳市观山湖区商务和投资促进局奖励 906,000.00 其他收益 906",
+   "vals": []
+  },
+  {
+   "label": "南昌市西湖区商务局2021年促进全市批零住餐行业奖",
+   "vals": []
+  },
+  {
+   "label": "其他收益",
+   "vals": []
+  },
+  {
+   "label": "570,000.00 570",
+   "vals": []
+  },
+  {
+   "label": "励资金",
+   "vals": []
+  },
+  {
+   "label": "合肥市区级高质量发展奖励 500,000.00 其他收益 500",
+   "vals": []
   }
  ],
  "unit": "元",
@@ -1469,6 +791,5 @@
  "period": "2022FY",
  "announced": "2023-03-31",
  "source": "600519_2022FY_2023-03-31.pdf",
- "title": "贵州茅台2022年年度报告",
- "dropped_nonnumeric_cols": 4
+ "title": "贵州茅台2022年年度报告"
 }

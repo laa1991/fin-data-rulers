@@ -659,17 +659,7 @@
    ]
   },
   {
-   "label": "所有者权益（或股东权",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
-  },
-  {
-   "label": "",
+   "label": "所有者权益（或股东权 益）合计",
    "vals": [
     148693274827.89,
     14866671.0,
@@ -679,27 +669,7 @@
    ]
   },
   {
-   "label": "益）合计",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
-  },
-  {
-   "label": "负债和所有者权益",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
-  },
-  {
-   "label": "",
+   "label": "负债和所有者权益 （或股东权益）总计",
    "vals": [
     161790947699.8,
     16188099.0,
@@ -709,67 +679,7 @@
    ]
   },
   {
-   "label": "（或股东权益）总计",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
-  },
-  {
-   "label": "25. 其他",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
-  },
-  {
-   "label": "□适用 √不适用",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
-  },
-  {
-   "label": "六、税项",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
-  },
-  {
-   "label": "1. 主要税种及税率",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
-  },
-  {
-   "label": "主要税种及税率情况",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
-  },
-  {
-   "label": "√适用 □不适用",
+   "label": "25. 其他 □适用 √不适用 六、税项 1. 主要税种及税率 主要税种及税率情况 √适用 □不适用",
    "vals": [
     null,
     null,
@@ -849,97 +759,7 @@
    ]
   },
   {
-   "label": "存在不同企业所得税税率纳税主",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
-  },
-  {
-   "label": "□适用 √不适用",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
-  },
-  {
-   "label": "2. 税收优惠",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
-  },
-  {
-   "label": "□适用 √不适用",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
-  },
-  {
-   "label": "3. 其他",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
-  },
-  {
-   "label": "□适用 √不适用",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
-  },
-  {
-   "label": "七、合并财务报表项目注释",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
-  },
-  {
-   "label": "1、 货币资金",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
-  },
-  {
-   "label": "√适用 □不适用",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
-  },
-  {
-   "label": "",
+   "label": "存在不同企业所得税税率纳税主 □适用 √不适用 2. 税收优惠 □适用 √不适用 3. 其他 □适用 √不适用 七、合并财务报表项目注释 1、 货币资金 √适用 □不适用",
    "vals": [
     null,
     null,
@@ -989,33 +809,13 @@
    ]
   },
   {
-   "label": "其中：存放在境外的",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null
-   ]
-  },
-  {
-   "label": "",
+   "label": "其中：存放在境外的 款项总额",
    "vals": [
     34051938.0,
     null,
     null,
     null,
     29007671.59
-   ]
-  },
-  {
-   "label": "款项总额",
-   "vals": [
-    null,
-    null,
-    null,
-    null,
-    null
    ]
   },
   {
