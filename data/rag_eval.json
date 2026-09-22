@@ -1,0 +1,425 @@
+[
+  {
+    "q": "贵州茅台 2024 年前三季度的营业收入是多少？",
+    "accept": [
+      "120776131874.69",
+      "1207.76"
+    ],
+    "in_corpus": true,
+    "答案": "贵州茅台 2024 年前三季度的营业收入为 120,776,131,874.69 元 [片段1][片段4]。",
+    "引用": [
+      1,
+      4
+    ],
+    "拒答": false,
+    "答对": true,
+    "引用含事实": true,
+    "finish": "stop",
+    "chunks": [
+      "600519_2024年第三季度报告.txt",
+      "600519_2024年第三季度报告.txt",
+      "600519_2023年年度报告.txt",
+      "600519_2024年第三季度报告.txt",
+      "600519_2023年年度报告.txt",
+      "600519_2024年第三季度报告.txt"
+    ],
+    "usage": {
+      "prompt_tokens": 2707,
+      "completion_tokens": 394,
+      "total_tokens": 3101,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 362
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 2707
+    }
+  },
+  {
+    "q": "贵州茅台 2024 年前三季度归属于上市公司股东的净利润是多少？",
+    "accept": [
+      "60827552118.51",
+      "608.28"
+    ],
+    "in_corpus": true,
+    "答案": "60,827,552,118.51 元 [片段2]",
+    "引用": [
+      2
+    ],
+    "拒答": false,
+    "答对": true,
+    "引用含事实": true,
+    "finish": "stop",
+    "chunks": [
+      "600519_2024年第三季度报告.txt",
+      "600519_2024年第三季度报告.txt",
+      "600519_2023年年度报告.txt",
+      "600519_2024年半年度报告.txt",
+      "600519_2024年半年度报告.txt",
+      "600519_2023年年度报告.txt"
+    ],
+    "usage": {
+      "prompt_tokens": 2696,
+      "completion_tokens": 262,
+      "total_tokens": 2958,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 246
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 2696
+    }
+  },
+  {
+    "q": "贵州茅台 2024 年半年度的营业收入是多少？",
+    "accept": [
+      "81930977667.75",
+      "819.31"
+    ],
+    "in_corpus": true,
+    "答案": "资料中未包含该信息",
+    "引用": [],
+    "拒答": true,
+    "答对": false,
+    "引用含事实": null,
+    "finish": "stop",
+    "chunks": [
+      "600519_2023年年度报告.txt",
+      "600519_2023年年度报告.txt",
+      "600519_2024年半年度报告.txt",
+      "600519_2024年半年度报告.txt",
+      "600519_2024年半年度报告.txt",
+      "600519_2024年半年度报告.txt"
+    ],
+    "usage": {
+      "prompt_tokens": 2718,
+      "completion_tokens": 346,
+      "total_tokens": 3064,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 339
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 2718
+    }
+  },
+  {
+    "q": "贵州茅台 2024 年半年度归属于上市公司股东的净利润是多少？",
+    "accept": [
+      "41695610983.37",
+      "416.96"
+    ],
+    "in_corpus": true,
+    "答案": "416.96 亿元 [片段2]",
+    "引用": [
+      2
+    ],
+    "拒答": false,
+    "答对": true,
+    "引用含事实": true,
+    "finish": "stop",
+    "chunks": [
+      "600519_2024年半年度报告.txt",
+      "600519_2024年半年度报告.txt",
+      "600519_2024年第三季度报告.txt",
+      "600519_2024年第三季度报告.txt",
+      "600519_2023年年度报告.txt",
+      "600519_2023年年度报告.txt"
+    ],
+    "usage": {
+      "prompt_tokens": 2681,
+      "completion_tokens": 361,
+      "total_tokens": 3042,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 351
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 2681
+    }
+  },
+  {
+    "q": "贵州茅台 2024 年第三季度单季度的营业收入是多少？",
+    "accept": [
+      "38845154206.94",
+      "388.45"
+    ],
+    "in_corpus": true,
+    "答案": "贵州茅台2024年第三季度单季度营业收入为38,845,154,206.94元。[片段2]",
+    "引用": [
+      2
+    ],
+    "拒答": false,
+    "答对": true,
+    "引用含事实": true,
+    "finish": "stop",
+    "chunks": [
+      "600519_2024年第三季度报告.txt",
+      "600519_2024年第三季度报告.txt",
+      "600519_2024年第三季度报告.txt",
+      "600519_2024年第三季度报告.txt",
+      "600519_2023年年度报告.txt",
+      "600519_2024年第三季度报告.txt"
+    ],
+    "usage": {
+      "prompt_tokens": 2683,
+      "completion_tokens": 285,
+      "total_tokens": 2968,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 259
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 2683
+    }
+  },
+  {
+    "q": "贵州茅台 2023 年度利润分配方案中，每 10 股派发现金红利多少元？",
+    "accept": [
+      "308.76"
+    ],
+    "in_corpus": true,
+    "答案": "每10股派发现金红利308.76元（含税）。[片段6]",
+    "引用": [
+      6
+    ],
+    "拒答": false,
+    "答对": true,
+    "引用含事实": true,
+    "finish": "stop",
+    "chunks": [
+      "600519_2023年年度报告.txt",
+      "600519_2023年年度报告.txt",
+      "600519_2023年年度报告.txt",
+      "600519_2023年年度报告.txt",
+      "600519_2023年年度报告.txt",
+      "600519_2023年年度报告.txt"
+    ],
+    "usage": {
+      "prompt_tokens": 2762,
+      "completion_tokens": 219,
+      "total_tokens": 2981,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 199
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 2762
+    }
+  },
+  {
+    "q": "贵州茅台 2023 年度合计拟派发现金红利多少元？",
+    "accept": [
+      "38786363272.80",
+      "387.86"
+    ],
+    "in_corpus": true,
+    "答案": "38,786,363,272.80元（含税）[片段1][片段2]",
+    "引用": [
+      1,
+      2
+    ],
+    "拒答": false,
+    "答对": true,
+    "引用含事实": true,
+    "finish": "stop",
+    "chunks": [
+      "600519_2023年年度报告.txt",
+      "600519_2023年年度报告.txt",
+      "600519_2023年年度报告.txt",
+      "600519_2023年年度报告.txt",
+      "600519_2023年年度报告.txt",
+      "600519_2023年年度报告.txt"
+    ],
+    "usage": {
+      "prompt_tokens": 2712,
+      "completion_tokens": 310,
+      "total_tokens": 3022,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 288
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 2712
+    }
+  },
+  {
+    "q": "截至 2023 年 12 月 31 日，贵州茅台的总股本是多少万股？",
+    "accept": [
+      "125619.78",
+      "1256197800"
+    ],
+    "in_corpus": true,
+    "答案": "125,619.78万股 [片段1]",
+    "引用": [
+      1
+    ],
+    "拒答": false,
+    "答对": true,
+    "引用含事实": true,
+    "finish": "stop",
+    "chunks": [
+      "600519_2023年年度报告.txt",
+      "600519_2023年年度报告.txt",
+      "600519_2023年年度报告.txt",
+      "600519_2024年半年度报告.txt",
+      "600519_2023年年度报告.txt",
+      "600519_2024年半年度报告.txt"
+    ],
+    "usage": {
+      "prompt_tokens": 2703,
+      "completion_tokens": 179,
+      "total_tokens": 2882,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 168
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 2703
+    }
+  },
+  {
+    "q": "贵州茅台 2024 年全年（年度）的营业收入是多少？",
+    "accept": [],
+    "in_corpus": false,
+    "答案": "资料中未包含该信息",
+    "引用": [],
+    "拒答": true,
+    "答对": null,
+    "引用含事实": null,
+    "finish": "stop",
+    "chunks": [
+      "600519_2023年年度报告.txt",
+      "600519_2023年年度报告.txt",
+      "600519_2024年半年度报告.txt",
+      "600519_2023年年度报告.txt",
+      "600519_2024年半年度报告.txt",
+      "600519_2024年半年度报告.txt"
+    ],
+    "usage": {
+      "prompt_tokens": 2682,
+      "completion_tokens": 173,
+      "total_tokens": 2855,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 166
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 2682
+    }
+  },
+  {
+    "q": "贵州茅台 2025 年第一季度的净利润是多少？",
+    "accept": [],
+    "in_corpus": false,
+    "答案": "资料中未包含该信息",
+    "引用": [],
+    "拒答": true,
+    "答对": null,
+    "引用含事实": null,
+    "finish": "stop",
+    "chunks": [
+      "600519_2023年年度报告.txt",
+      "600519_2024年第三季度报告.txt",
+      "600519_2024年第三季度报告.txt",
+      "600519_2023年年度报告.txt",
+      "600519_2023年年度报告.txt",
+      "600519_2023年年度报告.txt"
+    ],
+    "usage": {
+      "prompt_tokens": 2705,
+      "completion_tokens": 110,
+      "total_tokens": 2815,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 103
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 2705
+    }
+  },
+  {
+    "q": "贵州茅台计划在 2026 年度派发多少现金红利？",
+    "accept": [],
+    "in_corpus": false,
+    "答案": "资料中未包含该信息",
+    "引用": [],
+    "拒答": true,
+    "答对": null,
+    "引用含事实": null,
+    "finish": "stop",
+    "chunks": [
+      "600519_2023年年度报告.txt",
+      "600519_2023年年度报告.txt",
+      "600519_2023年年度报告.txt",
+      "600519_2023年年度报告.txt",
+      "600519_2023年年度报告.txt",
+      "600519_2023年年度报告.txt"
+    ],
+    "usage": {
+      "prompt_tokens": 2721,
+      "completion_tokens": 73,
+      "total_tokens": 2794,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 66
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 2721
+    }
+  },
+  {
+    "q": "五粮液 2023 年度的营业收入是多少？",
+    "accept": [],
+    "in_corpus": false,
+    "答案": "资料中未包含该信息",
+    "引用": [],
+    "拒答": true,
+    "答对": null,
+    "引用含事实": null,
+    "finish": "stop",
+    "chunks": [
+      "600519_2023年年度报告.txt",
+      "600519_2023年年度报告.txt",
+      "600519_2023年年度报告.txt",
+      "600519_2023年年度报告.txt",
+      "600519_2024年半年度报告.txt",
+      "600519_2024年半年度报告.txt"
+    ],
+    "usage": {
+      "prompt_tokens": 2739,
+      "completion_tokens": 81,
+      "total_tokens": 2820,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 74
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 2739
+    }
+  }
+]

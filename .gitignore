@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+_logs/
+data/docs/pdf/
+data/basket/
