@@ -3,3 +3,4 @@ __pycache__/
 _logs/
 data/docs/pdf/
 data/basket/
+data/*.log

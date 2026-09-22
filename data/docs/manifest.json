@@ -1,0 +1,82 @@
+[
+  {
+    "file": "600519_2022FY_2023-03-31.txt",
+    "title": "贵州茅台2022年年度报告",
+    "period": "2022FY",
+    "announced": "2023-03-31",
+    "announcement_id": "1216281757",
+    "url": "http://static.cninfo.com.cn/finalpage/2023-03-31/1216281757.PDF",
+    "bytes": 314961,
+    "sha256": "4563b1561eb7"
+  },
+  {
+    "file": "600519_2023Q1_2023-04-26.txt",
+    "title": "贵州茅台2023年第一季度报告",
+    "period": "2023Q1",
+    "announced": "2023-04-26",
+    "announcement_id": "1216595064",
+    "url": "http://static.cninfo.com.cn/finalpage/2023-04-26/1216595064.PDF",
+    "bytes": 24622,
+    "sha256": "ce72209bc9b3"
+  },
+  {
+    "file": "600519_2023H1_2023-08-03.txt",
+    "title": "贵州茅台2023年半年度报告",
+    "period": "2023H1",
+    "announced": "2023-08-03",
+    "announcement_id": "1217453695",
+    "url": "http://static.cninfo.com.cn/finalpage/2023-08-03/1217453695.PDF",
+    "bytes": 246994,
+    "sha256": "56abf44f2f6c"
+  },
+  {
+    "file": "600519_2023Q3_2023-10-21.txt",
+    "title": "贵州茅台2023年第三季度报告",
+    "period": "2023Q3",
+    "announced": "2023-10-21",
+    "announcement_id": "1218110141",
+    "url": "http://static.cninfo.com.cn/finalpage/2023-10-21/1218110141.PDF",
+    "bytes": 25746,
+    "sha256": "0e038afea08c"
+  },
+  {
+    "file": "600519_2023FY_2024-04-03.txt",
+    "title": "贵州茅台2023年年度报告",
+    "period": "2023FY",
+    "announced": "2024-04-03",
+    "announcement_id": "1219506510",
+    "url": "http://static.cninfo.com.cn/finalpage/2024-04-03/1219506510.PDF",
+    "bytes": 338608,
+    "sha256": "394640f6df60"
+  },
+  {
+    "file": "600519_2024Q1_2024-04-27.txt",
+    "title": "贵州茅台2024年第一季度报告",
+    "period": "2024Q1",
+    "announced": "2024-04-27",
+    "announcement_id": "1219875828",
+    "url": "http://static.cninfo.com.cn/finalpage/2024-04-27/1219875828.PDF",
+    "bytes": 21251,
+    "sha256": "094b0e438536"
+  },
+  {
+    "file": "600519_2024H1_2024-08-09.txt",
+    "title": "贵州茅台2024年半年度报告",
+    "period": "2024H1",
+    "announced": "2024-08-09",
+    "announcement_id": "1220825189",
+    "url": "http://static.cninfo.com.cn/finalpage/2024-08-09/1220825189.PDF",
+    "bytes": 247841,
+    "sha256": "72ad49aed64e"
+  },
+  {
+    "file": "600519_2024Q3_2024-10-26.txt",
+    "title": "贵州茅台2024年第三季度报告",
+    "period": "2024Q3",
+    "announced": "2024-10-26",
+    "announcement_id": "1221523519",
+    "url": "http://static.cninfo.com.cn/finalpage/2024-10-26/1221523519.PDF",
+    "bytes": 21388,
+    "sha256": "eed1594ae374"
+  }
+]
