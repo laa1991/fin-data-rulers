@@ -1,7 +1,7 @@
 {
  "600519": {
   "short": "贵州茅台",
-  "kind": "制造+金融子公司",
+  "kind": "白酒制造（含金融子公司）",
   "cells": {
    "资产总计": {
     "value": 272699660092.25,
@@ -13,26 +13,24 @@
     "source": [
      "600519_2023FY.pdf",
      [
-      59,
-      60
+      59
      ],
      "资产总计"
     ]
    },
    "负债合计": {
-    "value": 49043190797.43,
-    "value_raw": 49043190797.43,
-    "unit": "元",
-    "scale": 1.0,
-    "status": "✓",
-    "why": "可用",
+    "value": null,
+    "value_raw": null,
+    "unit": null,
+    "scale": null,
+    "status": "?",
+    "why": "概念未命中",
     "source": [
      "600519_2023FY.pdf",
      [
-      59,
-      60
+      59
      ],
-     "负债合计"
+     null
     ]
    },
    "所有者权益合计": {
@@ -45,8 +43,7 @@
     "source": [
      "600519_2023FY.pdf",
      [
-      59,
-      60
+      59
      ],
      null
     ]
@@ -100,8 +97,8 @@
     ]
    },
    "经营活动现金流量净额": {
-    "value": 66593247721.09,
-    "value_raw": 66593247721.09,
+    "value": 36698595830.03,
+    "value_raw": 36698595830.03,
     "unit": "元",
     "scale": 1.0,
     "status": "✓",
@@ -123,11 +120,8 @@
     "why": "归属于母公司股东的净利润 / 收入口径"
    },
    "资产负债率": {
-    "value": 17.984324139179147,
-    "status": "✓",
-    "unit": "%",
-    "unit_out": "%",
-    "why": "负债合计 / 资产总计"
+    "status": "⚠",
+    "why": "分子或分母缺失"
    }
   }
  },
@@ -145,42 +139,39 @@
     "source": [
      "000651_2023FY.pdf",
      [
-      114,
-      115
+      114
      ],
      "资产总计"
     ]
    },
    "负债合计": {
-    "value": 247407749159.93,
-    "value_raw": 247407749159.93,
-    "unit": "元",
-    "scale": 1.0,
-    "status": "✓",
-    "why": "可用",
+    "value": null,
+    "value_raw": null,
+    "unit": null,
+    "scale": null,
+    "status": "?",
+    "why": "概念未命中",
     "source": [
      "000651_2023FY.pdf",
      [
-      114,
-      115
+      114
      ],
-     "负债合计"
+     null
     ]
    },
    "所有者权益合计": {
-    "value": 120646153416.44,
-    "value_raw": 120646153416.44,
-    "unit": "元",
-    "scale": 1.0,
-    "status": "✓",
-    "why": "可用",
+    "value": null,
+    "value_raw": null,
+    "unit": null,
+    "scale": null,
+    "status": "?",
+    "why": "概念未命中",
     "source": [
      "000651_2023FY.pdf",
      [
-      114,
-      115
+      114
      ],
-     "股东权益合计"
+     null
     ]
    },
    "营业收入口径": {
@@ -229,18 +220,16 @@
     ]
    },
    "经营活动现金流量净额": {
-    "value": null,
-    "value_raw": null,
-    "unit": null,
-    "scale": null,
-    "status": "⚠",
-    "why": "抽取缺口",
+    "value": 56398426354.17,
+    "value_raw": 56398426354.17,
+    "unit": "元",
+    "scale": 1.0,
+    "status": "✓",
+    "why": "可用",
     "source": [
      "000651_2023FY.pdf",
      [
-      117,
-      118,
-      119
+      117
      ],
      "经营活动产生的现金流量净额"
     ]
@@ -253,11 +242,8 @@
     "why": "归属于母公司股东的净利润 / 收入口径"
    },
    "资产负债率": {
-    "value": 67.22052053465013,
-    "status": "✓",
-    "unit": "%",
-    "unit_out": "%",
-    "why": "负债合计 / 资产总计"
+    "status": "⚠",
+    "why": "分子或分母缺失"
    }
   }
  },
@@ -270,13 +256,12 @@
     "value_raw": 11028483.0,
     "unit": "百万元",
     "scale": 1000000.0,
-    "status": "✓",
-    "why": "可用",
+    "status": "⚠",
+    "why": "同表缺强标志行（很可能抽错了表）",
     "source": [
      "600036_2023FY.pdf",
      [
-      132,
-      133
+      132
      ],
      "资产合计"
     ]
@@ -286,13 +271,12 @@
     "value_raw": 9942754.0,
     "unit": "百万元",
     "scale": 1000000.0,
-    "status": "✓",
-    "why": "可用",
+    "status": "⚠",
+    "why": "同表缺强标志行（很可能抽错了表）",
     "source": [
      "600036_2023FY.pdf",
      [
-      132,
-      133
+      132
      ],
      "负债合计"
     ]
@@ -302,15 +286,14 @@
     "value_raw": null,
     "unit": null,
     "scale": null,
-    "status": "⚠",
-    "why": "抽取缺口",
+    "status": "?",
+    "why": "概念未命中",
     "source": [
      "600036_2023FY.pdf",
      [
-      132,
-      133
+      132
      ],
-     "股东权益合计"
+     null
     ]
    },
    "营业收入口径": {
@@ -368,7 +351,6 @@
     "source": [
      "600036_2023FY.pdf",
      [
-      140,
       141
      ],
      null
@@ -380,10 +362,841 @@
    },
    "资产负债率": {
     "value": 90.15522805811098,
+    "status": "⚠",
+    "unit": "%",
+    "unit_out": "%",
+    "why": "同表缺强标志行（很可能抽错了表）"
+   }
+  }
+ },
+ "601318": {
+  "short": "中国平安",
+  "kind": "保险",
+  "cells": {
+   "资产总计": {
+    "value": null,
+    "value_raw": null,
+    "unit": null,
+    "scale": null,
+    "status": "?",
+    "why": "概念未命中",
+    "source": [
+     "601318_2023FY.pdf",
+     [
+      145
+     ],
+     null
+    ]
+   },
+   "负债合计": {
+    "value": null,
+    "value_raw": null,
+    "unit": null,
+    "scale": null,
+    "status": "?",
+    "why": "概念未命中",
+    "source": [
+     "601318_2023FY.pdf",
+     [
+      145
+     ],
+     null
+    ]
+   },
+   "所有者权益合计": {
+    "value": null,
+    "value_raw": null,
+    "unit": null,
+    "scale": null,
+    "status": "?",
+    "why": "概念未命中",
+    "source": [
+     "601318_2023FY.pdf",
+     [
+      145
+     ],
+     null
+    ]
+   },
+   "营业收入口径": {
+    "value": null,
+    "value_raw": null,
+    "unit": null,
+    "scale": null,
+    "status": "⚠",
+    "why": "两个收入概念都没取到",
+    "source": [
+     "601318_2023FY.pdf",
+     [
+      148,
+      149
+     ],
+     null
+    ]
+   },
+   "净利润": {
+    "value": 109274000000.0,
+    "value_raw": 109274.0,
+    "unit": "百万元",
+    "scale": 1000000.0,
+    "status": "✓",
+    "why": "可用",
+    "source": [
+     "601318_2023FY.pdf",
+     [
+      148,
+      149
+     ],
+     "净利润"
+    ]
+   },
+   "其中：归母净利润": {
+    "value": 85665000000.0,
+    "value_raw": 85665.0,
+    "unit": "百万元",
+    "scale": 1000000.0,
+    "status": "✓",
+    "why": "可用",
+    "source": [
+     "601318_2023FY.pdf",
+     [
+      148,
+      149
+     ],
+     "归属于母公司股东的净利润"
+    ]
+   },
+   "经营活动现金流量净额": {
+    "value": 360403000000.0,
+    "value_raw": 360403.0,
+    "unit": "百万元",
+    "scale": 1000000.0,
+    "status": "✓",
+    "why": "可用",
+    "source": [
+     "601318_2023FY.pdf",
+     [
+      152,
+      153
+     ],
+     "经营活动产生的现金流量净额"
+    ]
+   },
+   "净利率": {
+    "status": "⚠",
+    "why": "分子或分母缺失"
+   },
+   "资产负债率": {
+    "status": "⚠",
+    "why": "分子或分母缺失"
+   }
+  }
+ },
+ "600030": {
+  "short": "中信证券",
+  "kind": "券商",
+  "cells": {
+   "资产总计": {
+    "status": "?",
+    "why": "缺 BS 表"
+   },
+   "负债合计": {
+    "status": "?",
+    "why": "缺 BS 表"
+   },
+   "所有者权益合计": {
+    "status": "?",
+    "why": "缺 BS 表"
+   },
+   "营业收入口径": {
+    "value": 60067992766.11,
+    "value_raw": 60067992766.11,
+    "unit": "?",
+    "scale": 1.0,
+    "status": "⚠",
+    "why": "同表缺强标志行（很可能抽错了表）",
+    "source": [
+     "600030_2023FY.pdf",
+     [
+      178
+     ],
+     "营业收入"
+    ]
+   },
+   "净利润": {
+    "value": null,
+    "value_raw": null,
+    "unit": null,
+    "scale": null,
+    "status": "?",
+    "why": "概念未命中",
+    "source": [
+     "600030_2023FY.pdf",
+     [
+      178
+     ],
+     null
+    ]
+   },
+   "其中：归母净利润": {
+    "value": null,
+    "value_raw": null,
+    "unit": null,
+    "scale": null,
+    "status": "?",
+    "why": "概念未命中",
+    "source": [
+     "600030_2023FY.pdf",
+     [
+      178
+     ],
+     null
+    ]
+   },
+   "经营活动现金流量净额": {
+    "status": "?",
+    "why": "缺 CF 表"
+   },
+   "净利率": {
+    "status": "⚠",
+    "why": "分子或分母缺失"
+   },
+   "资产负债率": {
+    "status": "?",
+    "why": "缺 BS 表"
+   }
+  }
+ },
+ "000002": {
+  "short": "万科A",
+  "kind": "房地产",
+  "cells": {
+   "资产总计": {
+    "value": 1504850172117.83,
+    "value_raw": 1504850172117.83,
+    "unit": "元",
+    "scale": 1.0,
+    "status": "✓",
+    "why": "可用",
+    "source": [
+     "000002_2023FY.pdf",
+     [
+      138
+     ],
+     "资产总计"
+    ]
+   },
+   "负债合计": {
+    "value": null,
+    "value_raw": null,
+    "unit": null,
+    "scale": null,
+    "status": "?",
+    "why": "概念未命中",
+    "source": [
+     "000002_2023FY.pdf",
+     [
+      138
+     ],
+     null
+    ]
+   },
+   "所有者权益合计": {
+    "value": null,
+    "value_raw": null,
+    "unit": null,
+    "scale": null,
+    "status": "?",
+    "why": "概念未命中",
+    "source": [
+     "000002_2023FY.pdf",
+     [
+      138
+     ],
+     null
+    ]
+   },
+   "营业收入口径": {
+    "value": null,
+    "value_raw": null,
+    "unit": null,
+    "scale": null,
+    "status": "⚠",
+    "why": "两个收入概念都没取到",
+    "source": [
+     "000002_2023FY.pdf",
+     [
+      142
+     ],
+     null
+    ]
+   },
+   "净利润": {
+    "value": null,
+    "value_raw": null,
+    "unit": null,
+    "scale": null,
+    "status": "?",
+    "why": "概念未命中",
+    "source": [
+     "000002_2023FY.pdf",
+     [
+      142
+     ],
+     null
+    ]
+   },
+   "其中：归母净利润": {
+    "value": null,
+    "value_raw": null,
+    "unit": null,
+    "scale": null,
+    "status": "?",
+    "why": "概念未命中",
+    "source": [
+     "000002_2023FY.pdf",
+     [
+      142
+     ],
+     null
+    ]
+   },
+   "经营活动现金流量净额": {
+    "value": 2750449478.44,
+    "value_raw": 2750449478.44,
+    "unit": "元",
+    "scale": 1.0,
+    "status": "✓",
+    "why": "可用",
+    "source": [
+     "000002_2023FY.pdf",
+     [
+      145
+     ],
+     "经营活动产生的现金流量净额"
+    ]
+   },
+   "净利率": {
+    "status": "⚠",
+    "why": "分子或分母缺失"
+   },
+   "资产负债率": {
+    "status": "⚠",
+    "why": "分子或分母缺失"
+   }
+  }
+ },
+ "600276": {
+  "short": "恒瑞医药",
+  "kind": "医药",
+  "cells": {
+   "资产总计": {
+    "value": null,
+    "value_raw": null,
+    "unit": null,
+    "scale": null,
+    "status": "⚠",
+    "why": "抽取缺口",
+    "source": [
+     "600276_2023FY.pdf",
+     [
+      145
+     ],
+     "资产总计"
+    ]
+   },
+   "负债合计": {
+    "value": null,
+    "value_raw": null,
+    "unit": null,
+    "scale": null,
+    "status": "⚠",
+    "why": "抽取缺口",
+    "source": [
+     "600276_2023FY.pdf",
+     [
+      145
+     ],
+     "负债合计"
+    ]
+   },
+   "所有者权益合计": {
+    "value": null,
+    "value_raw": null,
+    "unit": null,
+    "scale": null,
+    "status": "?",
+    "why": "概念未命中",
+    "source": [
+     "600276_2023FY.pdf",
+     [
+      145
+     ],
+     null
+    ]
+   },
+   "营业收入口径": {
+    "value": null,
+    "value_raw": null,
+    "unit": null,
+    "scale": null,
+    "status": "⚠",
+    "why": "两个收入概念都没取到",
+    "source": [
+     "600276_2023FY.pdf",
+     [
+      147
+     ],
+     null
+    ]
+   },
+   "净利润": {
+    "value": null,
+    "value_raw": null,
+    "unit": null,
+    "scale": null,
+    "status": "?",
+    "why": "概念未命中",
+    "source": [
+     "600276_2023FY.pdf",
+     [
+      147
+     ],
+     null
+    ]
+   },
+   "其中：归母净利润": {
+    "value": null,
+    "value_raw": null,
+    "unit": null,
+    "scale": null,
+    "status": "?",
+    "why": "概念未命中",
+    "source": [
+     "600276_2023FY.pdf",
+     [
+      147
+     ],
+     null
+    ]
+   },
+   "经营活动现金流量净额": {
+    "status": "?",
+    "why": "缺 CF 表"
+   },
+   "净利率": {
+    "status": "⚠",
+    "why": "分子或分母缺失"
+   },
+   "资产负债率": {
+    "status": "⚠",
+    "why": "分子或分母缺失"
+   }
+  }
+ },
+ "601088": {
+  "short": "中国神华",
+  "kind": "能源",
+  "cells": {
+   "资产总计": {
+    "value": null,
+    "value_raw": null,
+    "unit": null,
+    "scale": null,
+    "status": "?",
+    "why": "概念未命中",
+    "source": [
+     "601088_2023FY.pdf",
+     [
+      130
+     ],
+     null
+    ]
+   },
+   "负债合计": {
+    "value": null,
+    "value_raw": null,
+    "unit": null,
+    "scale": null,
+    "status": "?",
+    "why": "概念未命中",
+    "source": [
+     "601088_2023FY.pdf",
+     [
+      130
+     ],
+     null
+    ]
+   },
+   "所有者权益合计": {
+    "value": null,
+    "value_raw": null,
+    "unit": null,
+    "scale": null,
+    "status": "?",
+    "why": "概念未命中",
+    "source": [
+     "601088_2023FY.pdf",
+     [
+      130
+     ],
+     null
+    ]
+   },
+   "营业收入口径": {
+    "value": 241871000000.0,
+    "value_raw": 241871.0,
+    "unit": "百万元",
+    "scale": 1000000.0,
+    "status": "✓",
+    "why": "取「营业收入」",
+    "source": [
+     "601088_2023FY.pdf",
+     [
+      298
+     ],
+     "营业收入"
+    ]
+   },
+   "净利润": {
+    "value": 51540000000.0,
+    "value_raw": 51540.0,
+    "unit": "百万元",
+    "scale": 1000000.0,
+    "status": "✓",
+    "why": "可用",
+    "source": [
+     "601088_2023FY.pdf",
+     [
+      298
+     ],
+     "净利润"
+    ]
+   },
+   "其中：归母净利润": {
+    "value": null,
+    "value_raw": null,
+    "unit": null,
+    "scale": null,
+    "status": "?",
+    "why": "概念未命中",
+    "source": [
+     "601088_2023FY.pdf",
+     [
+      298
+     ],
+     null
+    ]
+   },
+   "经营活动现金流量净额": {
+    "status": "?",
+    "why": "缺 CF 表"
+   },
+   "净利率": {
+    "status": "⚠",
+    "why": "分子或分母缺失"
+   },
+   "资产负债率": {
+    "status": "⚠",
+    "why": "分子或分母缺失"
+   }
+  }
+ },
+ "002415": {
+  "short": "海康威视",
+  "kind": "电子",
+  "cells": {
+   "资产总计": {
+    "value": null,
+    "value_raw": null,
+    "unit": null,
+    "scale": null,
+    "status": "?",
+    "why": "概念未命中",
+    "source": [
+     "002415_2023FY.pdf",
+     [
+      160
+     ],
+     null
+    ]
+   },
+   "负债合计": {
+    "value": null,
+    "value_raw": null,
+    "unit": null,
+    "scale": null,
+    "status": "?",
+    "why": "概念未命中",
+    "source": [
+     "002415_2023FY.pdf",
+     [
+      160
+     ],
+     null
+    ]
+   },
+   "所有者权益合计": {
+    "value": null,
+    "value_raw": null,
+    "unit": null,
+    "scale": null,
+    "status": "?",
+    "why": "概念未命中",
+    "source": [
+     "002415_2023FY.pdf",
+     [
+      160
+     ],
+     null
+    ]
+   },
+   "营业收入口径": {
+    "value": null,
+    "value_raw": null,
+    "unit": null,
+    "scale": null,
+    "status": "⚠",
+    "why": "两个收入概念都没取到",
+    "source": [
+     "002415_2023FY.pdf",
+     [
+      164
+     ],
+     null
+    ]
+   },
+   "净利润": {
+    "value": null,
+    "value_raw": null,
+    "unit": null,
+    "scale": null,
+    "status": "?",
+    "why": "概念未命中",
+    "source": [
+     "002415_2023FY.pdf",
+     [
+      164
+     ],
+     null
+    ]
+   },
+   "其中：归母净利润": {
+    "value": null,
+    "value_raw": null,
+    "unit": null,
+    "scale": null,
+    "status": "?",
+    "why": "概念未命中",
+    "source": [
+     "002415_2023FY.pdf",
+     [
+      164
+     ],
+     null
+    ]
+   },
+   "经营活动现金流量净额": {
+    "value": null,
+    "value_raw": null,
+    "unit": null,
+    "scale": null,
+    "status": "?",
+    "why": "概念未命中",
+    "source": [
+     "002415_2023FY.pdf",
+     [
+      166
+     ],
+     null
+    ]
+   },
+   "净利率": {
+    "status": "⚠",
+    "why": "分子或分母缺失"
+   },
+   "资产负债率": {
+    "status": "⚠",
+    "why": "分子或分母缺失"
+   }
+  }
+ },
+ "600887": {
+  "short": "伊利股份",
+  "kind": "食品",
+  "cells": {
+   "资产总计": {
+    "value": 131003074245.94,
+    "value_raw": 131003074245.94,
+    "unit": "元",
+    "scale": 1.0,
+    "status": "✓",
+    "why": "可用",
+    "source": [
+     "600887_2023FY.pdf",
+     [
+      146
+     ],
+     "资产总计"
+    ]
+   },
+   "负债合计": {
+    "value": null,
+    "value_raw": null,
+    "unit": null,
+    "scale": null,
+    "status": "?",
+    "why": "概念未命中",
+    "source": [
+     "600887_2023FY.pdf",
+     [
+      146
+     ],
+     null
+    ]
+   },
+   "所有者权益合计": {
+    "value": null,
+    "value_raw": null,
+    "unit": null,
+    "scale": null,
+    "status": "?",
+    "why": "概念未命中",
+    "source": [
+     "600887_2023FY.pdf",
+     [
+      146
+     ],
+     null
+    ]
+   },
+   "营业收入口径": {
+    "value": 123171044056.27,
+    "value_raw": 123171044056.27,
+    "unit": "元",
+    "scale": 1.0,
+    "status": "✓",
+    "why": "取「营业总收入」",
+    "source": [
+     "600887_2023FY.pdf",
+     [
+      88,
+      89
+     ],
+     "一、营业总收入"
+    ]
+   },
+   "净利润": {
+    "value": 9318205866.77,
+    "value_raw": 9318205866.77,
+    "unit": "元",
+    "scale": 1.0,
+    "status": "✓",
+    "why": "可用",
+    "source": [
+     "600887_2023FY.pdf",
+     [
+      88,
+      89
+     ],
+     "五、净利润（净亏损以“－”号填列）"
+    ]
+   },
+   "其中：归母净利润": {
+    "value": 9431064679.78,
+    "value_raw": 9431064679.78,
+    "unit": "元",
+    "scale": 1.0,
+    "status": "✓",
+    "why": "可用",
+    "source": [
+     "600887_2023FY.pdf",
+     [
+      88,
+      89
+     ],
+     "1.归属于母公司股东的净利润（净亏损以 “-”号填列）"
+    ]
+   },
+   "经营活动现金流量净额": {
+    "value": 13420320580.36,
+    "value_raw": 13420320580.36,
+    "unit": "元",
+    "scale": 1.0,
+    "status": "✓",
+    "why": "可用",
+    "source": [
+     "600887_2023FY.pdf",
+     [
+      91,
+      92
+     ],
+     "经营活动产生的现金流量净额"
+    ]
+   },
+   "净利率": {
+    "value": 7.656884580333241,
     "status": "✓",
     "unit": "%",
     "unit_out": "%",
-    "why": "负债合计 / 资产总计"
+    "why": "归属于母公司股东的净利润 / 收入口径"
+   },
+   "资产负债率": {
+    "status": "⚠",
+    "why": "分子或分母缺失"
+   }
+  }
+ },
+ "601857": {
+  "short": "中国石油",
+  "kind": "石油石化",
+  "cells": {
+   "资产总计": {
+    "status": "?",
+    "why": "缺 BS 表"
+   },
+   "负债合计": {
+    "status": "?",
+    "why": "缺 BS 表"
+   },
+   "所有者权益合计": {
+    "status": "?",
+    "why": "缺 BS 表"
+   },
+   "营业收入口径": {
+    "status": "?",
+    "why": "缺 IS 表"
+   },
+   "净利润": {
+    "status": "?",
+    "why": "缺 IS 表"
+   },
+   "其中：归母净利润": {
+    "status": "?",
+    "why": "缺 IS 表"
+   },
+   "经营活动现金流量净额": {
+    "value": null,
+    "value_raw": null,
+    "unit": null,
+    "scale": null,
+    "status": "?",
+    "why": "概念未命中",
+    "source": [
+     "601857_2023FY.pdf",
+     [
+      261
+     ],
+     null
+    ]
+   },
+   "净利率": {
+    "status": "?",
+    "why": "缺 IS 表"
+   },
+   "资产负债率": {
+    "status": "?",
+    "why": "缺 BS 表"
    }
   }
  }

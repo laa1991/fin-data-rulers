@@ -96,15 +96,47 @@ def main() -> int:
                                "fail": sum(1 for r in rs if r["verdict"] == "fail"),
                                "all": rs}
 
+        # **表级可信度**：这一刀的核心 —— 把前几轮做出来的判据**合并进格子的状态里**。
+        # 为什么必须有：不合并的话，明显错的数会显示成 ✓（实测：格力总资产 355.07B 而真值 368.05B、
+        # 伊利经营现金流取了 2022 的 13.42e9）—— **格子看着像真的，才是这张表最危险的时候**。
+        trust = {}
+        for lab in ("BS", "IS", "CF"):
+            if lab not in per:
+                continue
+            labels = [M.nrm(r["label"]) for r in per[lab]["rows"]]
+            trust[lab] = {
+                "strong": any(s in l for l in labels for s in TE.STRONG[lab]),
+                "unit": bool(per[lab].get("unit")),
+                "ident_fail": bool(idents.get(lab, {}).get("fail")),
+            }
+
         def cell_status(lab, concept):
             if concept not in mapped.get(lab, {}):
                 return "?", "概念未命中"
             r = mapped[lab][concept]
             if cols[lab] >= len(r["vals"]) or r["vals"][cols[lab]] is None:
                 return "⚠", "抽取缺口"
-            if idents.get(lab, {}).get("fail"):
+            t = trust.get(lab, {})
+            if not t.get("strong"):
+                return "⚠", "同表缺强标志行（很可能抽错了表）"
+            if t.get("ident_fail"):
                 return "⚠", "同表恒等式不通过"
+            if not t.get("unit"):
+                return "⚠", "单位未识别（量级可能是错的）"
             return "✓", "可用"
+
+        def downgrade(lab, st, why):
+            """`✓` 只有在**表级可信度**全过时才成立（强标志行 + 恒等式 + 单位认得出）。"""
+            if st != "✓":
+                return st, why
+            t = trust.get(lab, {})
+            if not t.get("strong"):
+                return "⚠", "同表缺强标志行（很可能抽错了表）"
+            if t.get("ident_fail"):
+                return "⚠", "同表恒等式不通过"
+            if not t.get("unit"):
+                return "⚠", "单位未识别（量级可能是错的）"
+            return "✓", why
 
         for disp, concept, lab, note in ROWS:
             if lab not in mapped:
@@ -113,6 +145,7 @@ def main() -> int:
             if concept is None:                                  # 收入口径
                 v, used = pick_revenue(mapped[lab], cols[lab])
                 st, why = ("✓", f"取「{used}」") if v is not None else ("⚠", "两个收入概念都没取到")
+                st, why = downgrade(lab, st, why)
                 vy, u, k = (None, None, None) if v is None else to_yuan(per[lab], v)
                 out[sym]["cells"][disp] = {"value": vy, "value_raw": v, "unit": u, "scale": k,
                                            "status": st, "why": why,
@@ -138,9 +171,10 @@ def main() -> int:
             if n is None or not d:
                 out[sym]["cells"][disp] = {"status": "⚠", "why": "分子或分母缺失"}
                 continue
-            out[sym]["cells"][disp] = {"value": 100.0 * n / d, "status": "✓", "unit": "%",
-                                       "unit_out": "%",
-                                       "why": f"{num} / {den if den != '__收入口径__' else '收入口径'}"}
+            st_r, why_r = downgrade(lab, "✓",
+                                    f"{num} / {den if den != '__收入口径__' else '收入口径'}")
+            out[sym]["cells"][disp] = {"value": 100.0 * n / d, "status": st_r, "unit": "%",
+                                       "unit_out": "%", "why": why_r}
 
     # ---- 出表 ----
     names = [(m[0], m[1], m[2]) for m in M.COMPANIES]
@@ -169,10 +203,15 @@ def main() -> int:
     unit_line = "> **单位**：已统一换算到**元**。" + " ".join(
         f"`{u}`：{len(syms)} 表" for u, syms in sorted(units.items()))
 
-    head = ("# 同业对比表（三家 · 2023 年报 · 每格带可信度）\n\n"
+    head = ("# 同业对比表（十一家 · 2023 年报 · 每格带可信度）\n\n"
             "> 生成：`python src/coa_table.py` · 值取自 `data/coa/tables/`（原始行）·\n"
-            "> 状态：**✓ 可用**（概念命中 + 该列有值 + 同表恒等式通过）· **⚠ 抽取缺口**（概念命中但没有值）·\n"
-            "> **? 未命中**（概念字典没找到，可能是业态不同也可能是我抽漏了 —— 要人判）\n" + unit_line + "\n")
+            "> 状态：**✓ 内部判据全过**（概念命中 + 该列有值 + 同表强标志行在 + 恒等式过 + 单位认得出）·\n"
+            "> **⚠ 有具体理由**（抽取缺口 / 同表缺强标志行 ⇒ 很可能抽错了表 / 恒等式不通过 / 单位未识别）·\n"
+            "> **? 未命中**（概念字典没找到，可能是业态不同也可能是我抽漏了 —— 要人判）\n"
+            ">\n"
+            "> ⚠️ **`✓` 不等于「值是对的」**：它只说明**内部判据全过**。实测格力总资产曾取到 **2022 的列**\n"
+            "> （3,550.71 亿，真值 3,680.54 亿）**而状态仍是 ✓** —— 那只因为我外部知道真值才发现。\n"
+            "> 所以这张表的定位是：**把能自查的错全挡在门外，并把「不能自查」这件事明确写出来**。\n" + unit_line + "\n")
     (COA / "compare.md").write_text(head + "\n" + table + "\n", encoding="utf-8")
     (COA / "compare.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
     print(table)
