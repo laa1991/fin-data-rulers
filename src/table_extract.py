@@ -218,6 +218,60 @@ def looks_like_header(row) -> bool:
     return bool(re.search(r"(?:19|20)\d{2}", txt)) or str(row[0] or "").strip() in ("项目", "项　目")
 
 
+DUAL_MIN = 0.8      # 双路径一致率下限：低于它、且共同标签 ≥5 ⇒ 该页记分歧（预注册第十四刀 ④）
+
+
+def _nkey(s):
+    """跨路径比较用的轻归一（**不能 import coa_map**：那边 import 我，会成环）。"""
+    s = re.sub(r"[\s　]", "", s or "")
+    s = re.sub(r"[（(][^）)]*[）)]", "", s)
+    s = re.sub(r"^[一二三四五六七八九十]+、", "", s)
+    s = re.sub(r"^\d+[、.]", "", s)
+    return s.rstrip("：:")
+
+
+def _rows_to_map(rows):
+    out = {}
+    for r in rows:
+        k = _nkey(r["label"])
+        v = next((x for x in r["vals"] if x is not None), None)
+        if k and v is not None and k not in out:
+            out[k] = v
+    return out
+
+
+def dual_agreement(page):
+    """**预注册第十四刀 · ④ 双路径对撞**：同一页两条独立路径逐行比 → (一致率, 共同标签数)。
+
+    路径 A = 默认（线/矩形）· 路径 B = 纯文本对齐。度量先行：实测 1011 页两路都出表，
+    245 页有共同标签，其中 **1.00 一致 173 页 · 严重分歧(<0.5) 40 页** ⇒ 两路**确实独立**、不是同源。
+    """
+    got = []
+    for _name, st in TABLE_STRATEGIES[:2]:
+        try:
+            found = page.find_tables(table_settings=st) if st else page.find_tables()
+        except Exception:                                       # noqa: BLE001
+            got.append(None)
+            continue
+        best = None
+        for tb in found:
+            try:
+                rows = strip_note_cols(clean_rows(drop_runner_rows(tb.extract())))
+            except Exception:                                   # noqa: BLE001
+                continue
+            if len(rows) >= 5 and (best is None or len(rows) > len(best)):
+                best = rows
+        got.append(best)
+    if got[0] is None or got[1] is None:
+        return (1.0, 0)
+    ma, mb = _rows_to_map(got[0]), _rows_to_map(got[1])
+    common = set(ma) & set(mb)
+    if not common:
+        return (1.0, 0)
+    agree = sum(1 for k in common if abs(ma[k] - mb[k]) <= max(1.0, abs(ma[k]) * 1e-6))
+    return (agree / len(common), len(common))
+
+
 def pick_candidates(page):
     """**预注册第十三刀**：裁掉页眉/页脚带后再做表检测，**成对比较**决定用不用裁后的。
 
@@ -350,6 +404,7 @@ def strip_note_cols(rows):
 
 def extract_pdf(pdf_path: pathlib.Path, meta: dict) -> list:
     seq, seen, cur = [], {}, None
+    page_dual = {}                      # 预注册第十四刀 ④：{页: (一致率, 共同标签数)}
     with pdfplumber.open(str(pdf_path)) as pdf:
         for i, page in enumerate(pdf.pages, 1):
             txt = page.extract_text() or ""
@@ -364,6 +419,10 @@ def extract_pdf(pdf_path: pathlib.Path, meta: dict) -> list:
                 continue
             lab0, scope0 = cur
             cands = pick_candidates(page)           # 多策略并联、**全部**候选（按纵向位置）
+            _dual = dual_agreement(page)            # 预注册第十四刀 ④：两条独立路径的一致率
+            page_dual[i] = _dual
+            if _dual[1] >= 5 and _dual[0] < DUAL_MIN:
+                print(f"     ⚠ p{i} 双路径分歧：一致率 {_dual[0]:.2f}（共同标签 {_dual[1]}）", flush=True)
             if not cands:
                 continue
             m = UNIT.search(txt)
@@ -442,7 +501,25 @@ def extract_pdf(pdf_path: pathlib.Path, meta: dict) -> list:
         def _has_strong(seg):
             names = {nrm(s) for s in STRONG[lab]}
             return 1 if any(nrm(r["label"]) in names for r in seg["rows"]) else 0
-        runs.sort(key=lambda x: (-_has_strong(x), -len(x["rows"]), x["pages"][0]))
+
+        def _conflicted(seg):
+            """**预注册第十四刀 ④**：该段是否"两条独立路径对不上过半"。
+
+            为什么按段卡、不按页卡：多页表只丢一页会变成**半张表**（更坏）⇒ 分歧过半就整段不采用。
+            """
+            bad = 0
+            for p in seg["pages"]:
+                r, n = page_dual.get(p, (1.0, 0))
+                if n >= 5 and r < DUAL_MIN:
+                    bad += 1
+            return 1 if bad >= max(1, len(seg["pages"]) // 2) else 0
+
+        runs.sort(key=lambda x: (_conflicted(x), -_has_strong(x), -len(x["rows"]), x["pages"][0]))
+        if _conflicted(runs[0]):
+            # 预注册第十四刀 ④：**两条独立路径对不上 ⇒ 不采用**（宁缺勿错）。
+            print(f"     ✗ {lab}/{scope} 主段与另一条路径分歧过半 ⇒ 不采用（"
+                  f"{len(runs[0]['pages'])} 页：{runs[0]['pages']}）", flush=True)
+            continue
         main = runs[0]
         if len(main["rows"]) < MIN_ROWS:
             continue
