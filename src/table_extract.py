@@ -105,6 +105,11 @@ def page_headings(page):
     return out
 STRONG = {"BS": ["货币资金", "资产总计"], "IS": ["营业总收入", "净利润"],
           "CF": ["经营活动产生的现金流量净额", "期末现金及现金等价物余额"]}
+
+# 硬闸用的门（比 STRONG 宽一点：同一个意思各家写法不同，如「经营活动产生的现金流量」没有「净额」）
+GATE = {"BS": ["货币资金", "资产总计", "总资产", "资产合计"],
+        "IS": ["营业收入", "营业总收入", "净利润"],
+        "CF": ["经营活动产生的现金流量", "现金及现金等价物"]}
 # ⚠ 单位不是装饰：茅台/格力是「元」，**招商银行是「百万元」** ——
 #   不识别单位、不换算，跨公司表里招行的 11,028,483 看起来是茅台的 1/25000，
 #   而它实际比茅台大 40 倍。**这个错不报警：数字在、格式对、量级错。**
@@ -190,8 +195,14 @@ TABLE_STRATEGIES = [
 ]
 
 
+# 噪音词：**附注/分部/权益变动**类的表常常也含「营业收入」「净利润」这些词，
+# 于是按关键词打分时它们会打败真正的报表 —— 实测：11 家里有 9 家的现金流量表格子被这类表占住。
+NOISE = ("分部报告", "分部信息", "附注", "关联交易", "会计政策", "增减变动", "补充资料",
+         "上年年末余额", "本年期初余额", "主要业务", "经营分析", "分解信息", "说明")
+
+
 def page_tables(page):
-    """一页的候选表：多策略并联，返回 **按纵向位置排序的全部候选**（每张 ≥ MIN_SCORE）。
+    """一页的候选表：多策略并联，返回 **按分数排序的全部候选**（每张 ≥ MIN_SCORE）。
 
     为什么要「全部」而不是「最好的那一张」：报表首页常常**同时**有上一张表的尾巴和下一张表的头
     （实测：茅台 p61 = 合并表的权益段 + 母公司表的开头）。只取一张，两边的行都会缺。
@@ -212,9 +223,12 @@ def page_tables(page):
                 continue
             flat = " ".join(str(c) for row in rows[:60] for c in row)
             sc = max(sum(1 for w in SIG[lab] if w in flat) for lab in ("BS", "IS", "CF"))
-            if sc >= MIN_SCORE:
-                got.append({"rows": rows, "score": sc, "strategy": name,
-                            "top": round(tb.bbox[1], 1)})
+            # 噪音惩罚：附注 / 分部 / 权益变动表里也含「营业收入」「净利润」，按关键词打分时会**打败真报表**
+            noise = sum(1 for w in NOISE if w in flat)
+            sc_net = sc - 2 * noise
+            if sc_net >= MIN_SCORE:
+                got.append({"rows": rows, "score": sc_net, "raw": sc, "noise": noise,
+                            "strategy": name, "top": round(tb.bbox[1], 1)})
         cands += got
         if got and max(c["score"] for c in got) >= 3:   # 够好就停（不为大报告白白加几倍开销）
             break
@@ -255,6 +269,12 @@ def extract_pdf(pdf_path: pathlib.Path, meta: dict) -> list:
             # 这张表属于哪一份：**由它上方最近的标题决定**（一页两表时不再共用整页的锚）
             above = [(y, l, s) for (y, l, s) in hds if y <= cd["top"] + 2]
             lab, scope = (above[-1][1], above[-1][2]) if above else (lab0, scope0)
+            # **硬闸**：这一格必须至少有一条**它自己该有的强标志行**（BS 见货币资金/资产总计…）。
+            # 宁可不填也不填错：空与错不同，**错会一路传到结论**。
+            # 实测依据：11 家里 9 家的现金流量表格子曾被「分部报告 / 权益变动表 / 费用明细」占住过。
+            gate_txt = " ".join(str(c) for r in cd["rows"][:150] for c in r)
+            if not any(g in gate_txt for g in GATE[lab]):
+                continue
             rows = cd["rows"]
             hdr = [(c or "").replace("\n", " ").strip() if isinstance(c, str) else ""
                    for c in rows[0]]
@@ -274,7 +294,19 @@ def extract_pdf(pdf_path: pathlib.Path, meta: dict) -> list:
         if run and it["page"] == run[-1]["pages"][-1] + 1 and len(run[-1]["pages"]) < MAX_RUN_PAGES:
             seen_labels = {nrm(r["label"]) for r in run[-1]["rows"]}
             strong = {nrm(s) for s in STRONG[it["label"]]}
-            if any(nrm(r["label"]) in seen_labels and nrm(r["label"]) in strong for r in it["rows"]):
+            w_run = max((len(r["vals"]) for r in run[-1]["rows"]), default=0)
+            w_it = max((len(r["vals"]) for r in it["rows"]), default=0)
+            # ⑤ **列一致性守卫**：两页的值列宽不一致 ⇒ **不拼**（宁缺勿错）。
+            #   实测（伊利 CF p91/p92）：不守这一步时同一张表的两页各取一列
+            #   ——p91 取到 **2022**、p92 取到 2023——而两个数**量级都正常**，
+            #   只有恒等式能发现（那次残差 4,870,037,070.20 正好等于两年之差）。
+            if w_it and w_run and w_it != w_run:
+                print(f"     ⚠ {it['label']} p{it['page']} 值列宽 {w_it} ≠ 本段 {w_run} ⇒ **不拼**（防串列）",
+                      flush=True)
+                run.append({"label": it["label"], "scope": it["scope"], "pages": [it["page"]],
+                            "header": it["header"], "rows": list(it["rows"]), "unit": it["unit"],
+                            "split": f"列宽不一致（{w_run} vs {w_it}）—— 不拼，防串列"})
+            elif any(nrm(r["label"]) in seen_labels and nrm(r["label"]) in strong for r in it["rows"]):
                 run.append({"label": it["label"], "scope": it["scope"], "pages": [it["page"]],
                             "header": it["header"], "rows": list(it["rows"]), "unit": it["unit"]})
             else:
