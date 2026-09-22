@@ -309,7 +309,11 @@ def drop_runner_rows(rows):
     while out:
         cells = [str(c or "").strip() for c in out[0]]
         nonempty = [c for c in cells if c]
-        if nonempty and len(nonempty) <= 3 and not any(re.search(r"\d", c) for c in nonempty) \
+        # **fixture 抓出来的缺陷**（第十四刀）：原判据是「整行不能出现任何数字」——
+        #   而**页眉行里几乎一定有年份**（「格力电器股份有限公司2023年年度报告」）⇒ 页眉永远剔不掉 ✗。
+        #   改成「不能出现**长数字串**（≥6 位 = 金额）」，这才分得开页眉（年份 4 位）与数据行（金额 ≥6 位）。
+        if nonempty and len(nonempty) <= 3 \
+                and not any(re.search(r"\d{6,}", c.replace(",", "")) for c in nonempty) \
                 and any(RUNNER.search(c) for c in nonempty):
             out.pop(0)
             continue

@@ -59,26 +59,13 @@
    "short": "招商银行",
    "kind": "银行",
    "tables": [
-    "BS",
     "IS",
     "CF"
    ],
-   "concepts": "11/36",
+   "concepts": "8/21",
    "ident": "0/0",
-   "ident_skip": 8,
+   "ident_skip": 3,
    "missing": [
-    "负债和所有者权益总计",
-    "流动资产合计",
-    "非流动资产合计",
-    "流动负债合计",
-    "非流动负债合计",
-    "所有者权益合计",
-    "归属于母公司权益合计",
-    "少数股东权益",
-    "货币资金",
-    "存货",
-    "应收账款",
-    "吸收存款",
     "营业总收入",
     "营业总成本",
     "营业成本",
@@ -348,13 +335,13 @@
   }
  ],
  "total": {
-  "tables_ok": 26,
-  "tables_missing": 7,
-  "concepts_hit": 138,
-  "concepts_all": 317,
+  "tables_ok": 25,
+  "tables_missing": 8,
+  "concepts_hit": 135,
+  "concepts_all": 302,
   "ident_pass": 13,
   "ident_fail": 0,
-  "ident_skip": 57,
+  "ident_skip": 52,
   "fail_detail": []
  }
 }
