@@ -209,6 +209,39 @@ NOISE = ("分部报告", "分部信息", "附注", "关联交易", "会计政策
          "上年年末余额", "本年期初余额", "主要业务", "经营分析", "分解信息", "说明")
 
 
+CROP_TOP, CROP_BOTTOM = 115, 740      # 页眉带底 / 页脚带顶（实测三家：页眉 y≤100–110、页脚 y≥748）
+
+
+def looks_like_header(row) -> bool:
+    """首行像不像表头：含四位年份，或第一格是「项目」。"""
+    txt = " ".join(str(c or "") for c in row)
+    return bool(re.search(r"(?:19|20)\d{2}", txt)) or str(row[0] or "").strip() in ("项目", "项　目")
+
+
+def pick_candidates(page):
+    """**预注册第十三刀**：裁掉页眉/页脚带后再做表检测，**成对比较**决定用不用裁后的。
+
+    假设：招行一类的列集不可信，根在**页眉带被表检测吞进表里**（实测候选表顶边 y≈29–33，
+    而页眉带在 y≤100–110 ⇒ 表把页眉吞了）。
+
+    ⚠ 自检**改过一次，留痕**（跑前改的，判据读数一条都还没取）：
+      原设计的自检是「裁后首行必须像表头」—— 实跑发现它**两个缺陷**：
+      ① 「含四位年份」会被**页眉里的年份**骗（`…2023年年度报告…` 也算像表头）⇒ 在正该裁的页面上永远通过；
+      ② **续表页的首行本来就是数据行**（没有表头）⇒ 把正该裁的页面全挡回去（实测格力 p114、招行 p141 双双退回不裁）。
+      改成**成对判据**：裁后与未裁各跑一次，比**最优候选的净分**，**裁后 ≥ 未裁才用裁后的** ——
+      不靠"表头长什么样"的假设，只在两条路里挑证据更强的那条。
+    """
+    try:
+        cropped = page.crop((0, CROP_TOP, page.width, CROP_BOTTOM))
+        c_crop = page_tables(cropped)
+    except Exception:                                       # noqa: BLE001
+        c_crop = []
+    c_raw = page_tables(page)
+    if c_crop and (not c_raw or c_crop[0]["score"] >= c_raw[0]["score"]):
+        return c_crop
+    return c_raw
+
+
 def page_tables(page):
     """一页的候选表：多策略并联，返回 **按分数排序的全部候选**（每张 ≥ MIN_SCORE）。
 
@@ -326,7 +359,7 @@ def extract_pdf(pdf_path: pathlib.Path, meta: dict) -> list:
             if not cur:
                 continue
             lab0, scope0 = cur
-            cands = page_tables(page)               # 多策略并联、**全部**候选（按纵向位置）
+            cands = pick_candidates(page)           # 多策略并联、**全部**候选（按纵向位置）
             if not cands:
                 continue
             m = UNIT.search(txt)
