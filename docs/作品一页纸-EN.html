@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Financial Data Pipeline · Ten Cuts, Measured</title>
+<style>
+  @page { size: A4; margin: 11mm 12mm; }
+  * { box-sizing: border-box; }
+  body { font-family: "Segoe UI", "Microsoft YaHei", sans-serif; color: #1a1a1a;
+         font-size: 9.3pt; line-height: 1.32; margin: 0; }
+  h1 { font-size: 15pt; margin: 0 0 1px; letter-spacing: .1px; }
+  .sub { color: #555; font-size: 8.8pt; margin-bottom: 6px; }
+  h2 { font-size: 10pt; margin: 7px 0 3px; padding-bottom: 1.5px; border-bottom: 1.4px solid #1a1a1a; }
+  ul { margin: 2px 0 0; padding-left: 14px; }
+  li { margin: 1px 0; }
+  b, strong { color: #000; }
+  .grid { display: flex; gap: 14px; }
+  .grid > div { flex: 1; }
+  .kv { margin: 2px 0; }
+  .tag { display: inline-block; background: #eee; border-radius: 3px; padding: 0 4px; font-size: 8.8pt; }
+  .foot { margin-top: 9px; padding-top: 5px; border-top: 1px solid #bbb; color: #444; font-size: 9pt; }
+  code { background: #f2f2f2; padding: 0 3px; border-radius: 2px; font-size: 9pt; }
+  .hl { background: #ffe9a8; padding: 0 2px; }
+</style>
+</head>
+<body>
+
+<h1>Financial Data Pipeline · Ten Cuts, Measured</h1>
+<div class="sub">From public filings to a cross-company comparison table where <b>every cell states its own trustworthiness</b> — every step reproducible · 2026-09 · <code>github.com/laa1991/fin-data-rulers</code></div>
+
+<h2>Problem</h2>
+<ul>
+  <li>Errors in an investment-data pipeline <b>do not raise alarms</b>: wrong source, wrong basis, wrong point-in-time, wrong extraction all run fine, look right — <b>and the conclusion is wrong</b>.</li>
+  <li>So every cut ships with a <b>machine-decidable check</b> instead of a human judge — and each failure mode is <b>deliberately injected once</b> to see whether the check catches it.</li>
+</ul>
+
+<h2>What was built (ten cuts, four groups)</h2>
+<div class="grid">
+  <div>
+    <div class="kv"><span class="tag">Rulers ①–④</span> source reconciliation · adjustment basis · reporting period vs announcement date · scale-out to n=50</div>
+    <div class="kv"><span class="tag">Applications ⑤–⑦</span> citation-traceable RAG · automated report with number-to-source checking · <b>point-in-time (as-of) discipline</b></div>
+  </div>
+  <div>
+    <div class="kv"><span class="tag">Construction ⑧–⑩</span> statement tables reconstructed with <b>accounting-identity self-verification</b> · cross-industry <b>concept disambiguation</b> · the comparison table</div>
+    <div class="kv"><span class="tag">Engineering</span> multi-source + backoff + cache + resumable fetch · one command builds the table · whole chain reproducible</div>
+  </div>
+</div>
+
+<h2>Hardest readings</h2>
+<ul>
+  <li><b>Source</b>: two independent sources reconciled day by day, <b>242/242 trading days</b>, max absolute close difference <b>0.000000</b>.</li>
+  <li><b>Basis</b>: annual return gap <b>3.32 pts</b>; <b>28/50</b> names flip momentum sign; extreme case <b>−9.63% ↔ +28.32%</b> (the basis decides whether it is a loss or a gain).</li>
+  <li><b>Point-in-time</b>: filings are announced on average <b>30.8 trading days</b> after period end; the union of four windows covers <b>49.6%</b> of trading days.</li>
+  <li><b>Q&amp;A</b>: citation present <b>1.000</b> / citation correct <b>1.000</b> / refusal <b>1.000</b>; automated-report number traceability <b>0.804 → 1.000</b> (zero fabrication).</li>
+  <li><b>As-of discipline</b>: the unconstrained arm violates the cutoff in <b>36%</b> of answers and is wrong on <b>12/12</b> "not yet disclosed" questions; <b>0.000</b> once enforced.</li>
+  <li><b>Table reconstruction</b>: <b>228</b> identity checks; <span class="hl">all 40 failures traced back to my extraction — none to the statements themselves</span>. The check tells me where not to trust, rather than judging for me.</li>
+  <li><b>Concept disambiguation</b>: across three issuers the same line item is labelled differently in <b>11 concepts</b> — units differ too (<b>CNY vs CNY millions</b>); cross-company identities pass <b>27/27</b>; <b>the same net margin moves 0.96 pts just by changing the denominator</b>.</li>
+  <li><b>Comparison table</b>: 27 cells, <b>✓20 / ⚠4 / ?3</b> — "not available" is <b>never written as 0</b>; each cell says why it cannot be trusted.</li>
+</ul>
+
+<h2>The single most valuable finding</h2>
+<ul>
+  <li><b>One check covers exactly one failure mode.</b> After swapping two columns, every in-table identity <b>still holds</b> (each period is internally consistent).</li>
+  <li>What catches it is <b>cross-document reconciliation</b> — same date, same line item, two filings must agree: only <b>3 of 43</b> rows still matched.</li>
+</ul>
+
+<h2>Honest boundaries</h2>
+<ul>
+  <li>Sample is <b>one issuer × 8 periodic filings + three annual reports</b> ⇒ not extrapolated to industry statistics;</li>
+  <li><b>7 of 27 cells are currently unavailable</b> (parent-company table sharing a page; a bank's labels and column layout) — <b>flagging ⚠ is a feature, not a defect</b>;</li>
+  <li>The concept dictionary covers <b>36 concepts</b>, not a full chart of accounts; identities cover only the main lines of the three statements.</li>
+</ul>
+
+<div class="foot">
+  <b>Entry</b>: <code>github.com/laa1991/fin-data-rulers</code> (scripts + raw data + per-number recomputation) ·
+  full record <code>docs/一页纸.md</code> · lab log <code>docs/实验日志.md</code> (incl. the 14 silent failure modes I hit) ·
+  comparison table <code>data/coa/compare.md</code> (every cell with provenance)
+</div>
+
+</body>
+</html>
