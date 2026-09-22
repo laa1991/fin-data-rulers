@@ -1,0 +1,1623 @@
+{
+ "l1": [
+  {
+   "table": "2022FY_BS",
+   "ident": "必需行齐全",
+   "verdict": "fail",
+   "detail": "缺 ['所有者权益合计']"
+  },
+  {
+   "table": "2022FY_BS",
+   "ident": "资产总计 = 负债和所有者权益总计",
+   "verdict": "skip",
+   "detail": "缺项： 右式 ['负债和所有者权益总计']"
+  },
+  {
+   "table": "2022FY_BS",
+   "ident": "资产总计 = 流动资产合计 + 非流动资产合计",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2022FY_BS",
+   "ident": "负债和所有者权益总计 = 负债合计 + 所有者权益合计",
+   "verdict": "skip",
+   "detail": "缺项：左式 右式 ['所有者权益合计']"
+  },
+  {
+   "table": "2022FY_BS",
+   "ident": "所有者权益合计 = 归母权益 + 少数股东权益",
+   "verdict": "skip",
+   "detail": "缺项：左式 右式 ['归属于母公司所有者权益合计', '少数股东权益']"
+  },
+  {
+   "table": "2022FY_BS",
+   "ident": "负债合计 = 流动负债合计 + 非流动负债合计",
+   "verdict": "skip",
+   "detail": "缺项： 右式 ['非流动负债合计']"
+  },
+  {
+   "table": "2022FY_BS",
+   "ident": "流动资产区间求和 = 流动资产合计",
+   "verdict": "pass",
+   "detail": "9 个子项 · 残差 max 0.0000"
+  },
+  {
+   "table": "2022FY_BS",
+   "ident": "流动负债区间求和 = 流动负债合计",
+   "verdict": "pass",
+   "detail": "8 个子项 · 残差 max 0.0000"
+  },
+  {
+   "table": "2022FY_BS",
+   "ident": "非流动负债区间求和 = 非流动负债合计",
+   "verdict": "skip",
+   "detail": "找不到区间（非流动负债…非流动负债合计）"
+  },
+  {
+   "table": "2022FY_BS_母公司",
+   "ident": "必需行齐全",
+   "verdict": "pass",
+   "detail": "齐全"
+  },
+  {
+   "table": "2022FY_BS_母公司",
+   "ident": "资产总计 = 负债和所有者权益总计",
+   "verdict": "fail",
+   "detail": "残差 [-92573857295.45, -111592076417.82]"
+  },
+  {
+   "table": "2022FY_BS_母公司",
+   "ident": "资产总计 = 流动资产合计 + 非流动资产合计",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2022FY_BS_母公司",
+   "ident": "负债和所有者权益总计 = 负债合计 + 所有者权益合计",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2022FY_BS_母公司",
+   "ident": "所有者权益合计 = 归母权益 + 少数股东权益",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2022FY_BS_母公司",
+   "ident": "负债合计 = 流动负债合计 + 非流动负债合计",
+   "verdict": "fail",
+   "detail": "残差 [36163895771.63, 44208386632.14]"
+  },
+  {
+   "table": "2022FY_BS_母公司",
+   "ident": "流动资产区间求和 = 流动资产合计",
+   "verdict": "fail",
+   "detail": "残差 [130305635978.74, 113385255672.76]（1 个子项）"
+  },
+  {
+   "table": "2022FY_BS_母公司",
+   "ident": "流动负债区间求和 = 流动负债合计",
+   "verdict": "fail",
+   "detail": "残差 [-1305956163504.85, -1246906293615.23]（35 个子项）"
+  },
+  {
+   "table": "2022FY_BS_母公司",
+   "ident": "非流动负债区间求和 = 非流动负债合计",
+   "verdict": "skip",
+   "detail": "区间内没有可比子项"
+  },
+  {
+   "table": "2022FY_CF_母公司",
+   "ident": "必需行齐全",
+   "verdict": "pass",
+   "detail": "齐全"
+  },
+  {
+   "table": "2022FY_CF_母公司",
+   "ident": "净增加额 = 经营 + 投资 + 筹资 + 汇率影响",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2022FY_CF_母公司",
+   "ident": "期末余额 = 期初余额 + 净增加额",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2022FY_CF_母公司#2",
+   "ident": "必需行齐全",
+   "verdict": "pass",
+   "detail": "齐全"
+  },
+  {
+   "table": "2022FY_CF_母公司#2",
+   "ident": "净增加额 = 经营 + 投资 + 筹资 + 汇率影响",
+   "verdict": "skip",
+   "detail": "该行所有列为空"
+  },
+  {
+   "table": "2022FY_CF_母公司#2",
+   "ident": "期末余额 = 期初余额 + 净增加额",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2022FY_IS",
+   "ident": "必需行齐全",
+   "verdict": "pass",
+   "detail": "齐全"
+  },
+  {
+   "table": "2022FY_IS",
+   "ident": "净利润 = 归母净利润 + 少数股东损益",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2022FY_IS",
+   "ident": "净利润 = 利润总额 − 所得税费用",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2022FY_IS",
+   "ident": "利润总额 = 营业利润 + 营业外收入 − 营业外支出",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2022FY_IS_母公司",
+   "ident": "必需行齐全",
+   "verdict": "pass",
+   "detail": "齐全"
+  },
+  {
+   "table": "2022FY_IS_母公司",
+   "ident": "净利润 = 归母净利润 + 少数股东损益",
+   "verdict": "skip",
+   "detail": "缺项： 右式 ['归属于母公司股东的净利润', '少数股东损益']"
+  },
+  {
+   "table": "2022FY_IS_母公司",
+   "ident": "净利润 = 利润总额 − 所得税费用",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2022FY_IS_母公司",
+   "ident": "利润总额 = 营业利润 + 营业外收入 − 营业外支出",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2023FY_BS",
+   "ident": "必需行齐全",
+   "verdict": "fail",
+   "detail": "缺 ['所有者权益合计']"
+  },
+  {
+   "table": "2023FY_BS",
+   "ident": "资产总计 = 负债和所有者权益总计",
+   "verdict": "skip",
+   "detail": "缺项： 右式 ['负债和所有者权益总计']"
+  },
+  {
+   "table": "2023FY_BS",
+   "ident": "资产总计 = 流动资产合计 + 非流动资产合计",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2023FY_BS",
+   "ident": "负债和所有者权益总计 = 负债合计 + 所有者权益合计",
+   "verdict": "skip",
+   "detail": "缺项：左式 右式 ['所有者权益合计']"
+  },
+  {
+   "table": "2023FY_BS",
+   "ident": "所有者权益合计 = 归母权益 + 少数股东权益",
+   "verdict": "skip",
+   "detail": "缺项：左式 右式 ['归属于母公司所有者权益合计', '少数股东权益']"
+  },
+  {
+   "table": "2023FY_BS",
+   "ident": "负债合计 = 流动负债合计 + 非流动负债合计",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2023FY_BS",
+   "ident": "流动资产区间求和 = 流动资产合计",
+   "verdict": "fail",
+   "detail": "残差 [225101113914.71, 216450591998.5]（1 个子项）"
+  },
+  {
+   "table": "2023FY_BS",
+   "ident": "流动负债区间求和 = 流动负债合计",
+   "verdict": "pass",
+   "detail": "8 个子项 · 残差 max 0.0000"
+  },
+  {
+   "table": "2023FY_BS",
+   "ident": "非流动负债区间求和 = 非流动负债合计",
+   "verdict": "fail",
+   "detail": "残差 [-50520109513.5, -51044941607.28]（4 个子项）"
+  },
+  {
+   "table": "2023FY_BS_母公司",
+   "ident": "必需行齐全",
+   "verdict": "fail",
+   "detail": "缺 ['所有者权益合计']"
+  },
+  {
+   "table": "2023FY_BS_母公司",
+   "ident": "资产总计 = 负债和所有者权益总计",
+   "verdict": "skip",
+   "detail": "缺项： 右式 ['负债和所有者权益总计']"
+  },
+  {
+   "table": "2023FY_BS_母公司",
+   "ident": "资产总计 = 流动资产合计 + 非流动资产合计",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2023FY_BS_母公司",
+   "ident": "负债和所有者权益总计 = 负债合计 + 所有者权益合计",
+   "verdict": "skip",
+   "detail": "缺项：左式 右式 ['所有者权益合计']"
+  },
+  {
+   "table": "2023FY_BS_母公司",
+   "ident": "所有者权益合计 = 归母权益 + 少数股东权益",
+   "verdict": "skip",
+   "detail": "缺项：左式 右式 ['归属于母公司所有者权益合计', '少数股东权益']"
+  },
+  {
+   "table": "2023FY_BS_母公司",
+   "ident": "负债合计 = 流动负债合计 + 非流动负债合计",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2023FY_BS_母公司",
+   "ident": "流动资产区间求和 = 流动资产合计",
+   "verdict": "pass",
+   "detail": "7 个子项 · 残差 max 0.0000"
+  },
+  {
+   "table": "2023FY_BS_母公司",
+   "ident": "流动负债区间求和 = 流动负债合计",
+   "verdict": "pass",
+   "detail": "7 个子项 · 残差 max 0.0000"
+  },
+  {
+   "table": "2023FY_BS_母公司",
+   "ident": "非流动负债区间求和 = 非流动负债合计",
+   "verdict": "fail",
+   "detail": "残差 [-14490009023.94, -12901926354.76]（4 个子项）"
+  },
+  {
+   "table": "2023FY_CF",
+   "ident": "必需行齐全",
+   "verdict": "pass",
+   "detail": "齐全"
+  },
+  {
+   "table": "2023FY_CF",
+   "ident": "净增加额 = 经营 + 投资 + 筹资 + 汇率影响",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2023FY_CF",
+   "ident": "期末余额 = 期初余额 + 净增加额",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2023FY_CF_母公司",
+   "ident": "必需行齐全",
+   "verdict": "fail",
+   "detail": "缺 ['现金及现金等价物净增加额']"
+  },
+  {
+   "table": "2023FY_CF_母公司",
+   "ident": "净增加额 = 经营 + 投资 + 筹资 + 汇率影响",
+   "verdict": "skip",
+   "detail": "缺项：左式 右式 ['筹资活动产生的现金流量净额', '汇率变动对现金及现金等价物的影响']"
+  },
+  {
+   "table": "2023FY_CF_母公司",
+   "ident": "期末余额 = 期初余额 + 净增加额",
+   "verdict": "skip",
+   "detail": "缺项：左式 右式 ['期初现金及现金等价物余额', '现金及现金等价物净增加额']"
+  },
+  {
+   "table": "2023FY_IS",
+   "ident": "必需行齐全",
+   "verdict": "pass",
+   "detail": "齐全"
+  },
+  {
+   "table": "2023FY_IS",
+   "ident": "净利润 = 归母净利润 + 少数股东损益",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2023FY_IS",
+   "ident": "净利润 = 利润总额 − 所得税费用",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2023FY_IS",
+   "ident": "利润总额 = 营业利润 + 营业外收入 − 营业外支出",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2023FY_IS_母公司",
+   "ident": "必需行齐全",
+   "verdict": "pass",
+   "detail": "齐全"
+  },
+  {
+   "table": "2023FY_IS_母公司",
+   "ident": "净利润 = 归母净利润 + 少数股东损益",
+   "verdict": "skip",
+   "detail": "缺项： 右式 ['归属于母公司股东的净利润', '少数股东损益']"
+  },
+  {
+   "table": "2023FY_IS_母公司",
+   "ident": "净利润 = 利润总额 − 所得税费用",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2023FY_IS_母公司",
+   "ident": "利润总额 = 营业利润 + 营业外收入 − 营业外支出",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2023H1_BS",
+   "ident": "必需行齐全",
+   "verdict": "fail",
+   "detail": "缺 ['所有者权益合计']"
+  },
+  {
+   "table": "2023H1_BS",
+   "ident": "资产总计 = 负债和所有者权益总计",
+   "verdict": "skip",
+   "detail": "缺项： 右式 ['负债和所有者权益总计']"
+  },
+  {
+   "table": "2023H1_BS",
+   "ident": "资产总计 = 流动资产合计 + 非流动资产合计",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2023H1_BS",
+   "ident": "负债和所有者权益总计 = 负债合计 + 所有者权益合计",
+   "verdict": "skip",
+   "detail": "缺项：左式 右式 ['所有者权益合计']"
+  },
+  {
+   "table": "2023H1_BS",
+   "ident": "所有者权益合计 = 归母权益 + 少数股东权益",
+   "verdict": "skip",
+   "detail": "缺项：左式 右式 ['归属于母公司所有者权益合计', '少数股东权益']"
+  },
+  {
+   "table": "2023H1_BS",
+   "ident": "负债合计 = 流动负债合计 + 非流动负债合计",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2023H1_BS",
+   "ident": "流动资产区间求和 = 流动资产合计",
+   "verdict": "pass",
+   "detail": "9 个子项 · 残差 max 0.0000"
+  },
+  {
+   "table": "2023H1_BS",
+   "ident": "流动负债区间求和 = 流动负债合计",
+   "verdict": "pass",
+   "detail": "8 个子项 · 残差 max 0.0000"
+  },
+  {
+   "table": "2023H1_BS",
+   "ident": "非流动负债区间求和 = 非流动负债合计",
+   "verdict": "fail",
+   "detail": "残差 [-51044941607.28, -51044941607.28]（4 个子项）"
+  },
+  {
+   "table": "2023H1_BS_合并#2",
+   "ident": "必需行齐全",
+   "verdict": "fail",
+   "detail": "缺 ['所有者权益合计']"
+  },
+  {
+   "table": "2023H1_BS_合并#2",
+   "ident": "资产总计 = 负债和所有者权益总计",
+   "verdict": "skip",
+   "detail": "缺项： 右式 ['负债和所有者权益总计']"
+  },
+  {
+   "table": "2023H1_BS_合并#2",
+   "ident": "资产总计 = 流动资产合计 + 非流动资产合计",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2023H1_BS_合并#2",
+   "ident": "负债和所有者权益总计 = 负债合计 + 所有者权益合计",
+   "verdict": "skip",
+   "detail": "缺项：左式 右式 ['所有者权益合计']"
+  },
+  {
+   "table": "2023H1_BS_合并#2",
+   "ident": "所有者权益合计 = 归母权益 + 少数股东权益",
+   "verdict": "skip",
+   "detail": "缺项：左式 右式 ['归属于母公司所有者权益合计', '少数股东权益']"
+  },
+  {
+   "table": "2023H1_BS_合并#2",
+   "ident": "负债合计 = 流动负债合计 + 非流动负债合计",
+   "verdict": "skip",
+   "detail": "缺项： 右式 ['非流动负债合计']"
+  },
+  {
+   "table": "2023H1_BS_合并#2",
+   "ident": "流动资产区间求和 = 流动资产合计",
+   "verdict": "pass",
+   "detail": "11 个子项 · 残差 max 0.0000"
+  },
+  {
+   "table": "2023H1_BS_合并#2",
+   "ident": "流动负债区间求和 = 流动负债合计",
+   "verdict": "fail",
+   "detail": "残差 [-478230000.0]（9 个子项）"
+  },
+  {
+   "table": "2023H1_BS_合并#2",
+   "ident": "非流动负债区间求和 = 非流动负债合计",
+   "verdict": "skip",
+   "detail": "找不到区间（非流动负债…非流动负债合计）"
+  },
+  {
+   "table": "2023H1_BS_母公司",
+   "ident": "必需行齐全",
+   "verdict": "fail",
+   "detail": "缺 ['所有者权益合计']"
+  },
+  {
+   "table": "2023H1_BS_母公司",
+   "ident": "资产总计 = 负债和所有者权益总计",
+   "verdict": "skip",
+   "detail": "缺项： 右式 ['负债和所有者权益总计']"
+  },
+  {
+   "table": "2023H1_BS_母公司",
+   "ident": "资产总计 = 流动资产合计 + 非流动资产合计",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2023H1_BS_母公司",
+   "ident": "负债和所有者权益总计 = 负债合计 + 所有者权益合计",
+   "verdict": "skip",
+   "detail": "缺项：左式 右式 ['所有者权益合计']"
+  },
+  {
+   "table": "2023H1_BS_母公司",
+   "ident": "所有者权益合计 = 归母权益 + 少数股东权益",
+   "verdict": "skip",
+   "detail": "缺项：左式 右式 ['归属于母公司所有者权益合计', '少数股东权益']"
+  },
+  {
+   "table": "2023H1_BS_母公司",
+   "ident": "负债合计 = 流动负债合计 + 非流动负债合计",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2023H1_BS_母公司",
+   "ident": "流动资产区间求和 = 流动资产合计",
+   "verdict": "pass",
+   "detail": "7 个子项 · 残差 max 0.0000"
+  },
+  {
+   "table": "2023H1_BS_母公司",
+   "ident": "流动负债区间求和 = 流动负债合计",
+   "verdict": "pass",
+   "detail": "7 个子项 · 残差 max 0.0000"
+  },
+  {
+   "table": "2023H1_BS_母公司",
+   "ident": "非流动负债区间求和 = 非流动负债合计",
+   "verdict": "fail",
+   "detail": "残差 [-12901926354.76, -12901926354.76]（4 个子项）"
+  },
+  {
+   "table": "2023H1_BS_母公司#2",
+   "ident": "必需行齐全",
+   "verdict": "pass",
+   "detail": "齐全"
+  },
+  {
+   "table": "2023H1_BS_母公司#2",
+   "ident": "资产总计 = 负债和所有者权益总计",
+   "verdict": "fail",
+   "detail": "残差 [-102563218773.17, -92573857295.45]"
+  },
+  {
+   "table": "2023H1_BS_母公司#2",
+   "ident": "资产总计 = 流动资产合计 + 非流动资产合计",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2023H1_BS_母公司#2",
+   "ident": "负债和所有者权益总计 = 负债合计 + 所有者权益合计",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2023H1_BS_母公司#2",
+   "ident": "所有者权益合计 = 归母权益 + 少数股东权益",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2023H1_BS_母公司#2",
+   "ident": "负债合计 = 流动负债合计 + 非流动负债合计",
+   "verdict": "fail",
+   "detail": "残差 [24019805842.27, 36163895771.63]"
+  },
+  {
+   "table": "2023H1_BS_母公司#2",
+   "ident": "流动资产区间求和 = 流动资产合计",
+   "verdict": "fail",
+   "detail": "残差 [106238422127.44, 130305635978.74]（1 个子项）"
+  },
+  {
+   "table": "2023H1_BS_母公司#2",
+   "ident": "流动负债区间求和 = 流动负债合计",
+   "verdict": "fail",
+   "detail": "残差 [-1244390327560.41, -1305941070743.63]（34 个子项）"
+  },
+  {
+   "table": "2023H1_BS_母公司#2",
+   "ident": "非流动负债区间求和 = 非流动负债合计",
+   "verdict": "skip",
+   "detail": "区间内没有可比子项"
+  },
+  {
+   "table": "2023H1_CF",
+   "ident": "必需行齐全",
+   "verdict": "fail",
+   "detail": "缺 ['现金及现金等价物净增加额']"
+  },
+  {
+   "table": "2023H1_CF",
+   "ident": "净增加额 = 经营 + 投资 + 筹资 + 汇率影响",
+   "verdict": "skip",
+   "detail": "缺项：左式"
+  },
+  {
+   "table": "2023H1_CF",
+   "ident": "期末余额 = 期初余额 + 净增加额",
+   "verdict": "skip",
+   "detail": "缺项：左式 右式 ['期初现金及现金等价物余额', '现金及现金等价物净增加额']"
+  },
+  {
+   "table": "2023H1_CF_母公司",
+   "ident": "必需行齐全",
+   "verdict": "fail",
+   "detail": "缺 ['现金及现金等价物净增加额']"
+  },
+  {
+   "table": "2023H1_CF_母公司",
+   "ident": "净增加额 = 经营 + 投资 + 筹资 + 汇率影响",
+   "verdict": "skip",
+   "detail": "缺项：左式 右式 ['投资活动产生的现金流量净额', '筹资活动产生的现金流量净额', '汇率变动对现金及现金等价物的影响']"
+  },
+  {
+   "table": "2023H1_CF_母公司",
+   "ident": "期末余额 = 期初余额 + 净增加额",
+   "verdict": "skip",
+   "detail": "缺项：左式 右式 ['期初现金及现金等价物余额', '现金及现金等价物净增加额']"
+  },
+  {
+   "table": "2023H1_IS",
+   "ident": "必需行齐全",
+   "verdict": "pass",
+   "detail": "齐全"
+  },
+  {
+   "table": "2023H1_IS",
+   "ident": "净利润 = 归母净利润 + 少数股东损益",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2023H1_IS",
+   "ident": "净利润 = 利润总额 − 所得税费用",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2023H1_IS",
+   "ident": "利润总额 = 营业利润 + 营业外收入 − 营业外支出",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2023H1_IS_母公司",
+   "ident": "必需行齐全",
+   "verdict": "pass",
+   "detail": "齐全"
+  },
+  {
+   "table": "2023H1_IS_母公司",
+   "ident": "净利润 = 归母净利润 + 少数股东损益",
+   "verdict": "skip",
+   "detail": "缺项： 右式 ['归属于母公司股东的净利润', '少数股东损益']"
+  },
+  {
+   "table": "2023H1_IS_母公司",
+   "ident": "净利润 = 利润总额 − 所得税费用",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2023H1_IS_母公司",
+   "ident": "利润总额 = 营业利润 + 营业外收入 − 营业外支出",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2023Q1_BS",
+   "ident": "必需行齐全",
+   "verdict": "pass",
+   "detail": "齐全"
+  },
+  {
+   "table": "2023Q1_BS",
+   "ident": "资产总计 = 负债和所有者权益总计",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2023Q1_BS",
+   "ident": "资产总计 = 流动资产合计 + 非流动资产合计",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2023Q1_BS",
+   "ident": "负债和所有者权益总计 = 负债合计 + 所有者权益合计",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2023Q1_BS",
+   "ident": "所有者权益合计 = 归母权益 + 少数股东权益",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2023Q1_BS",
+   "ident": "负债合计 = 流动负债合计 + 非流动负债合计",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2023Q1_BS",
+   "ident": "流动资产区间求和 = 流动资产合计",
+   "verdict": "pass",
+   "detail": "9 个子项 · 残差 max 0.0000"
+  },
+  {
+   "table": "2023Q1_BS",
+   "ident": "流动负债区间求和 = 流动负债合计",
+   "verdict": "pass",
+   "detail": "8 个子项 · 残差 max 0.0000"
+  },
+  {
+   "table": "2023Q1_BS",
+   "ident": "非流动负债区间求和 = 非流动负债合计",
+   "verdict": "fail",
+   "detail": "残差 [-51044941607.28, -51044941607.28]（4 个子项）"
+  },
+  {
+   "table": "2023Q1_BS_合并#2",
+   "ident": "必需行齐全",
+   "verdict": "fail",
+   "detail": "缺 ['所有者权益合计']"
+  },
+  {
+   "table": "2023Q1_BS_合并#2",
+   "ident": "资产总计 = 负债和所有者权益总计",
+   "verdict": "skip",
+   "detail": "缺项： 右式 ['负债和所有者权益总计']"
+  },
+  {
+   "table": "2023Q1_BS_合并#2",
+   "ident": "资产总计 = 流动资产合计 + 非流动资产合计",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2023Q1_BS_合并#2",
+   "ident": "负债和所有者权益总计 = 负债合计 + 所有者权益合计",
+   "verdict": "skip",
+   "detail": "缺项：左式 右式 ['所有者权益合计']"
+  },
+  {
+   "table": "2023Q1_BS_合并#2",
+   "ident": "所有者权益合计 = 归母权益 + 少数股东权益",
+   "verdict": "skip",
+   "detail": "缺项：左式 右式 ['归属于母公司所有者权益合计', '少数股东权益']"
+  },
+  {
+   "table": "2023Q1_BS_合并#2",
+   "ident": "负债合计 = 流动负债合计 + 非流动负债合计",
+   "verdict": "skip",
+   "detail": "缺项： 右式 ['非流动负债合计']"
+  },
+  {
+   "table": "2023Q1_BS_合并#2",
+   "ident": "流动资产区间求和 = 流动资产合计",
+   "verdict": "pass",
+   "detail": "9 个子项 · 残差 max 0.0000"
+  },
+  {
+   "table": "2023Q1_BS_合并#2",
+   "ident": "流动负债区间求和 = 流动负债合计",
+   "verdict": "pass",
+   "detail": "8 个子项 · 残差 max 0.0000"
+  },
+  {
+   "table": "2023Q1_BS_合并#2",
+   "ident": "非流动负债区间求和 = 非流动负债合计",
+   "verdict": "skip",
+   "detail": "找不到区间（非流动负债…非流动负债合计）"
+  },
+  {
+   "table": "2023Q1_CF",
+   "ident": "必需行齐全",
+   "verdict": "pass",
+   "detail": "齐全"
+  },
+  {
+   "table": "2023Q1_CF",
+   "ident": "净增加额 = 经营 + 投资 + 筹资 + 汇率影响",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2023Q1_CF",
+   "ident": "期末余额 = 期初余额 + 净增加额",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2023Q1_IS",
+   "ident": "必需行齐全",
+   "verdict": "pass",
+   "detail": "齐全"
+  },
+  {
+   "table": "2023Q1_IS",
+   "ident": "净利润 = 归母净利润 + 少数股东损益",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2023Q1_IS",
+   "ident": "净利润 = 利润总额 − 所得税费用",
+   "verdict": "pass",
+   "detail": "残差 max 0.0100"
+  },
+  {
+   "table": "2023Q1_IS",
+   "ident": "利润总额 = 营业利润 + 营业外收入 − 营业外支出",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2023Q3_BS",
+   "ident": "必需行齐全",
+   "verdict": "pass",
+   "detail": "齐全"
+  },
+  {
+   "table": "2023Q3_BS",
+   "ident": "资产总计 = 负债和所有者权益总计",
+   "verdict": "skip",
+   "detail": "缺项： 右式 ['负债和所有者权益总计']"
+  },
+  {
+   "table": "2023Q3_BS",
+   "ident": "资产总计 = 流动资产合计 + 非流动资产合计",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2023Q3_BS",
+   "ident": "负债和所有者权益总计 = 负债合计 + 所有者权益合计",
+   "verdict": "skip",
+   "detail": "缺项：左式"
+  },
+  {
+   "table": "2023Q3_BS",
+   "ident": "所有者权益合计 = 归母权益 + 少数股东权益",
+   "verdict": "skip",
+   "detail": "缺项： 右式 ['少数股东权益']"
+  },
+  {
+   "table": "2023Q3_BS",
+   "ident": "负债合计 = 流动负债合计 + 非流动负债合计",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2023Q3_BS",
+   "ident": "流动资产区间求和 = 流动资产合计",
+   "verdict": "pass",
+   "detail": "11 个子项 · 残差 max 0.0000"
+  },
+  {
+   "table": "2023Q3_BS",
+   "ident": "流动负债区间求和 = 流动负债合计",
+   "verdict": "fail",
+   "detail": "残差 [-86730000.0]（9 个子项）"
+  },
+  {
+   "table": "2023Q3_BS",
+   "ident": "非流动负债区间求和 = 非流动负债合计",
+   "verdict": "fail",
+   "detail": "残差 [-38090010557.72, -51044941607.28]（4 个子项）"
+  },
+  {
+   "table": "2023Q3_BS_合并#2",
+   "ident": "必需行齐全",
+   "verdict": "pass",
+   "detail": "齐全"
+  },
+  {
+   "table": "2023Q3_BS_合并#2",
+   "ident": "资产总计 = 负债和所有者权益总计",
+   "verdict": "skip",
+   "detail": "缺项： 右式 ['负债和所有者权益总计']"
+  },
+  {
+   "table": "2023Q3_BS_合并#2",
+   "ident": "资产总计 = 流动资产合计 + 非流动资产合计",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2023Q3_BS_合并#2",
+   "ident": "负债和所有者权益总计 = 负债合计 + 所有者权益合计",
+   "verdict": "skip",
+   "detail": "缺项：左式"
+  },
+  {
+   "table": "2023Q3_BS_合并#2",
+   "ident": "所有者权益合计 = 归母权益 + 少数股东权益",
+   "verdict": "skip",
+   "detail": "缺项： 右式 ['少数股东权益']"
+  },
+  {
+   "table": "2023Q3_BS_合并#2",
+   "ident": "负债合计 = 流动负债合计 + 非流动负债合计",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2023Q3_BS_合并#2",
+   "ident": "流动资产区间求和 = 流动资产合计",
+   "verdict": "pass",
+   "detail": "9 个子项 · 残差 max 0.0000"
+  },
+  {
+   "table": "2023Q3_BS_合并#2",
+   "ident": "流动负债区间求和 = 流动负债合计",
+   "verdict": "pass",
+   "detail": "8 个子项 · 残差 max 0.0000"
+  },
+  {
+   "table": "2023Q3_BS_合并#2",
+   "ident": "非流动负债区间求和 = 非流动负债合计",
+   "verdict": "fail",
+   "detail": "残差 [-51044941607.28, -51044941607.28]（4 个子项）"
+  },
+  {
+   "table": "2023Q3_CF",
+   "ident": "必需行齐全",
+   "verdict": "fail",
+   "detail": "缺 ['现金及现金等价物净增加额']"
+  },
+  {
+   "table": "2023Q3_CF",
+   "ident": "净增加额 = 经营 + 投资 + 筹资 + 汇率影响",
+   "verdict": "skip",
+   "detail": "缺项：左式 右式 ['筹资活动产生的现金流量净额', '汇率变动对现金及现金等价物的影响']"
+  },
+  {
+   "table": "2023Q3_CF",
+   "ident": "期末余额 = 期初余额 + 净增加额",
+   "verdict": "skip",
+   "detail": "缺项：左式 右式 ['期初现金及现金等价物余额', '现金及现金等价物净增加额']"
+  },
+  {
+   "table": "2023Q3_IS",
+   "ident": "必需行齐全",
+   "verdict": "pass",
+   "detail": "齐全"
+  },
+  {
+   "table": "2023Q3_IS",
+   "ident": "净利润 = 归母净利润 + 少数股东损益",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2023Q3_IS",
+   "ident": "净利润 = 利润总额 − 所得税费用",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2023Q3_IS",
+   "ident": "利润总额 = 营业利润 + 营业外收入 − 营业外支出",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2024H1_BS",
+   "ident": "必需行齐全",
+   "verdict": "fail",
+   "detail": "缺 ['所有者权益合计']"
+  },
+  {
+   "table": "2024H1_BS",
+   "ident": "资产总计 = 负债和所有者权益总计",
+   "verdict": "skip",
+   "detail": "缺项： 右式 ['负债和所有者权益总计']"
+  },
+  {
+   "table": "2024H1_BS",
+   "ident": "资产总计 = 流动资产合计 + 非流动资产合计",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2024H1_BS",
+   "ident": "负债和所有者权益总计 = 负债合计 + 所有者权益合计",
+   "verdict": "skip",
+   "detail": "缺项：左式 右式 ['所有者权益合计']"
+  },
+  {
+   "table": "2024H1_BS",
+   "ident": "所有者权益合计 = 归母权益 + 少数股东权益",
+   "verdict": "skip",
+   "detail": "缺项：左式 右式 ['归属于母公司所有者权益合计', '少数股东权益']"
+  },
+  {
+   "table": "2024H1_BS",
+   "ident": "负债合计 = 流动负债合计 + 非流动负债合计",
+   "verdict": "skip",
+   "detail": "缺项： 右式 ['非流动负债合计']"
+  },
+  {
+   "table": "2024H1_BS",
+   "ident": "流动资产区间求和 = 流动资产合计",
+   "verdict": "pass",
+   "detail": "11 个子项 · 残差 max 0.0000"
+  },
+  {
+   "table": "2024H1_BS",
+   "ident": "流动负债区间求和 = 流动负债合计",
+   "verdict": "pass",
+   "detail": "8 个子项 · 残差 max 0.0000"
+  },
+  {
+   "table": "2024H1_BS",
+   "ident": "非流动负债区间求和 = 非流动负债合计",
+   "verdict": "skip",
+   "detail": "找不到区间（非流动负债…非流动负债合计）"
+  },
+  {
+   "table": "2024H1_BS_母公司",
+   "ident": "必需行齐全",
+   "verdict": "pass",
+   "detail": "齐全"
+  },
+  {
+   "table": "2024H1_BS_母公司",
+   "ident": "资产总计 = 负债和所有者权益总计",
+   "verdict": "fail",
+   "detail": "残差 [-130492013113.5, -101115293228.17]"
+  },
+  {
+   "table": "2024H1_BS_母公司",
+   "ident": "资产总计 = 流动资产合计 + 非流动资产合计",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2024H1_BS_母公司",
+   "ident": "负债和所有者权益总计 = 负债合计 + 所有者权益合计",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2024H1_BS_母公司",
+   "ident": "所有者权益合计 = 归母权益 + 少数股东权益",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2024H1_BS_母公司",
+   "ident": "负债合计 = 流动负债合计 + 非流动负债合计",
+   "verdict": "fail",
+   "detail": "残差 [41601804299.41, 34210456038.01]"
+  },
+  {
+   "table": "2024H1_BS_母公司",
+   "ident": "流动资产区间求和 = 流动资产合计",
+   "verdict": "fail",
+   "detail": "残差 [111018362493.23, 134368210615.68]（1 个子项）"
+  },
+  {
+   "table": "2024H1_BS_母公司",
+   "ident": "流动负债区间求和 = 流动负债合计",
+   "verdict": "fail",
+   "detail": "残差 [-1340517892101.72, -1365454830359.54]（34 个子项）"
+  },
+  {
+   "table": "2024H1_BS_母公司",
+   "ident": "非流动负债区间求和 = 非流动负债合计",
+   "verdict": "skip",
+   "detail": "区间内没有可比子项"
+  },
+  {
+   "table": "2024H1_CF",
+   "ident": "必需行齐全",
+   "verdict": "fail",
+   "detail": "缺 ['现金及现金等价物净增加额']"
+  },
+  {
+   "table": "2024H1_CF",
+   "ident": "净增加额 = 经营 + 投资 + 筹资 + 汇率影响",
+   "verdict": "skip",
+   "detail": "缺项：左式 右式 ['筹资活动产生的现金流量净额', '汇率变动对现金及现金等价物的影响']"
+  },
+  {
+   "table": "2024H1_CF",
+   "ident": "期末余额 = 期初余额 + 净增加额",
+   "verdict": "skip",
+   "detail": "缺项：左式 右式 ['期初现金及现金等价物余额', '现金及现金等价物净增加额']"
+  },
+  {
+   "table": "2024H1_CF_母公司",
+   "ident": "必需行齐全",
+   "verdict": "fail",
+   "detail": "缺 ['现金及现金等价物净增加额']"
+  },
+  {
+   "table": "2024H1_CF_母公司",
+   "ident": "净增加额 = 经营 + 投资 + 筹资 + 汇率影响",
+   "verdict": "skip",
+   "detail": "缺项：左式 右式 ['投资活动产生的现金流量净额', '筹资活动产生的现金流量净额', '汇率变动对现金及现金等价物的影响']"
+  },
+  {
+   "table": "2024H1_CF_母公司",
+   "ident": "期末余额 = 期初余额 + 净增加额",
+   "verdict": "skip",
+   "detail": "缺项：左式 右式 ['期初现金及现金等价物余额', '现金及现金等价物净增加额']"
+  },
+  {
+   "table": "2024H1_IS",
+   "ident": "必需行齐全",
+   "verdict": "pass",
+   "detail": "齐全"
+  },
+  {
+   "table": "2024H1_IS",
+   "ident": "净利润 = 归母净利润 + 少数股东损益",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2024H1_IS",
+   "ident": "净利润 = 利润总额 − 所得税费用",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2024H1_IS",
+   "ident": "利润总额 = 营业利润 + 营业外收入 − 营业外支出",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2024H1_IS_母公司",
+   "ident": "必需行齐全",
+   "verdict": "pass",
+   "detail": "齐全"
+  },
+  {
+   "table": "2024H1_IS_母公司",
+   "ident": "净利润 = 归母净利润 + 少数股东损益",
+   "verdict": "skip",
+   "detail": "缺项： 右式 ['归属于母公司股东的净利润', '少数股东损益']"
+  },
+  {
+   "table": "2024H1_IS_母公司",
+   "ident": "净利润 = 利润总额 − 所得税费用",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2024H1_IS_母公司",
+   "ident": "利润总额 = 营业利润 + 营业外收入 − 营业外支出",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2024Q1_BS",
+   "ident": "必需行齐全",
+   "verdict": "fail",
+   "detail": "缺 ['所有者权益合计']"
+  },
+  {
+   "table": "2024Q1_BS",
+   "ident": "资产总计 = 负债和所有者权益总计",
+   "verdict": "skip",
+   "detail": "缺项： 右式 ['负债和所有者权益总计']"
+  },
+  {
+   "table": "2024Q1_BS",
+   "ident": "资产总计 = 流动资产合计 + 非流动资产合计",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2024Q1_BS",
+   "ident": "负债和所有者权益总计 = 负债合计 + 所有者权益合计",
+   "verdict": "skip",
+   "detail": "缺项：左式 右式 ['所有者权益合计']"
+  },
+  {
+   "table": "2024Q1_BS",
+   "ident": "所有者权益合计 = 归母权益 + 少数股东权益",
+   "verdict": "skip",
+   "detail": "缺项：左式 右式 ['归属于母公司所有者权益合计', '少数股东权益']"
+  },
+  {
+   "table": "2024Q1_BS",
+   "ident": "负债合计 = 流动负债合计 + 非流动负债合计",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2024Q1_BS",
+   "ident": "流动资产区间求和 = 流动资产合计",
+   "verdict": "pass",
+   "detail": "10 个子项 · 残差 max 0.0000"
+  },
+  {
+   "table": "2024Q1_BS",
+   "ident": "流动负债区间求和 = 流动负债合计",
+   "verdict": "pass",
+   "detail": "8 个子项 · 残差 max 0.0000"
+  },
+  {
+   "table": "2024Q1_BS",
+   "ident": "非流动负债区间求和 = 非流动负债合计",
+   "verdict": "fail",
+   "detail": "残差 [-37772266007.32, -50520109513.5]（4 个子项）"
+  },
+  {
+   "table": "2024Q1_CF",
+   "ident": "必需行齐全",
+   "verdict": "pass",
+   "detail": "齐全"
+  },
+  {
+   "table": "2024Q1_CF",
+   "ident": "净增加额 = 经营 + 投资 + 筹资 + 汇率影响",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2024Q1_CF",
+   "ident": "期末余额 = 期初余额 + 净增加额",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2024Q1_IS",
+   "ident": "必需行齐全",
+   "verdict": "pass",
+   "detail": "齐全"
+  },
+  {
+   "table": "2024Q1_IS",
+   "ident": "净利润 = 归母净利润 + 少数股东损益",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2024Q1_IS",
+   "ident": "净利润 = 利润总额 − 所得税费用",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2024Q1_IS",
+   "ident": "利润总额 = 营业利润 + 营业外收入 − 营业外支出",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2024Q3_BS",
+   "ident": "必需行齐全",
+   "verdict": "pass",
+   "detail": "齐全"
+  },
+  {
+   "table": "2024Q3_BS",
+   "ident": "资产总计 = 负债和所有者权益总计",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2024Q3_BS",
+   "ident": "资产总计 = 流动资产合计 + 非流动资产合计",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2024Q3_BS",
+   "ident": "负债和所有者权益总计 = 负债合计 + 所有者权益合计",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2024Q3_BS",
+   "ident": "所有者权益合计 = 归母权益 + 少数股东权益",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2024Q3_BS",
+   "ident": "负债合计 = 流动负债合计 + 非流动负债合计",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2024Q3_BS",
+   "ident": "流动资产区间求和 = 流动资产合计",
+   "verdict": "pass",
+   "detail": "11 个子项 · 残差 max 0.0000"
+  },
+  {
+   "table": "2024Q3_BS",
+   "ident": "流动负债区间求和 = 流动负债合计",
+   "verdict": "fail",
+   "detail": "残差 [-57000000.0]（9 个子项）"
+  },
+  {
+   "table": "2024Q3_BS",
+   "ident": "非流动负债区间求和 = 非流动负债合计",
+   "verdict": "fail",
+   "detail": "残差 [-39959163670.35, -50520109513.5]（4 个子项）"
+  },
+  {
+   "table": "2024Q3_CF",
+   "ident": "必需行齐全",
+   "verdict": "pass",
+   "detail": "齐全"
+  },
+  {
+   "table": "2024Q3_CF",
+   "ident": "净增加额 = 经营 + 投资 + 筹资 + 汇率影响",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2024Q3_CF",
+   "ident": "期末余额 = 期初余额 + 净增加额",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2024Q3_IS",
+   "ident": "必需行齐全",
+   "verdict": "pass",
+   "detail": "齐全"
+  },
+  {
+   "table": "2024Q3_IS",
+   "ident": "净利润 = 归母净利润 + 少数股东损益",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2024Q3_IS",
+   "ident": "净利润 = 利润总额 − 所得税费用",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  },
+  {
+   "table": "2024Q3_IS",
+   "ident": "利润总额 = 营业利润 + 营业外收入 − 营业外支出",
+   "verdict": "pass",
+   "detail": "残差 max 0.0000"
+  }
+ ],
+ "l2": [
+  {
+   "a": "2024Q3_BS",
+   "b": "2023FY_BS",
+   "ok": true,
+   "compared": 43,
+   "same": 43,
+   "rate": 1.0,
+   "diff": [],
+   "cols": [
+    1,
+    1
+   ],
+   "date": "2023年12月31日"
+  },
+  {
+   "a": "2024H1_BS",
+   "b": "2023FY_BS",
+   "ok": true,
+   "compared": 34,
+   "same": 34,
+   "rate": 1.0,
+   "diff": [],
+   "cols": [
+    2,
+    1
+   ],
+   "date": "2023年12月31日"
+  },
+  {
+   "a": "2024Q1_BS",
+   "b": "2023FY_BS",
+   "ok": true,
+   "compared": 38,
+   "same": 38,
+   "rate": 1.0,
+   "diff": [],
+   "cols": [
+    1,
+    1
+   ],
+   "date": "2023年12月31日"
+  },
+  {
+   "a": "2023Q3_BS",
+   "b": "2022FY_BS",
+   "ok": true,
+   "compared": 31,
+   "same": 31,
+   "rate": 1.0,
+   "diff": [],
+   "cols": [
+    1,
+    1
+   ],
+   "date": "2022年12月31日"
+  }
+ ],
+ "l3": [
+  {
+   "name": "基线（未破坏）",
+   "caught_by": [],
+   "verdicts": [
+    [
+     "资产总计 = 负债和所有者权益总计",
+     "pass"
+    ],
+    [
+     "资产总计 = 流动资产合计 + 非流动资产合计",
+     "pass"
+    ],
+    [
+     "负债和所有者权益总计 = 负债合计 + 所有者权益合计",
+     "pass"
+    ],
+    [
+     "所有者权益合计 = 归母权益 + 少数股东权益",
+     "pass"
+    ],
+    [
+     "负债合计 = 流动负债合计 + 非流动负债合计",
+     "pass"
+    ]
+   ],
+   "caught": null
+  },
+  {
+   "name": "① 删行（资产总计）",
+   "caught_by": [
+    "资产总计 = 负债和所有者权益总计（pass→skip）",
+    "资产总计 = 流动资产合计 + 非流动资产合计（pass→skip）",
+    "必需行缺失 ['资产总计']"
+   ],
+   "verdicts": [
+    [
+     "资产总计 = 负债和所有者权益总计",
+     "skip"
+    ],
+    [
+     "资产总计 = 流动资产合计 + 非流动资产合计",
+     "skip"
+    ],
+    [
+     "负债和所有者权益总计 = 负债合计 + 所有者权益合计",
+     "pass"
+    ],
+    [
+     "所有者权益合计 = 归母权益 + 少数股东权益",
+     "pass"
+    ],
+    [
+     "负债合计 = 流动负债合计 + 非流动负债合计",
+     "pass"
+    ]
+   ],
+   "caught": true
+  },
+  {
+   "name": "② 改数（流动资产合计 +1 元）",
+   "caught_by": [
+    "资产总计 = 流动资产合计 + 非流动资产合计（pass→fail）"
+   ],
+   "verdicts": [
+    [
+     "资产总计 = 负债和所有者权益总计",
+     "pass"
+    ],
+    [
+     "资产总计 = 流动资产合计 + 非流动资产合计",
+     "fail"
+    ],
+    [
+     "负债和所有者权益总计 = 负债合计 + 所有者权益合计",
+     "pass"
+    ],
+    [
+     "所有者权益合计 = 归母权益 + 少数股东权益",
+     "pass"
+    ],
+    [
+     "负债合计 = 流动负债合计 + 非流动负债合计",
+     "pass"
+    ]
+   ],
+   "caught": true
+  },
+  {
+   "name": "③ 小数点错位（货币资金 ×10）",
+   "caught_by": [],
+   "verdicts": [
+    [
+     "资产总计 = 负债和所有者权益总计",
+     "pass"
+    ],
+    [
+     "资产总计 = 流动资产合计 + 非流动资产合计",
+     "pass"
+    ],
+    [
+     "负债和所有者权益总计 = 负债合计 + 所有者权益合计",
+     "pass"
+    ],
+    [
+     "所有者权益合计 = 归母权益 + 少数股东权益",
+     "pass"
+    ],
+    [
+     "负债合计 = 流动负债合计 + 非流动负债合计",
+     "pass"
+    ]
+   ],
+   "caught": false
+  },
+  {
+   "name": "④ 单位读错（全表 ×10000，模拟把万元当成元）",
+   "caught_by": [
+    "负债合计 = 流动负债合计 + 非流动负债合计（pass→fail）"
+   ],
+   "verdicts": [
+    [
+     "资产总计 = 负债和所有者权益总计",
+     "pass"
+    ],
+    [
+     "资产总计 = 流动资产合计 + 非流动资产合计",
+     "pass"
+    ],
+    [
+     "负债和所有者权益总计 = 负债合计 + 所有者权益合计",
+     "pass"
+    ],
+    [
+     "所有者权益合计 = 归母权益 + 少数股东权益",
+     "pass"
+    ],
+    [
+     "负债合计 = 流动负债合计 + 非流动负债合计",
+     "fail"
+    ]
+   ],
+   "caught": true
+  },
+  {
+   "name": "⑤ 两列对调（本期 ↔ 上期）",
+   "caught_by": [],
+   "verdicts": [
+    [
+     "资产总计 = 负债和所有者权益总计",
+     "pass"
+    ],
+    [
+     "资产总计 = 流动资产合计 + 非流动资产合计",
+     "pass"
+    ],
+    [
+     "负债和所有者权益总计 = 负债合计 + 所有者权益合计",
+     "pass"
+    ],
+    [
+     "所有者权益合计 = 归母权益 + 少数股东权益",
+     "pass"
+    ],
+    [
+     "负债合计 = 流动负债合计 + 非流动负债合计",
+     "pass"
+    ]
+   ],
+   "caught": false
+  }
+ ],
+ "summary": {
+  "l1_pass": 127,
+  "l1_fail": 40,
+  "l1_skip": 61,
+  "l2_rate": [
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "l3_caught": [
+   "① 删行（资产总计）",
+   "② 改数（流动资产合计 +1 元）",
+   "④ 单位读错（全表 ×10000，模拟把万元当成元）"
+  ],
+  "l3_missed": [
+   "基线（未破坏）",
+   "③ 小数点错位（货币资金 ×10）",
+   "⑤ 两列对调（本期 ↔ 上期）"
+  ]
+ }
+}
