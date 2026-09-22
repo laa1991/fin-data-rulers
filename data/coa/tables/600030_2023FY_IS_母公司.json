@@ -2,275 +2,811 @@
  "label": "IS",
  "scope": "母公司",
  "pages": [
-  182,
-  183
+  186
  ],
  "header": [
   "",
-  "限公司"
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "(cid:1048)(cid:1170)(cid:2714)(cid:1268)(cid:2561)",
+  "(cid:1121)(cid:1988)(cid:2962)(cid:1208)(cid:1371)",
+  "",
+  "",
+  "",
+  "",
+  ""
  ],
  "rows": [
   {
    "label": "",
    "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
     null
    ]
   },
   {
    "label": "",
    "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
     null
    ]
   },
   {
    "label": "",
    "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
     null
    ]
   },
   {
    "label": "",
    "vals": [
+    null,
+    null,
+    null,
+    2023.0,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
     null
    ]
   },
   {
    "label": "",
    "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    2023.0,
+    null,
+    null,
+    null,
+    null,
+    null,
     null
    ]
   },
   {
    "label": "",
    "vals": [
-    null
-   ]
-  },
-  {
-   "label": "营业收入",
-   "vals": [
-    33072382352.93
-   ]
-  },
-  {
-   "label": "手续费及佣金净收入",
-   "vals": [
-    15058502916.48
-   ]
-  },
-  {
-   "label": "其中：经纪业务手续费",
-   "vals": [
-    6576650227.59
-   ]
-  },
-  {
-   "label": "投资银行业务手",
-   "vals": [
-    5926335138.83
-   ]
-  },
-  {
-   "label": "资产管理业务手",
-   "vals": [
-    1932187323.41
-   ]
-  },
-  {
-   "label": "利息净收入",
-   "vals": [
-    3158280713.61
-   ]
-  },
-  {
-   "label": "其中：利息收入",
-   "vals": [
-    15735994964.25
-   ]
-  },
-  {
-   "label": "利息支出",
-   "vals": [
-    null
-   ]
-  },
-  {
-   "label": "投资收益",
-   "vals": [
-    9476764475.34
-   ]
-  },
-  {
-   "label": "其中：对联营企业和",
-   "vals": [
-    null
-   ]
-  },
-  {
-   "label": "投资收益",
-   "vals": [
-    307777455.21
-   ]
-  },
-  {
-   "label": "公允价值变动收益",
-   "vals": [
-    null
-   ]
-  },
-  {
-   "label": "(损失以负号列示)",
-   "vals": [
-    5681015162.37
-   ]
-  },
-  {
-   "label": "汇兑收益(损失以负号",
-   "vals": [
-    -684785377.18
-   ]
-  },
-  {
-   "label": "资产处置收益",
-   "vals": [
-    796931.27
-   ]
-  },
-  {
-   "label": "其他收益",
-   "vals": [
-    157485933.61
-   ]
-  },
-  {
-   "label": "其他业务收入",
-   "vals": [
-    224321597.43
-   ]
-  },
-  {
-   "label": "营业支出",
-   "vals": [
-    16399653771.95
-   ]
-  },
-  {
-   "label": "税金及附加",
-   "vals": [
-    173887447.61
-   ]
-  },
-  {
-   "label": "业务及管理费",
-   "vals": [
-    16654504218.58
-   ]
-  },
-  {
-   "label": "信用减值损失",
-   "vals": [
-    -434096033.15
-   ]
-  },
-  {
-   "label": "其他业务成本",
-   "vals": [
-    5358138.91
-   ]
-  },
-  {
-   "label": "",
-   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
     null
    ]
   },
   {
    "label": "",
    "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
     null
    ]
   },
   {
    "label": "",
    "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
     null
    ]
   },
   {
    "label": "",
    "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
     null
    ]
   },
   {
    "label": "",
    "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
     null
    ]
   },
   {
    "label": "",
    "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
     null
    ]
   },
   {
-   "label": "三、营业利润",
+   "label": "",
    "vals": [
-    20621263877.2
-   ]
-  },
-  {
-   "label": "加：营业外收入",
-   "vals": [
-    12357821.3
-   ]
-  },
-  {
-   "label": "减：营业外支出",
-   "vals": [
-    81234529.29
-   ]
-  },
-  {
-   "label": "四、利润总额",
-   "vals": [
-    20552387169.21
-   ]
-  },
-  {
-   "label": "减：所得税费用",
-   "vals": [
-    4606437915.29
-   ]
-  },
-  {
-   "label": "五、净利润",
-   "vals": [
-    15945949253.92
-   ]
-  },
-  {
-   "label": "按经营持续性分类",
-   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
     null
    ]
   },
   {
-   "label": "1. 持续经营净利润",
+   "label": "",
    "vals": [
-    15945949253.92
-   ]
-  },
-  {
-   "label": "2. 终止经营净利润",
-   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
     null
    ]
   },
   {
-   "label": "后附财务报表附注为本财务",
+   "label": "年1月1日余额 14,820,546,82",
    "vals": [
+    9.0013761704,
+    56.649,
+    93619968.0,
+    0.7119214841,
+    5.351129389291,
+    5.473688430248,
+    2.42,
+    85229292668.51,
+    5253951414.46,
+    258372038462.56,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "增减变动金额",
+   "vals": [
+    -3000000.0,
+    0.0,
+    null,
+    null,
+    3.0434611508,
+    0.04336630725,
+    5.76,
+    8220494391.1,
+    105648178.32,
+    null,
+    2022.0,
+    9.0010767729,
+    386.846,
+    562585663.0,
+    null,
+    null,
+    5.573295853456,
+    1.73,
+    77660564435.8,
+    4636452826.11,
+    213807786181.58
+   ]
+  },
+  {
+   "label": "净利润",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    19720547412.84,
+    818797816.17,
+    null,
+    null,
+    null,
+    null,
+    531034304.0,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "其他综合收益",
+   "vals": [
+    null,
+    null,
+    null,
+    -90019198.0,
+    3.04,
+    null,
+    null,
+    null,
+    16593527.94,
+    916785510.98,
+    null,
+    null,
+    null,
+    null,
+    -94535302.0,
+    7.2,
+    null,
+    null,
+    null,
+    91796420.31,
+    1037149447.51
+   ]
+  },
+  {
+   "label": "收益总额",
+   "vals": [
+    null,
+    null,
+    null,
+    -90019198.0,
+    3.04,
+    null,
+    null,
+    19720547412.84,
+    835391344.11,
+    21456130739.99,
+    null,
+    null,
+    null,
+    null,
+    -94535302.0,
+    7.2,
+    null,
+    null,
+    21317422282.16,
+    943161216.83,
+    23205936526.19
+   ]
+  },
+  {
+   "label": "股东投入和减少资本",
+   "vals": [
+    -3000000.0,
+    0.0,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    -242564500.68,
+    2645848212.11,
+    null,
+    0.002993974,
+    669.802,
+    531034304.0,
+    2.33,
+    null,
+    null,
+    null,
+    -13805526.1,
+    123673280.17,
+    30307956266.2
+   ]
+  },
+  {
+   "label": "1.股东减少资本",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    0.0,
+    -2.0,
+    530912031.0,
+    8.6,
+    null,
+    null,
+    null,
+    null,
+    null,
+    27202891118.6
+   ]
+  },
+  {
+   "label": "2.其他权益工具持有者 投入资本",
+   "vals": [
+    null,
+    -0.0,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    -2993974.0,
+    669.8,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    2993974669.8
+   ]
+  },
+  {
+   "label": "3.其他",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    -105109126.82,
+    null,
+    null,
+    null,
+    122272.0,
+    3.73,
+    null,
+    null,
+    null,
+    -13805526.1,
+    123673280.17,
+    111090477.8
+   ]
+  },
+  {
+   "label": "利润分配",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    -34611508.0,
+    0.04336630725,
+    null,
+    null,
+    -487178665.11,
+    -8274409351.05,
+    null,
+    null,
+    null,
+    null,
+    null,
+    -130881599.0,
+    9.90392576792,
+    0.69,
+    -13734888523.35,
+    -449335908.65,
+    null
+   ]
+  },
+  {
+   "label": "1.提取盈余公积",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    -34611508.0,
+    0.04,
+    null,
+    -346115080.04,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    -0.69,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "2.提取一般风险准备 3.对股东的分配 4.对其他权益工具持有者",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    -8003095287.66,
+    -449335908.65,
+    null
+   ]
+  },
+  {
+   "label": "的分配",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    -525162739.73,
+    null,
+    -525162739.73,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    -497209315.1,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    2022.0,
+    9.0013761704,
+    56.649,
+    93619968.0,
+    0.7119214841,
+    5.351129389291,
+    5.473688430248,
+    2.42,
+    85229292668.51,
+    5253951414.46,
+    258372038462.56
+   ]
+  },
+  {
+   "label": "其他",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    -400000.0,
+    null,
+    -400000.0,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "年12月31日余额 14,820,546,82",
+   "vals": [
+    9.0016761704,
+    56.649,
+    82461239.0,
+    3.50109234039,
+    8.391164000799,
+    5.514025060973,
+    8.18,
+    93449787059.61,
+    5359599592.78,
+    274199208063.61,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
     null
    ]
   }
@@ -281,7 +817,6 @@
  "announced": "2024-03-27",
  "source": "600030_2023FY.pdf",
  "title": "中信证券股份有限公司2023年年度报告",
- "dropped_nonnumeric_cols": 3,
  "symbol": "600030",
  "short": "中信证券",
  "kind": "券商"

@@ -222,7 +222,7 @@ def page_tables(page):
         got = []
         for tb in found:
             try:
-                rows = tb.extract()
+                rows = drop_runner_rows(tb.extract())          # 页眉行会脏掉表头，先剔
             except Exception:                                        # noqa: BLE001
                 continue
             if not rows:
@@ -231,7 +231,12 @@ def page_tables(page):
             sc = max(sum(1 for w in SIG[lab] if w in flat) for lab in ("BS", "IS", "CF"))
             # 噪音惩罚：附注 / 分部 / 权益变动表里也含「营业收入」「净利润」，按关键词打分时会**打败真报表**
             noise = sum(1 for w in NOISE if w in flat)
-            sc_net = sc - 2 * noise
+            # **表头里带年份**加分：真报表的第一行是「项目 | 2023年12月31日 | 2022年…」，
+            #   而**页眉被当成列**的那种伪表第一行是「招商银行股份有 | 限公司 第八章 财务报告」。
+            #   取证依据（13 次列宽不一致逐列摊开后）：**8/13 是页眉被当成列**，1 例公司名被拆成列。
+            hdr_txt = " ".join(str(c) for c in (rows[0] if rows else []))
+            year_bonus = 2 if re.search(r"(?:19|20)\d{2}", hdr_txt) else 0
+            sc_net = sc - 2 * noise + year_bonus
             if sc_net >= MIN_SCORE:
                 got.append({"rows": rows, "score": sc_net, "raw": sc, "noise": noise,
                             "strategy": name, "top": round(tb.bbox[1], 1)})
@@ -256,6 +261,52 @@ def align_period(rows, header, year):
             break
     return [{"label": r["label"],
              "vals": [r["vals"][k] if k < len(r["vals"]) else None]} for r in rows]
+
+
+# 页眉行：全文字、没数字、含公司名/章节词 —— 实测它会**成为表的第 0 行**，
+#   于是「表头」被它占住、每页列数还不一样（招行：9/10/9/8/6），列集整体不可信。
+RUNNER = re.compile(r"(年度报告|第[一二三四五六七八九十\d]{1,3}[章节]|股份有限|有限公司|财务报表|目录|审计报告)")
+
+
+def drop_runner_rows(rows):
+    """剔掉开头的**页眉行**（全文字 + 无数字 + 含公司名/章节词 + 非空格 ≤3）。"""
+    out = list(rows)
+    while out:
+        cells = [str(c or "").strip() for c in out[0]]
+        nonempty = [c for c in cells if c]
+        if nonempty and len(nonempty) <= 3 and not any(re.search(r"\d", c) for c in nonempty) \
+                and any(RUNNER.search(c) for c in nonempty):
+            out.pop(0)
+            continue
+        break
+    return out
+
+
+def strip_note_cols(rows):
+    """**按内容**剔「附注」列与全空列 —— 让不同页的值列宽天然一致。
+
+    为什么按内容而不是按表头：页表的表头**可能来自上一页或表头修复路径**（实测索引不可信，
+    按表头归一那次直接产出了错值 8,434,869,082.25）。而内容有硬性质：
+      · **注释号一定是小整数**（1~999），**金额一定是大数** ⇒ 整列全是小整数 ⇒ 必是附注列；
+      · 整列**一个值都没有** ⇒ 剔掉（留着只会在跨页拼接时造成宽度差）。
+    剔完之后宽度天然一致，跨页拼接就不会再串列。
+    """
+    if not rows:
+        return rows
+    w = max((len(r["vals"]) for r in rows), default=0)
+    keep = []
+    for j in range(w):
+        vals = [r["vals"][j] for r in rows if j < len(r["vals"]) and r["vals"][j] is not None]
+        if not vals:
+            continue                                   # 全空列
+        note_like = all(abs(v) < 1000 and float(v).is_integer() for v in vals)
+        if note_like and len(vals) >= max(2, len(rows) * 0.5):
+            continue                                   # 整列都是小整数 ⇒ 附注列
+        keep.append(j)
+    if not keep:
+        return rows
+    return [{"label": r["label"], "vals": [r["vals"][j] if j < len(r["vals"]) else None for j in keep]}
+            for r in rows]
 
 
 def extract_pdf(pdf_path: pathlib.Path, meta: dict) -> list:
@@ -305,7 +356,8 @@ def extract_pdf(pdf_path: pathlib.Path, meta: dict) -> list:
                     hdr = h
                     break
             seq.append({"page": i, "label": lab, "scope": scope, "header": hdr,
-                        "rows": clean_rows(rows), "unit": (m.group(1) if m else None)})
+                        "rows": strip_note_cols(clean_rows(rows)),
+                        "unit": (m.group(1) if m else None)})
 
     # —— 连续页同 (表, 合并/母公司) 拼成一张；页邻接**必须**配合数据信号（见上 ④）——
     groups = {}
@@ -346,7 +398,12 @@ def extract_pdf(pdf_path: pathlib.Path, meta: dict) -> list:
 
     out = []
     for (lab, scope), runs in groups.items():
-        runs.sort(key=lambda x: (-len(x["rows"]), x["pages"][0]))
+        # 主段优先：**先看有没有该表的强标志行**（没有它就不是这张表的正文），再看行数。
+        # 实测（伊利 CF）：只按行数取会把「续表页」当正文，而正文页（含经营活动净额）被降级成碎片。
+        def _has_strong(seg):
+            names = {nrm(s) for s in STRONG[lab]}
+            return 1 if any(nrm(r["label"]) in names for r in seg["rows"]) else 0
+        runs.sort(key=lambda x: (-_has_strong(x), -len(x["rows"]), x["pages"][0]))
         main = runs[0]
         if len(main["rows"]) < MIN_ROWS:
             continue

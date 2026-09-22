@@ -7,6 +7,7 @@
  "header": [
   "动资产：",
   "",
+  "",
   ""
  ],
  "rows": [
@@ -199,7 +200,6 @@
  "announced": "2024-04-20",
  "source": "002415_2023FY.pdf",
  "title": "2023年年度报告",
- "dropped_nonnumeric_cols": 1,
  "symbol": "002415",
  "short": "海康威视",
  "kind": "电子"
