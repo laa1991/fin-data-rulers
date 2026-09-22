@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>金融数据链 · 十刀实测（作品一页纸）</title>
+<style>
+  @page { size: A4; margin: 13mm 14mm; }
+  * { box-sizing: border-box; }
+  body { font-family: "Microsoft YaHei", "Segoe UI", sans-serif; color: #1a1a1a;
+         font-size: 10.2pt; line-height: 1.45; margin: 0; }
+  h1 { font-size: 17pt; margin: 0 0 2px; letter-spacing: .2px; }
+  .sub { color: #555; font-size: 9.6pt; margin-bottom: 9px; }
+  h2 { font-size: 11pt; margin: 11px 0 4px; padding-bottom: 2px; border-bottom: 1.5px solid #1a1a1a; }
+  ul { margin: 3px 0 0; padding-left: 15px; }
+  li { margin: 1.5px 0; }
+  b, strong { color: #000; }
+  .grid { display: flex; gap: 14px; }
+  .grid > div { flex: 1; }
+  .kv { margin: 2px 0; }
+  .tag { display: inline-block; background: #eee; border-radius: 3px; padding: 0 4px; font-size: 9pt; }
+  .foot { margin-top: 9px; padding-top: 5px; border-top: 1px solid #bbb; color: #444; font-size: 9.2pt; }
+  code { background: #f2f2f2; padding: 0 3px; border-radius: 2px; font-size: 9.2pt; }
+  .hl { background: #ffe9a8; padding: 0 2px; }
+</style>
+</head>
+<body>
+
+<h1>金融数据链 · 十刀实测</h1>
+<div class="sub">从公开公告到一张「<b>每格自报可信度</b>」的同业对比表 —— 每一步都可复算 · 2026-09 · <code>github.com/laa1991/fin-data-rulers</code></div>
+
+<h2>问题</h2>
+<ul>
+  <li>投研数据链上的错<b>不报警</b>：源错、口径错、时点错、抽取错 —— 全都跑得通、看着对，而<b>结论是错的</b>。</li>
+  <li>所以每一刀都配一条<b>不用人当裁判</b>的判据，并且<b>每类破坏都先被故意制造一次</b>，看判据抓不抓得住。</li>
+</ul>
+
+<h2>做了什么（十刀 · 四组）</h2>
+<div class="grid">
+  <div>
+    <div class="kv"><span class="tag">尺 ①–④</span> 源对账 · 复权口径 · 报告期 vs 公告日 · n=50 上规模</div>
+    <div class="kv"><span class="tag">用 ⑤–⑦</span> 引用可追溯 RAG · 自动化报告（数字回原文核） · <b>时点纪律验收（as-of）</b></div>
+  </div>
+  <div>
+    <div class="kv"><span class="tag">构 ⑧–⑩</span> 财报表还原 + <b>会计恒等式自证</b> · 跨业态<b>口径消歧</b> · 同业对比表</div>
+    <div class="kv"><span class="tag">工程</span> 多源 + 退避 + 缓存 + 断点续跑 · 一条命令出表 · 全链可复算</div>
+  </div>
+</div>
+
+<h2>最硬的读数</h2>
+<ul>
+  <li><b>源</b>：两份独立公开源逐日对账 <b>242/242 个交易日</b>，收盘价最大绝对差 <b>0.000000</b>。</li>
+  <li><b>口径</b>：全年收益差 <b>3.32 个点</b>；n=50 中 <b>28/50</b> 出现动量符号翻转，极端样本 <b>−9.63% ↔ +28.32%</b>（口径决定盈亏方向）。</li>
+  <li><b>时点</b>：定期报告从报告期末到实际公告平均隔 <b>30.8 个交易日</b>，四份窗口取并集覆盖 <b>49.6%</b> 的交易日。</li>
+  <li><b>问答</b>：带出处 <b>1.000</b> / 出处正确 <b>1.000</b> / 答不出 <b>1.000</b>；自动报告数字可追溯率 <b>0.804 → 1.000</b>（零编造）。</li>
+  <li><b>时点纪律</b>：无约束对照组 <b>36%</b> 的答案引用越界、「该日尚未披露」类题 <b>12/12 全错</b>；装上纪律后越界 <b>0.000</b>。</li>
+  <li><b>表还原</b>：<b>228 条</b>恒等式判定；<span class="hl">失败的 40 条逐条回看全是我抽取的问题，没有一条是报表错</span> —— 判据的价值是告诉我哪里不可信。</li>
+  <li><b>口径消歧</b>：三家同一科目各写各的（<b>11 个概念标签不同</b>，单位还分<b>元 / 百万元</b>）；跨公司恒等式 <b>27/27 通过</b>；<b>同一个净利率只换分母就差 0.96 个百分点</b>。</li>
+  <li><b>对比表</b>：27 格 <b>✓20 / ⚠4 / ?3</b> —— 「不可用」<b>不许写成 0</b>，每格都说出自己为什么不可信。</li>
+</ul>
+
+<h2>一条最值钱的方法论</h2>
+<ul>
+  <li><b>一条判据只覆盖一个失败面</b>：把两列对调之后，表内每条恒等式<b>照样成立</b>（两个期各自都自洽）；</li>
+  <li>抓住它的是<b>跨文档核对</b>（同一日期同一科目在两份报告里必须相同）—— 43 行里只剩 <b>3 行</b>一致。</li>
+</ul>
+
+<h2>诚实边界</h2>
+<ul>
+  <li>样本是<b>一家公司 8 份定期报告 + 三家年报</b> ⇒ 不外推为行业统计；</li>
+  <li>对比表 27 格中<b>有 7 格当前不可用</b>（茅台权益段与母公司表同页、招行的标签与列结构不同）—— <b>敢标 ⚠ 是特性，不是缺陷</b>；</li>
+  <li>概念字典覆盖 <b>36 个概念</b>，不是准则级 COA；恒等式只覆盖三张表各自的几条主干。</li>
+</ul>
+
+<div class="foot">
+  <b>入口</b>：<code>github.com/laa1991/fin-data-rulers</code>（脚本 + 原始数据 + 逐项复算）·
+  全量记录 <code>docs/一页纸.md</code>（十刀）· <code>docs/实验日志.md</code>（含我自己踩的 14 类静默失败）·
+  对比表 <code>data/coa/compare.md</code>（逐格带出处）
+</div>
+
+</body>
+</html>
